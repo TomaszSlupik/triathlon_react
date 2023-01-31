@@ -1,0 +1,42 @@
+$body: #7c5fe9;
+$second: #fff;
+
+.header {
+    text-align: center;
+    margin: 1em 0em;
+    &__span {
+        color: $second;
+    }
+}
+
+h1 {
+    color: $body;
+    font-weight: 700;
+}
+
+h2 {
+    color: $body;
+}
+
+
+
+@media (min-width: 576px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+

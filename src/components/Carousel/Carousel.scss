@@ -1,0 +1,104 @@
+$text: #999;
+@import '../../animations/animations';
+
+.carousel {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 2em; 
+    &__x {
+        position: absolute;
+        right: 4%;
+        bottom: 67%;
+        width: 200px;
+        height: 200px;
+        animation: rotate-left 55s infinite linear;
+        display: none;
+    }
+    &__box {
+        position: relative;
+        width: 61% !important;
+ 
+        &-slide {
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 210px;
+        }
+        &-signature {
+            font-size: 0.8rem;
+            color: #fff;
+            text-align: end;
+        }
+    }
+    &__text {
+        padding: 0.2em 0.5em;
+    }
+}
+
+
+@media only screen and  (min-width: 576px) {
+    
+    .carousel {
+        height: 300px;
+        &__box {
+            width: 50% !important;
+            &-slide {
+                height: 300px;
+            }
+        }
+        &__text {
+                width: 50%;
+        }
+}   
+}
+
+@media only screen and (min-width: 1200px) {
+    .carousel {
+        height: 450px;
+        &__x {
+            display: block;
+        }
+        &__box {
+            &-slide {
+                height: 450px
+     }}}
+}
+
+@media only screen and (min-width: 1400px) {
+    .carousel {
+        &__x {
+            width: 300px;
+            height: 300px;
+        }}
+}
+
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+ 
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+    color: #fff !important;
+  }
+ 
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+
+}

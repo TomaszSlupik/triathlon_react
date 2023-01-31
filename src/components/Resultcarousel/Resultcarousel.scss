@@ -1,0 +1,36 @@
+.resultcarousel {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    margin-top: 2em;
+    &__img {
+        width: 250px;
+        height: 250px;
+    }
+    &__signature {
+        font-size: 0.8rem;
+        color: #fff;
+        text-align: end;
+    }
+}
+
+
+@media only screen and (min-width: 576px) {
+    .resultcarousel {
+        &__img {
+            width: 450px;
+            height: 450px;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    .resultcarousel {
+        &__img {
+            width: 450px;
+            height: 670px;
+        }
+    }
+}
