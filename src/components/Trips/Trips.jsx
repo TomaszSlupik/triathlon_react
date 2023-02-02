@@ -20,6 +20,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import Textradio from '../../style/mymuistyle/textradio';
+import Search from '../Search/Search';
 
 
 
@@ -69,6 +70,18 @@ const filterTripsYes = () => {
  
 }
 
+
+const searchText = (text) => {
+  const serachEvent = Data.filter(el => el.name.toLowerCase().includes(text.toLowerCase()))
+  setTrip(serachEvent)
+}
+
+const allData = () => {
+  const data = [...Data]
+  setTrip(data)
+}
+
+
   return (
     <div>
       <div className="trip">
@@ -83,7 +96,7 @@ const filterTripsYes = () => {
           <img className="trip__headerImage" src={process.env.PUBLIC_URL + '/img/bikes.jpg'} alt="rowery - trip" />
         </div>
         <div className="trip__switch">
-        
+              <Search searchText={searchText} allData={allData}/>
             <FormControl>
             <RadioGroup
               style={style.radioGroup}
