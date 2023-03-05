@@ -58,6 +58,42 @@ $text: #999;
                 justify-content: center;
                 align-items: center;
             }
+            &--rightup {
+                position: absolute;
+                top: -1.5%;
+                left: -1%;
+                width: 100px;
+                height: 4px;
+                background-color: $body;
+                border-radius: 0px 8px 8px 0px;
+            }
+            &--leftup {
+                position: absolute;
+                top: -1.5%;
+                left: -2%;
+                height: 100px;
+                width: 4px;
+                background-color: $body;
+                border-radius: 0px 0px 8px 8px;
+            }
+            &--righttop {
+                position: absolute;
+                bottom: -1.5%;
+                right: -1%;
+                width: 100px;
+                height: 4px;
+                background-color: $body;
+                border-radius: 0px 8px 8px 0px;
+            }
+            &--lefttop {
+                position: absolute;
+                bottom: -1.5%;
+                right: -2%;
+                height: 100px;
+                width: 4px;
+                background-color: $body;
+                border-radius: 0px 0px 8px 8px;
+            }
         }
     }
 }
@@ -78,6 +114,13 @@ $text: #999;
                         width: 80%;
                         font-size: 1.2rem;
                     }
+                    &--leftup {
+                        left: -1.5%;
+                    }
+                    &--lefttop {
+                        right: -1.5%
+                    }
+
                 }
             }
 
@@ -96,6 +139,12 @@ $text: #999;
                 &-box{ 
                     &--text{
                         font-size: 1.3rem;
+                    }
+                    &--leftup {
+                        left: -1%;
+                    }
+                    &--lefttop {
+                        right: -1%
                     }
                 }
             }
@@ -123,6 +172,12 @@ $text: #999;
                         height: 70%;
                         font-size: 0.8rem;
                     }
+                    &--leftup {
+                        left: -2.7%;
+                    }
+                    &--lefttop {
+                        right: -2.7%
+                    }
                 }
             }
         }
@@ -137,6 +192,16 @@ $text: #999;
             }
             &__line {
                 width: 240px;
+            }
+            &__wrapper {
+                &-box {
+                    &--leftup {
+                        left: -2%;
+                    }
+                    &--lefttop {
+                        right: -2%
+                    }
+                }
             }
 
 
@@ -155,6 +220,12 @@ $text: #999;
                 &-box{ 
                     &--text{
                         font-size: 1rem;
+                    }
+                    &--leftup {
+                        left: -1.5%;
+                    }
+                    &--lefttop {
+                        right: -1.5%
                     }
                 }
             }

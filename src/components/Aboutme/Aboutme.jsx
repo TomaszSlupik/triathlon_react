@@ -16,7 +16,10 @@ export default function Aboutme() {
             <div className="aboutme__line"></div>
             <div className="aboutme__wrapper">
                 <div className="aboutme__wrapper-box">
-                    
+                      <div className="aboutme__wrapper-box--leftup"></div>
+                      <div className="aboutme__wrapper-box--rightup"></div>
+                      <div className="aboutme__wrapper-box--lefttop"></div>
+                      <div className="aboutme__wrapper-box--righttop"></div>
                       <SchoolIcon style={style.item} />
                       <div className="aboutme__wrapper-box--header">
                         Magister Inżynier
@@ -27,6 +30,10 @@ export default function Aboutme() {
                    
                 </div>
                 <div className="aboutme__wrapper-box">
+                      <div className="aboutme__wrapper-box--leftup"></div>
+                      <div className="aboutme__wrapper-box--rightup"></div>
+                      <div className="aboutme__wrapper-box--lefttop"></div>
+                      <div className="aboutme__wrapper-box--righttop"></div>
                       <i className="fa-solid fa-code" style={style.item}></i>
                       <div className="aboutme__wrapper-box--header">
                         Programista
@@ -36,6 +43,10 @@ export default function Aboutme() {
                       </div>
                 </div>
                 <div className="aboutme__wrapper-box threeBox">
+                      <div className="aboutme__wrapper-box--leftup"></div>
+                      <div className="aboutme__wrapper-box--rightup"></div>
+                      <div className="aboutme__wrapper-box--lefttop"></div>
+                      <div className="aboutme__wrapper-box--righttop"></div>
                       <DirectionsRunIcon style={style.item}/>
                       <div className="aboutme__wrapper-box--header">
                         Sportowiec
