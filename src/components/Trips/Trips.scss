@@ -41,6 +41,11 @@ $nav: #fff;
         width:  96%;
         border-radius: 8px;
         margin-top: -7em;
+        &-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
     }
     &__box {
         position: relative;

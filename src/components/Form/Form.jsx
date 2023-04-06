@@ -55,8 +55,9 @@ const changeText = (e) => {
 const style = {
   paper: {width: '100%', height: '100%', padding: '0.6em 0.3em', backgroundColor: '#999'}, 
   btn: {marginTop: '0.7em'},
-  field: {width: '90%', color: '#999'}, 
-  icon: {margin: '0em 0.4em', fontWeight: '700'}
+  field: {width: '90%', color: '#999', marginTop: '0.6em'}, 
+  icon: {margin: '0em 0.4em', fontWeight: '700'},
+  emailInput: {marginTop: '0.6em'}
 }
 
 
@@ -126,7 +127,9 @@ const style = {
               }
               >{validemail}</Alert>
                </Collapse>
-                    <TextField id="mail" type="mail" name='mail'
+                    <TextField 
+                    style={style.emailInput}
+                    id="mail" type="mail" name='mail'
                     value={email}  
                     onChange={changeEmail}
                     label="wpisz swój adres email" variant="outlined" 

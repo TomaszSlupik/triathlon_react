@@ -6,7 +6,7 @@ import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 export default function Aboutme() {
 
   const style = {
-    item: {fontSize: '4rem', color: '#7c5fe9'}
+    item: {fontSize: '4rem', color: '#7c5fe9', zIndex: '15'}
   }
 
   return (
@@ -16,10 +16,8 @@ export default function Aboutme() {
             <div className="aboutme__line"></div>
             <div className="aboutme__wrapper">
                 <div className="aboutme__wrapper-box">
-                      <div className="aboutme__wrapper-box--leftup"></div>
-                      <div className="aboutme__wrapper-box--rightup"></div>
-                      <div className="aboutme__wrapper-box--lefttop"></div>
-                      <div className="aboutme__wrapper-box--righttop"></div>
+                <div className="aboutme__wrapper-box--shadow"></div>
+                      <img src={process.env.PUBLIC_URL + '/img/politechnika.jpg'} alt="" className="aboutme__wrapper-box--imgCode" />
                       <SchoolIcon style={style.item} />
                       <div className="aboutme__wrapper-box--header">
                         Magister Inżynier
@@ -30,10 +28,8 @@ export default function Aboutme() {
                    
                 </div>
                 <div className="aboutme__wrapper-box">
-                      <div className="aboutme__wrapper-box--leftup"></div>
-                      <div className="aboutme__wrapper-box--rightup"></div>
-                      <div className="aboutme__wrapper-box--lefttop"></div>
-                      <div className="aboutme__wrapper-box--righttop"></div>
+                      <div className="aboutme__wrapper-box--shadow"></div>
+                      <img src={process.env.PUBLIC_URL + '/img/codeTwo.jpg'} alt="" className="aboutme__wrapper-box--imgCode" />
                       <i className="fa-solid fa-code" style={style.item}></i>
                       <div className="aboutme__wrapper-box--header">
                         Programista
@@ -43,10 +39,8 @@ export default function Aboutme() {
                       </div>
                 </div>
                 <div className="aboutme__wrapper-box threeBox">
-                      <div className="aboutme__wrapper-box--leftup"></div>
-                      <div className="aboutme__wrapper-box--rightup"></div>
-                      <div className="aboutme__wrapper-box--lefttop"></div>
-                      <div className="aboutme__wrapper-box--righttop"></div>
+                <div className="aboutme__wrapper-box--shadow"></div>
+                      <img src={process.env.PUBLIC_URL + '/img/sports.JPG'} alt="" className="aboutme__wrapper-box--imgCode" />
                       <DirectionsRunIcon style={style.item}/>
                       <div className="aboutme__wrapper-box--header">
                         Sportowiec
