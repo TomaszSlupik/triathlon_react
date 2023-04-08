@@ -12,7 +12,7 @@ import Iconcontact from '../../style/mymuistyle/iconcontact';
 import theme from '../../style/mybreakpoints'
 import { ThemeProvider } from '@mui/material';
 import php from '../../php/main.php'
-import TextareaAutosize from '@mui/base/TextareaAutosize';
+import Snackbar from '@mui/material/Snackbar';
 
 export default function Form() {
 
@@ -23,6 +23,8 @@ const [openemail, setOpenEmail] = useState(false)
 const [text, setText] = useState("")
 const [validtext, setValidText] = useState(null)
 const [opentext, setOpenText] = useState(false)
+
+const [openAlertSuccess, setOpenAlertSuccess] = useState(false)
 
 
 const submit = (e) => {
@@ -43,9 +45,16 @@ const submit = (e) => {
   
   else {
     console.log("Twoja wiaodmość została wysłana")
+    setOpenAlertSuccess(true)
+    setOpenEmail(false)
+    setOpenText(false)
+    setTimeout(() => {
+      setOpenAlertSuccess(false)
+    }, 2000)
   }
 
 }
+
 
 const changeEmail = (e) => {
   setTextEmail(e.target.value)
@@ -172,6 +181,11 @@ const style = {
                         onChange={changeText}
                         name="msg" id="msg">      
                         </textarea>
+                        <Snackbar open={openAlertSuccess} autoHideDuration={6000}>
+                          <Alert severity="success" sx={{ width: '100%' }}>
+                            Twoja wiadomość została wysłana!
+                          </Alert>
+                        </Snackbar>
                     </div>
                   
                     <br></br>

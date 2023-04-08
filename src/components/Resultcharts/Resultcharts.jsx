@@ -102,17 +102,17 @@ export default function Resultcharts() {
         ]
     }
 
-    //     const data2023 = {
-    //     labels: ['HP Indoor Triathlon',], 
-    //     datasets: [
-    //         {
-    //             data: [1], 
-    //             borderColor: '#7c5fe9', 
-    //             tension: 1, 
+        const data2023 = {
+        labels: ['HP Indoor Triathlon', 'Grand Prix Polski'], 
+        datasets: [
+            {
+                data: [1, 1], 
+                borderColor: '#7c5fe9', 
+                tension: 1, 
             
-    //         }
-    //     ]
-    // }
+            }
+        ]
+    }
 
     const options = {
         plugins: {
@@ -184,7 +184,7 @@ export default function Resultcharts() {
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
                 <div className="data">
-                    {/* <Line data={data2023} style={style.data} options={options}></Line> */}
+                    <Line data={data2023} style={style.data} options={options}></Line>
                 </div>
         </TabPanel>
       </Button>
