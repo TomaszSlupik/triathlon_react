@@ -95,5 +95,17 @@
         "marks" : 5,
         "trophy": "1 miejsce",
         "signature": "Foto. Daniel Christ"
+    }, 
+    {
+        "id": 7, 
+        "nav": "/grandprixpolski2023",
+        "name" : "Grand Prix Polski",
+        "type": "Aquathlon",
+        "data": "kwietnia 02, 2023",
+        "year": 2023,
+        "image": "/img/img_2023/aquathlonOne.JPG",
+        "marks" : 5,
+        "trophy": "1 miejsce",
+        "signature": "KS Barakuda Mińsk Mazowiecki"
     }
 ]

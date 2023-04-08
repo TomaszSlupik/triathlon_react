@@ -5,7 +5,7 @@ import theme from '../../style/mybreakpoints';
 import { Card, ThemeProvider } from '@mui/material';
 import Data from '../../data/data.json'
 import { useState} from 'react';
-import { teal, blue, indigo } from '@mui/material/colors';
+import { teal, blue, indigo, lime } from '@mui/material/colors';
 import CardHeader from '@mui/material/CardHeader';
 import Avatar from '@mui/material/Avatar';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
@@ -175,9 +175,9 @@ const handlerFilterClose = () => {
         <div className="trip__switch">
               <div className="trip__switch-header">
               <Search searchText={searchText} allData={allData}/>
-              <FilterAltIcon 
+              {/* <FilterAltIcon 
               onClick={handlerFilterOpen}
-              style={style.filter}/>
+              style={style.filter}/> */}
                 <Dialog
                   open={windowFilter}
                   TransitionComponent={Transition}
@@ -204,6 +204,7 @@ const handlerFilterClose = () => {
                     checked={checkTriathlon}
                     />} label="Triathlon" />
                     <FormControlLabel control={<Checkbox />} label="Duathlon" />
+                    <FormControlLabel control={<Checkbox />} label="Aquathlon" />
                     <FormControlLabel control={<Checkbox />} label="Bieganie" />
                   </FormGroup>
                     </DialogContentText>
@@ -231,6 +232,9 @@ const handlerFilterClose = () => {
               <FormControlLabel 
               onClick={() => filterTrips("Duathlon")}
               value="Duathlon" control={<Radio />} label={<Textradio>Duathlon</Textradio>} />
+               <FormControlLabel 
+              onClick={() => filterTrips("Aquathlon")}
+              value="Aquathlon" control={<Radio />} label={<Textradio>Aquathlon</Textradio>} />
               <FormControlLabel 
               onClick={() => filterTrips("Bieg")}
               value="Bieganie" control={<Radio />} label={<Textradio>Bieganie</Textradio>} />
@@ -267,6 +271,13 @@ const handlerFilterClose = () => {
                                             T
                                             </Avatar>)
                                             : 
+                                            el.type === 'Aquathlon' ?
+                                            (
+                                            <Avatar sx={{ bgcolor: lime [500] }} aria-label="recipe">
+                                            A
+                                            </Avatar>
+                                            )
+                                            :
                                             (
                                             <Avatar sx={{ bgcolor: indigo[500] }} aria-label="recipe">
                                             D

@@ -15,6 +15,8 @@ import Babicka2022 from './components/Trips/Describetrips/Babicka2022/Babicka202
 import Gdynia2022 from './components/Trips/Describetrips/Gdynia2022/Gdynia2022';
 import Bydgoszcz2022 from './components/Trips/Describetrips/Bydgoszcz2022/Bydgoszcz2022';
 import Olsztyn2022 from './components/Trips/Describetrips/Olsztyn2022/Olsztyn2022';
+import Grandprixpolski2023 from './components/Trips/Describetrips/Grandprixpolski2023/Grandprixpolski2023';
+import Indoortriathlon2023 from './components/Trips/Describetrips/Indoortriathlon2023/Indoortriathlon2023';
 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
           <Route path='/gdynia2022' element={<Gdynia2022 />} />
           <Route path='/bydgoszcz2022' element={<Bydgoszcz2022 />} />
           <Route path='/olsztyn2022' element={<Olsztyn2022 />} />
+          <Route path='/indoor2023' element={<Indoortriathlon2023 />} />
+          <Route path='/grandprixpolski2023' element={<Grandprixpolski2023 />} />
         </Routes>
         <Footer />
       </Router>
