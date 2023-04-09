@@ -116,14 +116,17 @@ export default function Maraton2022() {
                         </Halfbox>
             </Cardflex>
             <Cardflex data-aos="fade-left">
-                    <img className='maraton__box-map' src={process.env.PUBLIC_URL + '/img/img_2022/maratonthree.JPG'} alt="expo Maratonu Warszawskiego" />
-                    <img className='maraton__box-map four' src={process.env.PUBLIC_URL + '/img/img_2022/maratonfour.JPG'} alt="expo Maratonu Warszawskiego" />
+                    <img className='grandprix__box-map' src={process.env.PUBLIC_URL + '/img/img_2022/maratonthree.JPG'} alt="expo Maratonu Warszawskiego" />
+                    <img className='grandprix__box-map four' src={process.env.PUBLIC_URL + '/img/img_2022/maratonfour.JPG'} alt="expo Maratonu Warszawskiego" />
             </Cardflex>
             <div data-aos="fade-right">
                 <TextDescribebox >
                   Po maratonie dochodziłem do siebie 1h, a na następny dzień już mogłem jeździć na rowerze. Mimo wszystko liczba treningów w tygodniu pozwoliła mi być dobrze przygotowanym do tego biegu. Nie wykluczam, że w przyszłości jeszcze powalczę o lepszy wynik w Maratonie.
                 </TextDescribebox>
             </div>
+
+            <Centerheader>3 miejsce kat. M20 - Maraton Warszawski</Centerheader>
+
 
             
         </div>

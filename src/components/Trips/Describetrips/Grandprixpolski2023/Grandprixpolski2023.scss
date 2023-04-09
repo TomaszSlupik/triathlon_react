@@ -13,9 +13,16 @@
         &-map{
             position: relative;
             width: 320px;
-            height: 320px;
+            height: 470px;
             background-size: cover;
             border-radius: 8px;
+            &--signature {
+                position: absolute;
+                right: 14%;
+                bottom: 1%;
+                font-size: 0.9rem;
+                color: #fff;
+            }
            
         }
     }
@@ -27,9 +34,13 @@
         &__box {
             &-map{
                 position: relative;
-                height: 400px;
+                height: 550px;
                 width: 455px;
+                margin-top: 1em;
             }
         }
+    }
+    .four {
+        margin-left: 0.6em;
     }
 }

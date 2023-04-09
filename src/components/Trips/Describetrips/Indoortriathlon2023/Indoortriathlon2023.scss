@@ -10,5 +10,13 @@
     &__box {
         position: relative;
         width: 80%;
+        &-map{
+            position: relative;
+            width: 320px;
+            height: 320px;
+            background-size: cover;
+            border-radius: 8px;
+           
+        }
     }
 }
