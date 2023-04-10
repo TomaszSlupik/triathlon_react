@@ -34,7 +34,10 @@ export default function Grandprixpolski2023() {
             <div className="grandprix__box">
                 <Leftheader><DoubleArrowIcon />Dzień startu</Leftheader>
                 <Cardflex data-aos="fade-left">
-                    <img className='grandprix__box-map' src={process.env.PUBLIC_URL + '/img/img_2023/aquathlonTwo.jpg'} alt="rozpoczęcie zawodów Aquathlon" />
+                    <div className="arbiter">
+                        <div className="arbiter__signature">Foto. Oliwia Głownia</div>
+                        <img className='grandprix__box-map' src={process.env.PUBLIC_URL + '/img/img_2023/aquathlonTwo.jpg'} alt="rozpoczęcie zawodów Aquathlon" />
+                    </div>  
                     <Halfbox>
                         <TextDescribebox>
                             Sezon 2023 r. rozpocząłem od sprawdzenia się w Grand Prix Polski w Aquathlonie. W tym dniu miałem do pokonania 400m pływania na pływalni (ul. Wyszyńskiego 56, Mińsk Mazowiecki) oraz 5 km biegania na stadionie 
@@ -52,8 +55,8 @@ export default function Grandprixpolski2023() {
                 <Centerheader>Bieg</Centerheader>
                 <div data-aos="fade-left">
                 <TextDescribebox >
-                    Po dobrym pływaniu, czekało na mnie do przebiegnięcia 12,5 okrążenia na stadionie lekkoatletycznym - 5 000 m. Pierwszy km minąłem w tempuie 2'55"/km. Od pierwszych metrów oderwałem się od rywali i tak musiałem sam biec SOLO, bez grupy 5km. 
-                    Do 3km biegłem na złamanie 15:00, jednak silny wiatr na każdym okrążeniu nie pomagał. Finalnie wbiegłem na metę jak pierwszy zawodnik z czasem 15:26 co dało tempo z całości 3'05"/km.
+                    Po dobrym pływaniu, czekało na mnie do przebiegnięcia 12,5 okrążenia na stadionie lekkoatletycznym - 5 000 m. Pierwszy km minąłem w tempie 2'55"/km. Od pierwszych metrów oderwałem się od rywali i tak musiałem sam biec SOLO, bez grupy 5km. 
+                    Do 3km biegłem na złamanie 15:00, jednak silny wiatr na każdym okrążeniu nie pomagał. Finalnie wbiegłem na metę jako pierwszy zawodnik z czasem 15:26 co dało tempo z całości 3'05"/km.
                 </TextDescribebox>
                 </div>
 
