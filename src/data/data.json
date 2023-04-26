@@ -106,6 +106,18 @@
         "image": "/img/img_2023/aquathlonOne.JPG",
         "marks" : 5,
         "trophy": "1 miejsce",
-        "signature": "KS Barakuda Mińsk Mazowiecki"
+        "signature": "Foto. KS Barakuda Mińsk Mazowiecki"
+    },
+    {
+        "id": 8, 
+        "nav": "/mprumia2023",
+        "name" : "Mistrzostwa Polski AG",
+        "type": "Duathlon",
+        "data": "kwietnia 25, 2023",
+        "year": 2023,
+        "image": "/img/img_2023/rumiaOne.jpg",
+        "marks" : 5,
+        "trophy": "1 miejsce",
+        "signature": "Foto. LOTTO Duathlon Energy"
     }
 ]

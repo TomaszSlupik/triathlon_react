@@ -93,62 +93,133 @@ const allData = () => {
 // Filtrowanie 
 
 const [windowFilter, setWindowFilter] = useState(false)
+const [windowFilterSecond, setWindowFilterSecond] = useState(false)
 
 const [check2023, setCheck2023] = useState(false)
 const [disabledCheck2023, setDisabledCheck2023] = useState(false)
+const [label2023, setLabel2023] = useState("2023 r.")
 
 const [check2022, setCheck2022] = useState(false)
 const [disabledCheck2022, setDisabledCheck2022] = useState(false)
+const [label2022, setLabel2022] = useState("2022 r.")
 
 const [checkTriathlon, setCheckTriathlon] = useState(false)
 const [disabledCheckTriathlon, setDisabledCheckTriathlon] = useState(false)
+const [labelTriathlon, setLabelTriathlon] = useState("Triathlon")
 
 const [checkDuathlon, setCheckDuathlon] = useState(false)
 const [disabledCheckDuathlon, setDisabledCheckDuathlon] = useState(false)
+const [labelDuathlon, setLabelDuathlon] = useState("Duathlon")
+
+
+const [checkAquathlon, setCheckAquathlon] = useState(false)
+const [labelAquathlon, setLabelAquathlon] = useState("Aquathlon")
+
 
 const [checkRun, setCheckRun] = useState(false)
 const [disabledCheckRun, setDisabledCheckRun] = useState(false)
+const [labelRun, setLabelRun] = useState("Bieganie")
 
 const handlerChange2023 = (e) => {
   setCheck2023(e.target.checked)
-  if (check2023 === true) {
-    setDisabledCheck2022(false)
-  }
-  else {
-    setDisabledCheck2022(true)
-  } 
 }
 
 const handlerChange2022 = (e) => {
   setCheck2022(e.target.checked)
-  if (check2022 === true) {
-    setDisabledCheck2023(false)
-  }
-  else {
-    setDisabledCheck2023(true)
-  }
-  
+}
+
+const handlerTriathlon = (e) => {
+  setCheckTriathlon(e.target.checked)
+}
+
+const handlerDuathlon = (e) => {
+  setCheckDuathlon(e.target.checked)
+}
+
+const handlerAquathlon = (e) => {
+  setCheckAquathlon(e.target.checked)
+}
+
+const handlerRun = (e) => {
+  setCheckRun(e.target.checked)
 }
 
 const handlerFilterOpen = () => {
   setWindowFilter(true)
 } 
 
+
+const eventClickAll = []
+const clickTrue = true
+
 const handlerAccept = () => {
-  if (check2023 === true) {
-      const start2023 = Data.filter((el => el.year === 2023))
-      setTrip(start2023)
-  }
-  else if (check2022 === true) {
-    const start2022 = Data.filter((el => el.year === 2022))
-    setTrip(start2022)
+
+switch(clickTrue) {
+  case (check2023):
+    eventClickAll.push(`${check2023}2023`)
+  case (check2022):
+    eventClickAll.push(`${check2022}2022`)
+  case(checkTriathlon):
+    eventClickAll.push(`${checkTriathlon}Triathlon`)
+  case(checkDuathlon):
+    eventClickAll.push(`${checkDuathlon}Duathlon`)
+  case(checkAquathlon):
+    eventClickAll.push(`${checkAquathlon}Aquathlon`)
+  case(checkRun):
+    eventClickAll.push(`${checkRun}Bieg`)
+  default:
+    console.log('Filtruję rok')
+}
+
+
+function el (eventClickAll) {
+  return eventClickAll.startsWith('true')
+}
+
+const allClickEvent = eventClickAll.filter(el).map(el => el.substr(4))
+
+const missingItems = []
+  const numberAdd = 7 - allClickEvent.length 
+  for (let i = 0; i < numberAdd; i++) {
+      missingItems.push(i.toString())
   }
 
+  const allItem = allClickEvent.concat(missingItems)
+
+  const newArr = [...Data].filter(el => el.type === allItem[0].toString() || el.type === allItem[1].toString() ||
+  el.type === allItem[2].toString() || el.type === allItem[3].toString() || el.type === allItem[4].toString() || 
+  el.type === allItem[5].toString() || el.type === allItem[6].toString() || el.year === Number(allItem[0]))
+
+  console.log(newArr)
+  console.log(allItem)
+  setTrip(newArr)
+  
   setWindowFilter(false)
-  setCheck2023(false)
-  setCheck2022(false)
-  setDisabledCheck2023(false)
-  setDisabledCheck2022(false)
+  setWindowFilterSecond(true)
+  // if (check2023 === true) {
+  //     const start2023 = Data.filter((el => el.year === 2023))
+  //     setTrip(start2023)
+  // }
+  // else if (check2022 === true) {
+  //   const start2022 = Data.filter((el => el.year === 2022))
+  //   setTrip(start2022)
+  // }
+
+  // else if (checkTriathlon === true) {
+  //   const triathlonAll = Data.filter((el => el.type === 'Triathlon'))
+  //   setTrip(triathlonAll)
+  // }
+
+  // setWindowFilter(false)
+  // setCheck2023(false)
+  // setCheck2022(false)
+  // setDisabledCheck2023(false)
+  // setDisabledCheck2022(false)
+}
+
+
+const handlerAcceptSecond = () => {
+  setWindowFilterSecond(false)
 }
 
 const handlerFilterClose = () => {
@@ -175,9 +246,9 @@ const handlerFilterClose = () => {
         <div className="trip__switch">
               <div className="trip__switch-header">
               <Search searchText={searchText} allData={allData}/>
-              {/* <FilterAltIcon 
+              <FilterAltIcon 
               onClick={handlerFilterOpen}
-              style={style.filter}/> */}
+              style={style.filter}/>
                 <Dialog
                   open={windowFilter}
                   TransitionComponent={Transition}
@@ -185,7 +256,7 @@ const handlerFilterClose = () => {
                   onClose={handlerFilterClose}
                   aria-describedby="alert-dialog-slide-description"
                 >
-                  <DialogTitle>{"Filtrowanie szczegółowe"}</DialogTitle>
+                  <DialogTitle>{"Filtrowanie szczegółowe - wybierz rok"}</DialogTitle>
                   <DialogContent>
                     <DialogContentText id="alert-dialog-slide-description">
                     <FormGroup>
@@ -193,19 +264,28 @@ const handlerFilterClose = () => {
                     disabled={disabledCheck2023}
                     checked={check2023}
                     onChange={handlerChange2023}
-                    />} label="2023 r." />
+                    />} label={label2023} />
                     <FormControlLabel control={<Checkbox 
                     checked={check2022}
                     disabled={disabledCheck2022}
                     onChange={handlerChange2022}
-                    />} label="2022 r." />
-                    <FormControlLabel control={<Checkbox />} label="Wszystko" />
-                    <FormControlLabel control={<Checkbox 
+                    />} label={label2022} />
+                    {/* <FormControlLabel control={<Checkbox 
                     checked={checkTriathlon}
-                    />} label="Triathlon" />
-                    <FormControlLabel control={<Checkbox />} label="Duathlon" />
-                    <FormControlLabel control={<Checkbox />} label="Aquathlon" />
-                    <FormControlLabel control={<Checkbox />} label="Bieganie" />
+                    onChange={handlerTriathlon}
+                    />} label={labelTriathlon} />
+                    <FormControlLabel control={<Checkbox 
+                    checked={checkDuathlon}
+                    onChange={handlerDuathlon}
+                    />} label={labelDuathlon} />
+                    <FormControlLabel control={<Checkbox 
+                    checked={checkAquathlon}
+                    onChange={handlerAquathlon}
+                    />} label={labelAquathlon} />
+                    <FormControlLabel control={<Checkbox 
+                    checked={checkRun}
+                    onChange={handlerRun}
+                    />} label={labelRun} /> */}
                   </FormGroup>
                     </DialogContentText>
                   </DialogContent>
@@ -215,9 +295,51 @@ const handlerFilterClose = () => {
                     onClick={handlerFilterClose}>Anuluj</Button>
                     <Button 
                     variant='contained'
-                    onClick={handlerAccept}>Akcteptuję</Button>
+                    onClick={handlerAccept}>Dalej</Button>
                   </DialogActions>
                 </Dialog>
+
+              {/* Drugie okno */}
+              <Dialog
+              open={windowFilterSecond}
+              // onClose={handleClose}
+              aria-labelledby="alert-dialog-title"
+              aria-describedby="alert-dialog-description"
+            >
+              <DialogTitle id="alert-dialog-title">
+                {"Wybierz dyscyplinę"}
+              </DialogTitle>
+              <DialogContent>
+                <DialogContentText id="alert-dialog-description">
+                <FormGroup>
+                    <FormControlLabel control={<Checkbox 
+                    checked={checkTriathlon}
+                    onChange={handlerTriathlon}
+                    />} label={labelTriathlon} />
+                    <FormControlLabel control={<Checkbox 
+                    checked={checkDuathlon}
+                    onChange={handlerDuathlon}
+                    />} label={labelDuathlon} />
+                    <FormControlLabel control={<Checkbox 
+                    checked={checkAquathlon}
+                    onChange={handlerAquathlon}
+                    />} label={labelAquathlon} />
+                    <FormControlLabel control={<Checkbox 
+                    checked={checkRun}
+                    onChange={handlerRun}
+                    />} label={labelRun} />
+                  </FormGroup>
+                </DialogContentText>
+              </DialogContent>
+              <DialogActions>
+                {/* <Button onClick={handleClose}>Disagree</Button> */}
+                <Button onClick={handlerAcceptSecond} autoFocus>
+                  Akcteptuję
+                </Button>
+              </DialogActions>
+            </Dialog>
+
+
               </div>
             <FormControl>
             <RadioGroup
