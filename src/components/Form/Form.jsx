@@ -78,7 +78,7 @@ export default function Form() {
   return (
     <div>
       <div className="contactbox">
-        <form action="../../php/main.php" method="post" className="contactbox__form">
+        <form action="main.php" method="post" className="contactbox__form">
           <div className="contactbox__form-item">
             <div className="contactbox__form-item--header">Napisz do mnie!</div>
             <div className="contactbox__form-item--describe">
