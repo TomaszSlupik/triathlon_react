@@ -45,6 +45,13 @@ $nav: #fff;
             display: flex;
             flex-direction: row;
             align-items: center;
+            &--info {
+                font-size: 0.9rem;
+                color: #999;
+                text-align: center;
+                margin-left: 0.4em;
+                margin-right: 0.4em;
+            }
         }
     }
     &__box {
