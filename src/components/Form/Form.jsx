@@ -11,8 +11,8 @@ import Collapse from "@mui/material/Collapse";
 import Iconcontact from "../../style/mymuistyle/iconcontact";
 import theme from "../../style/mybreakpoints";
 import { ThemeProvider } from "@mui/material";
-import php from "../../php/main.php";
 import Snackbar from "@mui/material/Snackbar";
+
 
 export default function Form() {
   const [email, setTextEmail] = useState("");
@@ -78,7 +78,7 @@ export default function Form() {
   return (
     <div>
       <div className="contactbox">
-        <form action={php} method="post" className="contactbox__form">
+        <form action="../../php/main.php" method="post" className="contactbox__form">
           <div className="contactbox__form-item">
             <div className="contactbox__form-item--header">Napisz do mnie!</div>
             <div className="contactbox__form-item--describe">
