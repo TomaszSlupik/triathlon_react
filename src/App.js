@@ -20,6 +20,7 @@ import Indoortriathlon2023 from './components/Trips/Describetrips/Indoortriathlo
 import Mprumia2023 from './components/Trips/Describetrips/Mprumia2023/Mprumia2023';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -40,7 +41,8 @@ function App() {
           <Route path='/indoor2023' element={<Indoortriathlon2023 />} />
           <Route path='/grandprixpolski2023' element={<Grandprixpolski2023 />} />
           <Route path='/mprumia2023' element={<Mprumia2023 />} />
-        </Routes>
+          <Route path='/thankyou' element={<Thankyou />} />
+         </Routes>
         <Footer />
       </Router>
     </div>

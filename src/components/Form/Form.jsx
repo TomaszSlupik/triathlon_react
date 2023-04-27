@@ -78,7 +78,7 @@ export default function Form() {
   return (
     <div>
       <div className="contactbox">
-        <form action="https://www.slupiktriathlon.pl/php/main.php" method="post" className="contactbox__form">
+        <form action="https://formsubmit.io/send/slupiktomasz@gmail.com" method="POST" className="contactbox__form">
           <div className="contactbox__form-item">
             <div className="contactbox__form-item--header">Napisz do mnie!</div>
             <div className="contactbox__form-item--describe">
@@ -198,14 +198,9 @@ export default function Form() {
               </div>
 
               <br></br>
-              <input
-                name="_redirect"
-                type="hidden"
-                id="name"
-                value="http://localhost:3000/thankyou"
-              />
+              <input name="_redirect" type="hidden" id="name" value="https://slupiktriathlon.pl/#thankyou"></input>
               <Mybutton
-                onClick={submit}
+                onSubmit={submit}
                 style={style.btn}
                 variant="contained"
                 endIcon={<SendIcon />}
