@@ -148,6 +148,9 @@ $nav: #fff;
 @media only screen and  (min-width: 1200px) {
 
 .trip {
+    &__switch {
+        margin-top: -8.5em;
+    }
     &__headerImage {
         &-text {
             font-size: 4.5rem;

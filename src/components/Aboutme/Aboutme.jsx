@@ -18,7 +18,7 @@ export default function Aboutme() {
             <div className="aboutme__wrapper-box--shadow"></div>
             <img
               src={process.env.PUBLIC_URL + "/img/politechnika.jpg"}
-              alt=""
+              alt="Uczelnia"
               className="aboutme__wrapper-box--imgCode"
             />
             <SchoolIcon style={style.item} />

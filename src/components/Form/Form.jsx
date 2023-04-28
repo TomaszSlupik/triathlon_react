@@ -13,7 +13,6 @@ import theme from "../../style/mybreakpoints";
 import { ThemeProvider } from "@mui/material";
 import Snackbar from "@mui/material/Snackbar";
 
-
 export default function Form() {
   const [email, setTextEmail] = useState("");
   const [validemail, setValidEmail] = useState(null);
@@ -78,7 +77,11 @@ export default function Form() {
   return (
     <div>
       <div className="contactbox">
-        <form action="https://formsubmit.io/send/slupiktomasz@gmail.com" method="POST" className="contactbox__form">
+        <form
+          action="https://formsubmit.io/send/slupiktomasz@gmail.com"
+          method="POST"
+          className="contactbox__form"
+        >
           <div className="contactbox__form-item">
             <div className="contactbox__form-item--header">Napisz do mnie!</div>
             <div className="contactbox__form-item--describe">
@@ -198,7 +201,12 @@ export default function Form() {
               </div>
 
               <br></br>
-              <input name="_redirect" type="hidden" id="name" value="https://slupiktriathlon.pl/#thankyou"></input>
+              <input
+                name="_redirect"
+                type="hidden"
+                id="name"
+                value="https://slupiktriathlon.pl/#thankyou"
+              ></input>
               <Mybutton
                 onSubmit={submit}
                 style={style.btn}
