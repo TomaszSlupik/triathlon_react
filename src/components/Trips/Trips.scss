@@ -37,7 +37,7 @@ $nav: #fff;
         justify-content: center;
         align-items: center;
         background: linear-gradient(45deg, rgba(0,0,0,0.75), rgba(0,0,0,0.25));
-        height: 150px;
+        min-height: 210px;
         width:  96%;
         border-radius: 8px;
         margin-top: -7em;
@@ -45,6 +45,7 @@ $nav: #fff;
             display: flex;
             flex-direction: row;
             align-items: center;
+            margin-top: 0.4em;
             &--info {
                 font-size: 0.9rem;
                 color: #999;
@@ -52,6 +53,11 @@ $nav: #fff;
                 margin-left: 0.4em;
                 margin-right: 0.4em;
             }
+        }
+        &-sort {
+            margin-top: 0.4em;
+            margin-bottom: 0.4em;
+            margin-left: 14em;
         }
     }
     &__box {
@@ -78,6 +84,16 @@ $nav: #fff;
     text-align: end;
     margin-right: 0.3em;
 
+}
+
+@media only screen and (max-width: 330px) {
+    .trip {
+        &__switch {
+                &-sort {
+                    margin-left: 11em;
+                }
+        }
+}
 }
 
 @media only screen and  (min-width: 576px) {

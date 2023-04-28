@@ -34,6 +34,9 @@ import Stack from "@mui/material/Stack";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 import themeColor from "../../theme/themeColor";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -58,6 +61,7 @@ export default function Trips() {
       fontSize: "2rem",
       marginLeft: "0.4em",
     },
+    sort: {textAlign: 'left'}
   };
 
   let navigate = useNavigate();
@@ -273,6 +277,34 @@ export default function Trips() {
     setDisabledCheck2022(false);
   };
 
+
+  // Sortowanie 
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+
+const handlerSortData = () => {
+    setTrip([...trip.sort((a,b) => new Date (b.dateadded) > new Date(a.dateadded) ? 1 : - 1)])
+    setAnchorEl(null);
+}
+
+
+  const handlerSortName = () => {
+    setTrip([...trip.sort((a, b) => a.name < b.name ? - 1 : 1)])
+    setAnchorEl(null);
+}
+
+const handlerSortMark = () => {
+    setTrip([...trip.sort((a, b) => a.trophy.substr(0, 1) < b.trophy.substr(0,1) ? -1 : 1)])
+    setAnchorEl(null);
+}
+
   return (
     <div>
       <div className="trip">
@@ -421,8 +453,37 @@ export default function Trips() {
               </Snackbar>
             </Stack>
           </div>
+          <div className="trip__switch-sort">
+          <Button
+           id="basic-button"
+           aria-controls={open ? 'basic-menu' : undefined}
+           aria-haspopup="true"
+           aria-expanded={open ? 'true' : undefined}
+           onClick={handleClick}
+          style={style.sort}
+          variant="outlined"
+          >Sortuj
+          <ArrowDropDownIcon />
+          </Button>
+          <Menu
+            id="basic-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            MenuListProps={{
+              'aria-labelledby': 'basic-button',
+            }}
+          >
+            <MenuItem onClick={handlerSortData}>Dacie dodania</MenuItem>
+            <MenuItem onClick={handlerSortName}>Nazwie</MenuItem>
+            <MenuItem onClick={handlerSortMark}>Miejscu</MenuItem>
+          </Menu>
+          </div>
+         
+
           <FormControl>
             <RadioGroup
+              defaultValue="Wszystko"
               style={style.radioGroup}
               row
               aria-labelledby="demo-row-radio-buttons-group-label"
