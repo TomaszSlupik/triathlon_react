@@ -1,0 +1,56 @@
+[
+    {
+        "name_competition" : "HP Indoor Triathlon",
+        "place": "1 miejsce",
+        "color": "gold",
+        "kind": "Triathlon"
+    },
+        {
+        "name_competition" : "Duathlon Czempiń",
+        "place": "1 miejsce",
+        "color": "gold",
+        "kind": "Duathlon"
+    },
+            {
+        "name_competition" : "Mistrzostwa Europy Olsztyn",
+        "place": "4 miejsce",
+        "color": "#fff",
+        "kind": "Triathlon"
+    },
+                {
+        "name_competition" :   "Susz Triathlon",
+        "place": "3 miejsce",
+        "color": "#8b4513",
+        "kind": "Triathlon"
+    },
+                    {
+        "name_competition" :  "Enea Bydgoszcz Triathlon",
+        "place": "1 miejsce",
+        "color": "gold",
+        "kind": "Triathlon"
+    },
+                        {
+        "name_competition" :  "Sprint Triathlon Gdynia",
+        "place": "3 miejsce",
+        "color": "#8b4513",
+        "kind": "Triathlon"
+    },
+    {
+        "name_competition" :  "Dziesiątka Babicka",
+        "place": "1 miejsce",
+        "color": "gold",
+        "kind": "Bieg"
+    },
+    {
+        "name_competition" :  "5150 Poznań",
+        "place": "1 miejsce",
+        "color": "gold",
+        "kind": "Triathlon"
+    },
+    {
+        "name_competition" :  "Mararton Warszawski - kat M20",
+        "place": "3 miejsce",
+        "color": "#8b4513",
+        "kind": "Bieg"
+    }
+]
