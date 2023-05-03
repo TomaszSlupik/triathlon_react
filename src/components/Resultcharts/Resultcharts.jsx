@@ -187,10 +187,9 @@ export default function Resultcharts() {
     <div className="charts">
       <div className="charts__choice">
         <FormControl style={{ color: "#7c5fe9" }}>
+          <div className="charts__choice-header">
           Wybierz przedział czasowy
-          {/* <FormLabel 
-      color="primary"
-      id="demo-radio-buttons-group-label">Wybierz przedział czasowy</FormLabel> */}
+          </div>
           <RadioGroup
             aria-labelledby="demo-radio-buttons-group-label"
             defaultValue="female"
@@ -211,7 +210,7 @@ export default function Resultcharts() {
               control={<Radio />}
               checked={yearIntervalSecond}
               onChange={handlerYearIntervalSecond}
-              label="Rok: 2022, 2023"
+              label="Rok: 2022, 2023, 2024"
             />
           </RadioGroup>
         </FormControl>
@@ -230,58 +229,16 @@ export default function Resultcharts() {
                 variant="fullWidth"
                 aria-label="full width tabs example"
               >
-                <Tab label="2021 r." {...a11yProps(0)} />
-                <Tab label="2022 r." {...a11yProps(1)} />
-                <Tab label="2023 r." {...a11yProps(2)} />
+                <Tab label="2022 r." {...a11yProps(0)} />
+                <Tab label="2023 r." {...a11yProps(1)} />
+                <Tab label="2024 r." {...a11yProps(2)} />
               </Tabs>
             </AppBar>
             <Button
               style={{ width: "100%", height: "100%" }}
               onChangeIndex={handleChangeIndex}
             >
-              <TabPanel
-                value={value}
-                index={0}
-                dir={theme.direction}
-                style={style.panel}
-              >
-                <div className="data">
-                  <Timeline position="alternate">
-                    {Season2021.map((el, index) => {
-                      return (
-                        <div>
-                          <TimelineItem key={index}>
-                            <TimelineOppositeContent
-                              sx={{ m: "auto 0" }}
-                              align="right"
-                              variant="body2"
-                              color="text.secondary"
-                            >
-                              {el.place}
-                            </TimelineOppositeContent>
-                            <TimelineSeparator>
-                              <TimelineConnector />
-                              <TimelineDot color="primary">
-                                <EmojiEventsIcon
-                                  style={{ color: `${el.color}` }}
-                                />
-                              </TimelineDot>
-                              <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent sx={{ py: "12px", px: 2 }}>
-                              <Typography variant="h6" component="span">
-                                {el.name_competition}
-                              </Typography>
-                              <Typography>{el.kind}</Typography>
-                            </TimelineContent>
-                          </TimelineItem>
-                        </div>
-                      );
-                    })}
-                  </Timeline>
-                </div>
-              </TabPanel>
-              <TabPanel value={value} index={1} dir={theme.direction}>
+              <TabPanel value={value} index={0} dir={theme.direction}>
                 <div className="data">
                   <Timeline position="alternate">
                     {Season2022.map((el, index) => {
@@ -318,7 +275,7 @@ export default function Resultcharts() {
                   </Timeline>
                 </div>
               </TabPanel>
-              <TabPanel value={value} index={2} dir={theme.direction}>
+              <TabPanel value={value} index={1} dir={theme.direction}>
                 <div className="data">
                   <Timeline position="alternate">
                     {Season2023.map((el, index) => {
@@ -354,6 +311,14 @@ export default function Resultcharts() {
                     })}
                   </Timeline>
                 </div>
+              </TabPanel>
+
+              <TabPanel value={value} index={2} dir={theme.direction}>
+              <div className="data">
+              <Timeline position="alternate">
+                    Brak wydarzeń sportowych
+              </Timeline>  
+              </div>
               </TabPanel>
             </Button>
           </Box>
