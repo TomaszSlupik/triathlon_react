@@ -48,7 +48,8 @@ export default function Mprumia2023() {
                 wiedziałem czy na pewno wystartuje, ponieważ 2,5 tygodnia przed
                 zawodami złapała mnie choroba i gorączka. Jednak udało się
                 wyzdrowieć i zrobić treningi wprowadzające przed MP. Do Rumii
-                wyjechaliśmy dzień przed
+                wyjechaliśmy dzień przed tj. w sobotę i zakwaterowaliśmy się w
+                Hotelu Falko.
               </TextDescribebox>
             </Halfbox>
           </Cardflex>

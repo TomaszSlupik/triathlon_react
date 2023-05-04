@@ -28,9 +28,8 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
-import Season2019 from '../../data/season 2019.json'
-import Season2020 from '../../data/season 2020.json'
+import Season2019 from "../../data/season 2019.json";
+import Season2020 from "../../data/season 2020.json";
 import Season2021 from "../../data/season 2021.json";
 import Season2022 from "../../data/season 2022.json";
 import Season2023 from "../../data/season 2023.json";
@@ -189,9 +188,7 @@ export default function Resultcharts() {
     <div className="charts">
       <div className="charts__choice">
         <FormControl style={{ color: "#7c5fe9" }}>
-          <div className="charts__choice-header">
-          Wybierz przedział czasowy
-          </div>
+          <div className="charts__choice-header">Wybierz przedział czasowy</div>
           <RadioGroup
             aria-labelledby="demo-radio-buttons-group-label"
             defaultValue="female"
@@ -316,11 +313,11 @@ export default function Resultcharts() {
               </TabPanel>
 
               <TabPanel value={value} index={2} dir={theme.direction}>
-              <div className="data">
-              <Timeline position="alternate">
+                <div className="data">
+                  <Timeline position="alternate">
                     Brak wydarzeń sportowych
-              </Timeline>  
-              </div>
+                  </Timeline>
+                </div>
               </TabPanel>
             </Button>
           </Box>
@@ -354,7 +351,7 @@ export default function Resultcharts() {
                 dir={theme.direction}
                 style={style.panel}
               >
-                               <div className="data">
+                <div className="data">
                   <Timeline position="alternate">
                     {Season2019.map((el, index) => {
                       return (
@@ -391,7 +388,7 @@ export default function Resultcharts() {
                 </div>
               </TabPanel>
               <TabPanel value={value} index={1} dir={theme.direction}>
-              <div className="data">
+                <div className="data">
                   <Timeline position="alternate">
                     {Season2020.map((el, index) => {
                       return (
