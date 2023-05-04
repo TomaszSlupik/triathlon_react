@@ -1,0 +1,56 @@
+[
+    {
+        "name_competition" : "5150warsaw Indoor Triathlon",
+        "place": "2 miejsce",
+        "color": "#c0c0c0",
+        "kind": "Triathlon"
+    },
+    {
+        "name_competition" : "XV Biegu Wedla",
+        "place": "2 miejsce",
+        "color": "#c0c0c0",
+        "kind": "Bieg"
+    },
+    {
+        "name_competition" : "Mistrzostwa Polski AG",
+        "place": "5 miejsce",
+        "color": "#fff",
+        "kind": "Triathlon"
+    },
+    {
+        "name_competition" : "Mistrzostwa Polski AG",
+        "place": "5 miejsce",
+        "color": "#fff",
+        "kind": "Triathlon"
+    },
+    {
+        "name_competition" : "Garmin Iron Triathlon ",
+        "place": "1 miejsce",
+        "color": "gold",
+        "kind": "Triathlon"
+    },
+    {
+        "name_competition" : "IRONMAN 70.3 Gdynia",
+        "place": "2 miejsce",
+        "color": "#c0c0c0",
+        "kind": "Triathlon"
+    },   
+    {
+        "name_competition" : "Garmin Iron Triathlon ",
+        "place": "1 miejsce",
+        "color": "gold",
+        "kind": "Triathlon"
+    },
+    {
+        "name_competition" : "Mistrzostwa Polski AG",
+        "place": "2 miejsce",
+        "color": "#c0c0c0",
+        "kind": "Triathlon"
+    },
+    {
+        "name_competition" : "Mistrzostwa Polski AG",
+        "place": "1 miejsce",
+        "color": "gold",
+        "kind": "Duathlon"
+    }
+]

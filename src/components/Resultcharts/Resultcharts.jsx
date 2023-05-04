@@ -29,6 +29,8 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
+import Season2019 from '../../data/season 2019.json'
+import Season2020 from '../../data/season 2020.json'
 import Season2021 from "../../data/season 2021.json";
 import Season2022 from "../../data/season 2022.json";
 import Season2023 from "../../data/season 2023.json";
@@ -352,13 +354,77 @@ export default function Resultcharts() {
                 dir={theme.direction}
                 style={style.panel}
               >
-                <div className="data">
-                  <Timeline position="alternate"></Timeline>
+                               <div className="data">
+                  <Timeline position="alternate">
+                    {Season2019.map((el, index) => {
+                      return (
+                        <div>
+                          <TimelineItem key={index}>
+                            <TimelineOppositeContent
+                              sx={{ m: "auto 0" }}
+                              align="right"
+                              variant="body2"
+                              color="text.secondary"
+                            >
+                              {el.place}
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                              <TimelineConnector />
+                              <TimelineDot color="primary">
+                                <EmojiEventsIcon
+                                  style={{ color: `${el.color}` }}
+                                />
+                              </TimelineDot>
+                              <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent sx={{ py: "12px", px: 2 }}>
+                              <Typography variant="h6" component="span">
+                                {el.name_competition}
+                              </Typography>
+                              <Typography>{el.kind}</Typography>
+                            </TimelineContent>
+                          </TimelineItem>
+                        </div>
+                      );
+                    })}
+                  </Timeline>
                 </div>
               </TabPanel>
               <TabPanel value={value} index={1} dir={theme.direction}>
-                <div className="data">
-                  <Timeline position="alternate"></Timeline>
+              <div className="data">
+                  <Timeline position="alternate">
+                    {Season2020.map((el, index) => {
+                      return (
+                        <div>
+                          <TimelineItem key={index}>
+                            <TimelineOppositeContent
+                              sx={{ m: "auto 0" }}
+                              align="right"
+                              variant="body2"
+                              color="text.secondary"
+                            >
+                              {el.place}
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                              <TimelineConnector />
+                              <TimelineDot color="primary">
+                                <EmojiEventsIcon
+                                  style={{ color: `${el.color}` }}
+                                />
+                              </TimelineDot>
+                              <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent sx={{ py: "12px", px: 2 }}>
+                              <Typography variant="h6" component="span">
+                                {el.name_competition}
+                              </Typography>
+                              <Typography>{el.kind}</Typography>
+                            </TimelineContent>
+                          </TimelineItem>
+                        </div>
+                      );
+                    })}
+                  </Timeline>
                 </div>
               </TabPanel>
               <TabPanel value={value} index={2} dir={theme.direction}>
