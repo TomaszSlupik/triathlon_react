@@ -16,5 +16,11 @@
         "place": "1 miejsce",
         "color": "gold",
         "kind": "Duathlon"
+    },
+    {
+        "name_competition" : "Mistrzostwa Polski AG",
+        "place": "3 miejsce",
+        "color": "#8b4513",
+        "kind": "Duathlon"
     }
 ]
