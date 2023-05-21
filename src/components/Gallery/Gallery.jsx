@@ -33,7 +33,7 @@ export default function Gallery() {
       title: "Laptop",
     },
     {
-      img: "/img/assets/galleryEight.jpg",
+      img: "/img/assets/galleryTwo.jpg",
       title: "Doors",
     },
     {
@@ -45,8 +45,8 @@ export default function Gallery() {
       title: "Storage",
     },
     {
-      img: "/img/assets/galleryTwo.JPG",
-      title: "Coffee table",
+      img: "/img/assets/galleryEight.jpg",
+      title: "Rower - drugi etap kolarski",
     },
     {
       img: "/img/assets/galerryFour.JPG",
@@ -55,7 +55,7 @@ export default function Gallery() {
   ];
 
   return (
-    <div>
+    <div style={{marginTop: '5em'}}>
       <ImageList
         sx={{ width: "100%", height: "50%", backgroundSize: 'contain' }}
         variant="woven"
