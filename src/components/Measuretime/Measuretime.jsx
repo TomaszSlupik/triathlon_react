@@ -22,9 +22,8 @@ export default function Measuretime() {
       setHours(0);
       setMinutes(0);
       setSeconds(0);
-    }
-    else {
-      setDays(days)
+    } else {
+      setDays(days);
       setHours(hours);
       setMinutes(minutes);
       setSeconds(seconds);
@@ -39,9 +38,7 @@ export default function Measuretime() {
   return (
     <div className="measure">
       <div className="measure__time">Następne zawody</div>
-      <div className="measure__name">
-        Mistrzostwa Polski 🇵🇱 Susz Triathlon
-      </div>
+      <div className="measure__name">Mistrzostwa Polski 🇵🇱 Susz Triathlon</div>
       <div className="measure__timenumber">
         <div className="measure__timenumber-col">
           <div className="measure__timenumber-days">{leading0(days)} </div>

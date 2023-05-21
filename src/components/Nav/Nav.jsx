@@ -23,6 +23,10 @@ export default function Nav() {
       hrefLink: "/",
     },
     {
+      nameLink: "Galeria",
+      hrefLink: "/gallery",
+    },
+    {
       nameLink: "Wyniki",
       hrefLink: "/results",
     },

@@ -18,6 +18,8 @@ import Olsztyn2022 from './components/Trips/Describetrips/Olsztyn2022/Olsztyn202
 import Grandprixpolski2023 from './components/Trips/Describetrips/Grandprixpolski2023/Grandprixpolski2023';
 import Indoortriathlon2023 from './components/Trips/Describetrips/Indoortriathlon2023/Indoortriathlon2023';
 import Mprumia2023 from './components/Trips/Describetrips/Mprumia2023/Mprumia2023';
+import Mpczempin2023 from './components/Trips/Describetrips/Mpczempin2023/Mpczempin2023';
+import Gallery from './components/Gallery/Gallery';
 
 
 
@@ -30,6 +32,7 @@ function App() {
           <Route path='/' element={<Main />} />
           <Route path='/results' element={<Results />} />
           <Route path='/trips' element={<Trips />} />
+          <Route path='/gallery' element={<Gallery />} />
           <Route path='/thankyou' element={<Thankyou />} />
           <Route path='/maraton2022' element={<Maraton2022 />} />
           <Route path='/championman2022' element={<Championman2022 />} />
@@ -41,6 +44,7 @@ function App() {
           <Route path='/indoor2023' element={<Indoortriathlon2023 />} />
           <Route path='/grandprixpolski2023' element={<Grandprixpolski2023 />} />
           <Route path='/mprumia2023' element={<Mprumia2023 />} />
+          <Route path='/mpczempin2023' element={<Mpczempin2023 />} />
           <Route path='/thankyou' element={<Thankyou />} />
          </Routes>
         <Footer />

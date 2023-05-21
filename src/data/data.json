@@ -128,5 +128,18 @@
         "trophy": "1 miejsce",
         "signature": "Foto. LOTTO Duathlon Energy",
         "dateadded": "2023-04-25"
+    },
+    {
+        "id": 10, 
+        "nav": "/mpczempin2023",
+        "name" : "Mistrzostwa Polski AG",
+        "type": "Duathlon",
+        "data": "maja 13, 2023",
+        "year": 2023,
+        "image": "",
+        "marks" : 5,
+        "trophy": "3 miejsce",
+        "signature": "",
+        "dateadded": "2023-05-13"
     }
 ]
