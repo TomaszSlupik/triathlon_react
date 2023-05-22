@@ -10,7 +10,7 @@ import Myscrollbox from '../../../../style/myscrollbox';
 import Leftheader from '../../../../style/mymuistyle/leftheader';
 import Centerheader from '../../../../style/mymuistyle/centerheader';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
-import './Grandprixpolski2023.scss'
+
 
 export default function Grandprixpolski2023() {
 
@@ -22,13 +22,13 @@ export default function Grandprixpolski2023() {
   return (
     <div>
         <BacktoPage />
-        <div className="grandprix">
+        <div className="event">
         <ThemeProvider theme={theme}>
             <Linetext>Grand Prix Polski Aquathlon</Linetext>
             <Line />
         </ThemeProvider>
         <Myscrollbox />
-            <div className="grandprix__box">
+            <div className="event__box">
                 <Leftheader><DoubleArrowIcon />Dzień startu</Leftheader>
                 <Centerheader>Bieg</Centerheader>
             </div>

@@ -171,8 +171,8 @@ export default function Resultcharts() {
   // };
 
   // Wybór roku
-  const [yearIntervalFirst, setYearIntervalFirst] = useState(true);
-  const [yearIntervalSecond, setYearIntervalSecond] = useState(false);
+  const [yearIntervalFirst, setYearIntervalFirst] = useState(false);
+  const [yearIntervalSecond, setYearIntervalSecond] = useState(true);
 
   const handlerYearIntervalFirst = (e) => {
     setYearIntervalFirst(e.target.checked);
