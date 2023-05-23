@@ -2,6 +2,7 @@ import React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import dataAssets from "../../data/dataAsets.json";
+import "./Gallery.scss";
 
 export default function Gallery() {
   return (
@@ -20,6 +21,9 @@ export default function Gallery() {
               alt={item.title}
               loading="lazy"
             />
+            <div style={{ position: "absolute", right: "0%", bottom: "2%" }}>
+              cos
+            </div>
           </ImageListItem>
         ))}
       </ImageList>

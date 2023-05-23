@@ -1,5 +1,58 @@
  [
     {
+        "id": 10, 
+        "nav": "/mpczempin2023",
+        "name" : "Mistrzostwa Polski AG",
+        "type": "Duathlon",
+        "data": "maja 13, 2023",
+        "year": 2023,
+        "image": "/img/img_2023/czempinOne.JPG",
+        "marks" : 5,
+        "trophy": "3 miejsce",
+        "signature": "",
+        "dateadded": "2023-05-13"
+    },
+    {
+        "id": 9, 
+        "nav": "/mprumia2023",
+        "name" : "Mistrzostwa Polski AG",
+        "type": "Duathlon",
+        "data": "kwietnia 23, 2023",
+        "year": 2023,
+        "image": "/img/img_2023/rumiaOne.jpg",
+        "marks" : 5,
+        "trophy": "1 miejsce",
+        "signature": "Foto. LOTTO Duathlon Energy",
+        "dateadded": "2023-04-23"
+    },
+    {
+        "id": 7, 
+        "nav": "/indoor2023",
+        "name" : "Indoor Triathlon",
+        "type": "Triathlon",
+        "data": "kwietnia 19, 2023",
+        "year": 2023,
+        "image": "/img/img_2023/indoorOne.jpg",
+        "marks" : 5,
+        "trophy": "1 miejsce",
+        "signature": "Foto. Daniel Christ",
+        "dateadded": "2023-04-19"
+    }, 
+    {
+        "id": 8, 
+        "nav": "/grandprixpolski2023",
+        "name" : "Grand Prix Polski",
+        "type": "Aquathlon",
+        "data": "kwietnia 02, 2023",
+        "year": 2023,
+        "image": "/img/img_2023/aquathlonOne.jpg",
+        "marks" : 5,
+        "trophy": "1 miejsce",
+        "signature": "Foto. KS Barakuda Mińsk Mazowiecki",
+        "dateadded": "2023-04-02"
+    },
+
+    {
         "id": 0, 
         "nav": "/maraton2022",
         "name": "Maraton Warszawski", 
@@ -89,57 +142,5 @@
         "trophy": "1 miejsce",
         "signature": "",
         "dateadded": "2022-05-07"
-    },  
-    {
-        "id": 7, 
-        "nav": "/indoor2023",
-        "name" : "Indoor Triathlon",
-        "type": "Triathlon",
-        "data": "kwietnia 19, 2023",
-        "year": 2023,
-        "image": "/img/img_2023/indoorOne.jpg",
-        "marks" : 5,
-        "trophy": "1 miejsce",
-        "signature": "Foto. Daniel Christ",
-        "dateadded": "2023-04-19"
-    }, 
-    {
-        "id": 8, 
-        "nav": "/grandprixpolski2023",
-        "name" : "Grand Prix Polski",
-        "type": "Aquathlon",
-        "data": "kwietnia 02, 2023",
-        "year": 2023,
-        "image": "/img/img_2023/aquathlonOne.jpg",
-        "marks" : 5,
-        "trophy": "1 miejsce",
-        "signature": "Foto. KS Barakuda Mińsk Mazowiecki",
-        "dateadded": "2023-04-02"
-    },
-    {
-        "id": 9, 
-        "nav": "/mprumia2023",
-        "name" : "Mistrzostwa Polski AG",
-        "type": "Duathlon",
-        "data": "kwietnia 25, 2023",
-        "year": 2023,
-        "image": "/img/img_2023/rumiaOne.jpg",
-        "marks" : 5,
-        "trophy": "1 miejsce",
-        "signature": "Foto. LOTTO Duathlon Energy",
-        "dateadded": "2023-04-25"
-    },
-    {
-        "id": 10, 
-        "nav": "/mpczempin2023",
-        "name" : "Mistrzostwa Polski AG",
-        "type": "Duathlon",
-        "data": "maja 13, 2023",
-        "year": 2023,
-        "image": "/img/img_2023/czempinOne.JPG",
-        "marks" : 5,
-        "trophy": "3 miejsce",
-        "signature": "",
-        "dateadded": "2023-05-13"
     }
 ]
