@@ -1,50 +1,62 @@
 [
     {
       "img": "/img/assets/galleryOne.jpg",
-      "title": "Po wyścigu"
+      "title": "Po wyścigu",
+      "signature": "Foto. LOTTO Duathlon Energy"
     },
     {
       "img": "/img/assets/gallerySix.JPG",
-      "title": "Przed startem - basen"
+      "title": "Przed startem - basen",
+      "signature": "Foto. Agnieszka Weremczuk"
     },
     {
       "img": "/img/assets/galleryFive.jpg",
-      "title": "Etap rowerowy - zakładanie buta"
+      "title": "Etap rowerowy - zakładanie buta",
+      "signature": "Foto. LOTTO Duathlon Energy"
     },
     {
       "img": "/img/assets/gallerySeven.jpg",
-      "title": "Bieżnia mechaniczna - bieganie"
+      "title": "Bieżnia mechaniczna - bieganie",
+      "signature": "Foto. Daniel Christ"
     },
     {
       "img": "/img/assets/galleryNine.jpg",
-      "title": "Nawrotka na kolejną pętle - rower"
+      "title": "Nawrotka na kolejną pętle - rower",
+      "signature": "Foto. LOTTO Duathlon Energy"
     }, 
     {
       "img": "/img/assets/galleryTen.jpg",
-      "title": "Delfin - pływanie"
+      "title": "Delfin - pływanie",
+      "signature": "Foto. Daniel Christ"
     },
     {
       "img": "/img/assets/galleryThree.JPG",
-      "title": "Wyjście z wody - jezioro"
+      "title": "Wyjście z wody - jezioro",
+      "signature": "Foto. IRONMAN Poland"
     },
     {
       "img": "/img/assets/galleryTwo.jpg",
-      "title": "Rower"
+      "title": "Rower",
+      "signature": "Foto. AK - SKA PHOTO"
     },
     {
       "img": "/img/assets/galleryTwelve.JPG",
-      "title": "Bieżnia mechaniczna - bieg"
+      "title": "Bieżnia mechaniczna - bieg",
+      "signature": "Foto. Daniel Christ"
     },
     {
       "img": "/img/assets/galleryEleven.jpg",
-      "title": "Koniec wyścigu - podsumowanie"
+      "title": "Koniec wyścigu - podsumowanie",
+      "signature": "Foto. LOTTO Duathlon Energy"
     },
     {
       "img": "/img/assets/galleryEight.jpg",
-      "title": "Rower - drugi etap kolarski"
+      "title": "Rower - drugi etap kolarski",
+      "signature": "Foto. LOTTO Duathlon Energy"
     },
     {
       "img": "/img/assets/galerryFour.JPG",
-      "title": "Pozycja na rowerze"
+      "title": "Pozycja na rowerze",
+      "signature": "Foto. IRONMAN Poland"
     }
   ]

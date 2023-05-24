@@ -21,9 +21,7 @@ export default function Gallery() {
               alt={item.title}
               loading="lazy"
             />
-            <div style={{ position: "absolute", right: "0%", bottom: "2%" }}>
-              cos
-            </div>
+            <div className="signature">{item.signature}</div>
           </ImageListItem>
         ))}
       </ImageList>

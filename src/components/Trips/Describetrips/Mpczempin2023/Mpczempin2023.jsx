@@ -53,18 +53,28 @@ export default function Mpczempin2023() {
           </Cardflex>
 
           <Cardflex data-aos="fade-right">
-            <Halfbox style={{ marginRight: "1.2em" }}>
+            <Halfbox>
               <TextDescribebox>
                 Po przyjeździe, zakwaterowaliśmy się w apartamencie w Poznaniu.
                 Szybkie zakupy w żabce i mogliśmy podładować kcal przed
                 niedzielnym startem, które były zaplanowane na 13:00.
               </TextDescribebox>
             </Halfbox>
-            <img
-              className="event__box-map"
-              src={process.env.PUBLIC_URL + "/img/img_2023/czepinThree.jpg"}
-              alt="Ładowanie kcal przed zawodami"
-            />
+            {window.innerWidth < 900 ? (
+              <img
+                style={{ marginLeft: "0em" }}
+                className="event__box-map"
+                src={process.env.PUBLIC_URL + "/img/img_2023/czepinThree.jpg"}
+                alt="Ładowanie kcal przed zawodami"
+              />
+            ) : (
+              <img
+                style={{ marginLeft: "1.2em" }}
+                className="event__box-map"
+                src={process.env.PUBLIC_URL + "/img/img_2023/czepinThree.jpg"}
+                alt="Ładowanie kcal przed zawodami"
+              />
+            )}
           </Cardflex>
 
           <Leftheader>

@@ -1,0 +1,13 @@
+.signature {
+    position: absolute;
+    right: 0%;
+    bottom: 2%;
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+@media only screen and (min-width: 1200px) {
+    .signature {
+        font-size: 0.9rem;
+    }
+}
