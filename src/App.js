@@ -20,6 +20,7 @@ import Indoortriathlon2023 from './components/Trips/Describetrips/Indoortriathlo
 import Mprumia2023 from './components/Trips/Describetrips/Mprumia2023/Mprumia2023';
 import Mpczempin2023 from './components/Trips/Describetrips/Mpczempin2023/Mpczempin2023';
 import Gallery from './components/Gallery/Gallery';
+import Records from './components/Records/Records';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Nav />   
         <Routes>
           <Route path='/' element={<Main />} />
+          <Route path='/records' element={<Records />} />
           <Route path='/results' element={<Results />} />
           <Route path='/trips' element={<Trips />} />
           <Route path='/gallery' element={<Gallery />} />
