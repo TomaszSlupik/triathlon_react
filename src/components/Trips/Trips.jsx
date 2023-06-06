@@ -595,12 +595,20 @@ export default function Trips() {
                               subheader={el.data}
                             />
                             <CardMedia
+                              style={{ position: "relative" }}
                               component="img"
                               height="194"
                               image={process.env.PUBLIC_URL + el.image}
                               alt={el.name + "zdjęcie opisujące zawody"}
                             />
-                            <div className="signature">{el.signature}</div>
+                            {el.signature === "" ? (
+                              <div className="signature">
+                                <br></br>
+                              </div>
+                            ) : (
+                              <div className="signature">{el.signature}</div>
+                            )}
+
                             <Rating
                               name="read-only"
                               value={el.marks}

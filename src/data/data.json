@@ -1,5 +1,18 @@
  [
     {
+        "id": 11, 
+        "nav": "/ursynow2023",
+        "name" : "Bieg Ursynowa",
+        "type": "Bieg",
+        "data": "czerwca 4, 2023",
+        "year": 2023,
+        "image": "/img/img_2023/ursynowTwo.jpg",
+        "marks" : 4,
+        "trophy": "6 miejsce",
+        "signature": "Foto. Bieg Ursynowa",
+        "dateadded": "2023-06-04"
+    },
+    {
         "id": 10, 
         "nav": "/mpczempin2023",
         "name" : "Mistrzostwa Polski AG",

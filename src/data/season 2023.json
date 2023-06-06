@@ -22,5 +22,11 @@
         "place": "3 miejsce",
         "color": "#8b4513",
         "kind": "Duathlon"
+    },
+    {
+        "name_competition" : "Bieg Ursynowa",
+        "place": "6 miejsce",
+        "color": "#fff",
+        "kind": "Bieg"
     }
 ]

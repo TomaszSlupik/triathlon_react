@@ -21,6 +21,7 @@ import Mprumia2023 from './components/Trips/Describetrips/Mprumia2023/Mprumia202
 import Mpczempin2023 from './components/Trips/Describetrips/Mpczempin2023/Mpczempin2023';
 import Gallery from './components/Gallery/Gallery';
 import Records from './components/Records/Records';
+import Ursynow2023 from './components/Trips/Describetrips/Ursynow2023/Ursynow2023';
 
 
 
@@ -47,6 +48,7 @@ function App() {
           <Route path='/grandprixpolski2023' element={<Grandprixpolski2023 />} />
           <Route path='/mprumia2023' element={<Mprumia2023 />} />
           <Route path='/mpczempin2023' element={<Mpczempin2023 />} />
+          <Route path='/ursynow2023' element={<Ursynow2023 />} />
           <Route path='/thankyou' element={<Thankyou />} />
          </Routes>
         <Footer />
