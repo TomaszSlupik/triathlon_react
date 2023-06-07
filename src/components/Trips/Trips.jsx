@@ -602,11 +602,13 @@ export default function Trips() {
                               alt={el.name + "zdjęcie opisujące zawody"}
                             />
                             {el.signature === "" ? (
-                              <div className="signature">
+                              <div className="signatureTrip">
                                 <br></br>
                               </div>
                             ) : (
-                              <div className="signature">{el.signature}</div>
+                              <div className="signatureTrip">
+                                {el.signature}
+                              </div>
                             )}
 
                             <Rating
