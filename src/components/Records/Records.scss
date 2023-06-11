@@ -11,8 +11,10 @@ $text: #999;
     justify-content: center;
     align-items: center;
     &__myatropos {
-        width: 50%;
-        height: 400px;
+        width: 90%;
+        height: 600px;
+        background-size: cover;
+        background-position: center;
       }
     &__img {
       width: 100vw;
@@ -52,3 +54,12 @@ $text: #999;
 }
 
 
+
+@media only screen and (min-width: 1200px) {
+  .records {
+    &__myatropos {
+      width: 40%;
+      height: 800px;
+    }
+  }
+}

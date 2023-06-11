@@ -18,7 +18,7 @@ export default function Records() {
       <Atropos className="records__myatropos" highlight={false}>
         <ImageButton focusRipple style={{ width: "100%", height: "100%" }}>
           <ImageSrc
-            style={{ backgroundImage: `url(/img/img_2023/czempinFour.jpg)` }}
+            style={{ backgroundImage: `url(/img/recordRunOne.jpeg)` }}
           ></ImageSrc>
           <ImageBackdrop className="MuiImageBackdrop-root" />
           <Image>
@@ -110,6 +110,75 @@ export default function Records() {
         </ImageButton>
       </div>
       <div className="records__header">Triathlon</div>
+      <div className="records__text">~ dys. sprint</div>
+      <div className="records__img">
+        <ImageButton focusRipple style={{ width: "30%", height: "400px" }}>
+          <ImageSrc
+            style={{ backgroundImage: `url(/img/recordSwimOne.JPG)` }}
+          ></ImageSrc>
+          <ImageBackdrop className="MuiImageBackdrop-root" />
+          <Image>
+            <Typography
+              component="span"
+              variant="subtitle1"
+              color="inherit"
+              sx={{
+                position: "relative",
+                p: 4,
+                pt: 2,
+                pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+              }}
+            >
+              Pływanie - 750 m -
+              <ImageMarked className="MuiImageMarked-root" />
+            </Typography>
+          </Image>
+        </ImageButton>
+        <ImageButton focusRipple style={{ width: "40%", height: "400px" }}>
+          <ImageSrc
+            style={{ backgroundImage: `url(/img/recordBikeOne.JPG)` }}
+          ></ImageSrc>
+          <ImageBackdrop className="MuiImageBackdrop-root" />
+          <Image>
+            <Typography
+              component="span"
+              variant="subtitle1"
+              color="inherit"
+              sx={{
+                position: "relative",
+                p: 4,
+                pt: 2,
+                pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+              }}
+            >
+              Rower 20 km - śr. km/h
+              <ImageMarked className="MuiImageMarked-root" />
+            </Typography>
+          </Image>
+        </ImageButton>
+        <ImageButton focusRipple style={{ width: "30%", height: "400px" }}>
+          <ImageSrc
+            style={{ backgroundImage: `url(/img/img_2023/czempinFour.jpg)` }}
+          ></ImageSrc>
+          <ImageBackdrop className="MuiImageBackdrop-root" />
+          <Image>
+            <Typography
+              component="span"
+              variant="subtitle1"
+              color="inherit"
+              sx={{
+                position: "relative",
+                p: 4,
+                pt: 2,
+                pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+              }}
+            >
+              Bieg 5 km - 16'XX"
+              <ImageMarked className="MuiImageMarked-root" />
+            </Typography>
+          </Image>
+        </ImageButton>
+      </div>
     </div>
   );
 }
