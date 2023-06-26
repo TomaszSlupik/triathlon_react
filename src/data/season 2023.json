@@ -28,5 +28,11 @@
         "place": "6 miejsce",
         "color": "#fff",
         "kind": "Bieg"
+    }, 
+    {
+        "name_competition" : "Mistrzostwa Polski AG",
+        "place": "",
+        "color": "",
+        "kind": "Triathlon"
     }
 ]
