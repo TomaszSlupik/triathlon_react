@@ -27,8 +27,8 @@ export default function Nav() {
       hrefLink: "/gallery",
     },
     // {
-    //   nameLink: "Rekordy",
-    //   hrefLink: "/records",
+    //    nameLink: "Rekordy",
+    //     hrefLink: "/records",
     // },
     {
       nameLink: "Wyniki",

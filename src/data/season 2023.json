@@ -34,5 +34,11 @@
         "place": "",
         "color": "",
         "kind": "Triathlon"
+    },
+    {
+        "name_competition" : "Enea Bydgoszcz Triathlon",
+        "place": "",
+        "color": "",
+        "kind": "Triathlon"
     }
 ]

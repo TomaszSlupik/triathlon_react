@@ -1,6 +1,19 @@
  [
     {
         "id": 12, 
+        "nav": "/bydgoszcz2023",
+        "name" : "Enea Bydgoszcz Triathlon",
+        "type": "Triathlon",
+        "data": "lipca 9, 2023",
+        "year": 2023,
+        "image": "",
+        "marks" : 1,
+        "trophy": " miejsce",
+        "signature": "",
+        "dateadded": "2023-07-09"
+    },
+    {
+        "id": 12, 
         "nav": "/susz2023",
         "name" : "Mistrzostwa Polski AG",
         "type": "Triathlon",

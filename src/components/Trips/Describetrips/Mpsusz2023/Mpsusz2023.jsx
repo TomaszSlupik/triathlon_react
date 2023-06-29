@@ -73,7 +73,31 @@ export default function Mpsusz2023() {
             )}
           </Cardflex>
 
+          <Leftheader>
+            <DoubleArrowIcon />
+            Dzień startu
+          </Leftheader>
         
+              <div data-aos="fade-left">
+            <TextDescribebox>
+              Mistrzostwa Polski w Duathlonie na dystansie średnim zaplanowane
+              były na godzinę 13:00. Dziesięć minut przed startem zrobiłem 1km
+              rozgrzewki w tym kilka rytmów. Pięć minut przed startem już każdy
+              ustawił się na linii startu. Wystrzał startera i od razu
+              narzuciłem bardzo mocne tempo. Chciałem zaryzykować i oderwać się
+              od grupy. Już od początkowych kilometrów byłem na prowadzeniu.
+              Całe 10km prowadziłem, a ze mną biegł 1 zawodnik z kat. PRO.
+              Pierwsze 10km zrobiłem w czasie 00:32:34 wbiegając jako pierwszy
+              zawodnik do T1.
+            </TextDescribebox>
+                        <div className="event__box-img">
+              <img
+                className="event__box-img"
+                src={process.env.PUBLIC_URL + "/img/img_2023/czempinFour.jpg"}
+                alt="Etap biegowy, pierwsze 10km - MP Czempin"
+              />
+              </div>
+            </div>
                 </div>
             </div>
         </div>
