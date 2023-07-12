@@ -12,7 +12,7 @@ export default function Measuretime() {
   // Miesiąc: aktualny - 1
   const timer = () => {
     const measureTime =
-      Date.parse(new Date(2023, 6, 9, 12, 0, 0)) - Date.parse(new Date());
+      Date.parse(new Date(2023, 7, 6, 6, 0, 0)) - Date.parse(new Date());
     const seconds = Math.floor((measureTime / 1000) % 60);
     const minutes = Math.floor((measureTime / 1000 / 60) % 60);
     const hours = Math.floor((measureTime / (1000 * 60 * 60)) % 24);
@@ -39,7 +39,7 @@ export default function Measuretime() {
   return (
     <div className="measure">
       <div className="measure__time">Następne zawody</div>
-      <div className="measure__name">Enea Bydgoszcz Triathlon</div>
+      <div className="measure__name">Ironman Gdynia</div>
       <div className="measure__timenumber">
         <div className="measure__timenumber-col">
           <div className="measure__timenumber-days">{leading0(days)} </div>
