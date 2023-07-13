@@ -37,6 +37,7 @@ import themeColor from "../../theme/themeColor";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import LocationCityIcon from '@mui/icons-material/LocationCity';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -483,6 +484,7 @@ export default function Trips() {
               <MenuItem onClick={handlerSortData}>Dacie dodania</MenuItem>
               <MenuItem onClick={handlerSortName}>Nazwie</MenuItem>
               <MenuItem onClick={handlerSortMark}>Miejscu</MenuItem>
+              <MenuItem>Miejscowości</MenuItem>
             </Menu>
           </div>
 
@@ -594,6 +596,8 @@ export default function Trips() {
                               title={el.name}
                               subheader={el.data}
                             />
+                            {el.city}
+                            <LocationCityIcon />
                             <CardMedia
                               style={{ position: "relative" }}
                               component="img"

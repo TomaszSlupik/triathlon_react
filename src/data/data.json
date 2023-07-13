@@ -7,10 +7,11 @@
         "data": "lipca 9, 2023",
         "year": 2023,
         "image": "",
-        "marks" : 1,
-        "trophy": " miejsce",
+        "marks" : 5,
+        "trophy": " 4 miejsce",
         "signature": "",
-        "dateadded": "2023-07-09"
+        "dateadded": "2023-07-09",
+        "city": "Bydgoszcz"
     },
     {
         "id": 12, 
@@ -20,7 +21,7 @@
         "data": "lipca 2, 2023",
         "year": 2023,
         "image": "",
-        "marks" : 1,
+        "marks" : 3.5,
         "trophy": "DNF",
         "signature": "",
         "dateadded": "2023-07-02"

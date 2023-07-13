@@ -37,8 +37,8 @@
     },
     {
         "name_competition" : "Enea Bydgoszcz Triathlon",
-        "place": "",
-        "color": "",
+        "place": "4 miejsce",
+        "color": "#fff",
         "kind": "Triathlon"
     }
 ]
