@@ -52,7 +52,7 @@ export default function Trips() {
 
   const style = {
     grid: { alignItems: "center", display: "flex", justifyContent: "center" },
-    card: { height: "345px" },
+    card: { height: "365px" },
     label: { color: "#fff" },
     radioGroup: { color: "#7c5fe9" },
     trophy: { marginLeft: "0.2em", color: "#faaf00" },
@@ -596,10 +596,11 @@ export default function Trips() {
                               title={el.name}
                               subheader={el.data}
                             />
-                            {el.city}
-                            <LocationCityIcon />
+                            <div className="trip__box-city">{el.city}
+                            <LocationCityIcon /></div>
+                   
                             <CardMedia
-                              style={{ position: "relative" }}
+                              style={{ position: "relative", marginTop: "0.8em" }}
                               component="img"
                               height="194"
                               image={process.env.PUBLIC_URL + el.image}

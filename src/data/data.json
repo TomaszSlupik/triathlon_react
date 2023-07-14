@@ -6,7 +6,7 @@
         "type": "Triathlon",
         "data": "lipca 9, 2023",
         "year": 2023,
-        "image": "",
+        "image": "/img/img_2023/bydgoszczOne.jpg",
         "marks" : 5,
         "trophy": " 4 miejsce",
         "signature": "",
@@ -24,7 +24,8 @@
         "marks" : 3.5,
         "trophy": "DNF",
         "signature": "",
-        "dateadded": "2023-07-02"
+        "dateadded": "2023-07-02",
+        "city": "Susz"
     },
     {
         "id": 11, 
@@ -37,7 +38,8 @@
         "marks" : 4,
         "trophy": "6 miejsce",
         "signature": "Foto. Bieg Ursynowa",
-        "dateadded": "2023-06-04"
+        "dateadded": "2023-06-04",
+        "city": "Warszawa"
     },
     {
         "id": 10, 
@@ -50,7 +52,8 @@
         "marks" : 5,
         "trophy": "3 miejsce",
         "signature": "Foto. IRONMAN Poland",
-        "dateadded": "2023-05-13"
+        "dateadded": "2023-05-13",
+        "city": "Czempiń"
     },
     {
         "id": 9, 
@@ -63,7 +66,8 @@
         "marks" : 5,
         "trophy": "1 miejsce",
         "signature": "Foto. LOTTO Duathlon Energy",
-        "dateadded": "2023-04-23"
+        "dateadded": "2023-04-23",
+        "city": "Rumia"
     },
     {
         "id": 7, 

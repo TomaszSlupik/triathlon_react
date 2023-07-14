@@ -39,7 +39,7 @@ export default function Measuretime() {
   return (
     <div className="measure">
       <div className="measure__time">Następne zawody</div>
-      <div className="measure__name">Ironman Gdynia</div>
+      <div className="measure__name">Ironman 🇵🇱 Gdynia</div>
       <div className="measure__timenumber">
         <div className="measure__timenumber-col">
           <div className="measure__timenumber-days">{leading0(days)} </div>
