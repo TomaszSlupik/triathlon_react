@@ -71,7 +71,11 @@ $nav: #fff;
             grid-template-columns: repeat(1/ 1fr);
         }
         &-city {
-            margin-bottom: 0.2em;
+            position: absolute;
+            right: 2%;
+            top: 15%;
+            margin-bottom: 2em;
+            font-weight: 500;
         }
     } 
 }

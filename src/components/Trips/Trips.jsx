@@ -52,7 +52,7 @@ export default function Trips() {
 
   const style = {
     grid: { alignItems: "center", display: "flex", justifyContent: "center" },
-    card: { height: "365px" },
+    card: { height: "365px", position: "relative" },
     label: { color: "#fff" },
     radioGroup: { color: "#7c5fe9" },
     trophy: { marginLeft: "0.2em", color: "#faaf00" },
@@ -311,6 +311,13 @@ export default function Trips() {
     setAnchorEl(null);
   };
 
+  const handlerSortCity = () => {
+    setTrip([
+      ...trip.sort((a, b) => (a.city < b.city ? -1 : 1))
+    ])
+    setAnchorEl(null);
+  }
+
   return (
     <div>
       <div className="trip">
@@ -484,7 +491,7 @@ export default function Trips() {
               <MenuItem onClick={handlerSortData}>Dacie dodania</MenuItem>
               <MenuItem onClick={handlerSortName}>Nazwie</MenuItem>
               <MenuItem onClick={handlerSortMark}>Miejscu</MenuItem>
-              <MenuItem>Miejscowości</MenuItem>
+              <MenuItem onClick={handlerSortCity}>Miejscowości</MenuItem>
             </Menu>
           </div>
 

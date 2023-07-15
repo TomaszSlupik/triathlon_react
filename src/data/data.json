@@ -8,7 +8,7 @@
         "year": 2023,
         "image": "/img/img_2023/bydgoszczOne.jpg",
         "marks" : 5,
-        "trophy": " 4 miejsce",
+        "trophy": "4 miejsce",
         "signature": "",
         "dateadded": "2023-07-09",
         "city": "Bydgoszcz"
@@ -20,7 +20,7 @@
         "type": "Triathlon",
         "data": "lipca 2, 2023",
         "year": 2023,
-        "image": "",
+        "image": "/img/img_2023/suszOne.jpg",
         "marks" : 3.5,
         "trophy": "DNF",
         "signature": "",
@@ -80,7 +80,8 @@
         "marks" : 5,
         "trophy": "1 miejsce",
         "signature": "Foto. Daniel Christ",
-        "dateadded": "2023-04-19"
+        "dateadded": "2023-04-19",
+        "city": "Warszawa"
     }, 
     {
         "id": 8, 
@@ -93,7 +94,8 @@
         "marks" : 5,
         "trophy": "1 miejsce",
         "signature": "Foto. KS Barakuda Mińsk Mazowiecki",
-        "dateadded": "2023-04-02"
+        "dateadded": "2023-04-02",
+        "city": "Mińsk Mazowiecki"
     },
 
     {
@@ -107,7 +109,8 @@
         "marks" : 5, 
         "trophy": "3 miejsce M20",
         "signature": "Foto. Jan Nyka",
-        "dateadded": "2022-09-25"
+        "dateadded": "2022-09-25",
+        "city": "Warszawa"
     }, 
     {
         "id": 1,
@@ -120,7 +123,8 @@
         "marks" : 3.5,
         "trophy": "1 miejsce",
         "signature": "Foto. IRONMAN Poland",
-        "dateadded": "2022-09-04"
+        "dateadded": "2022-09-04",
+        "city": "Poznań"
     }, 
     {
         "id": 2, 
@@ -133,7 +137,8 @@
         "marks" : 4.5,
         "trophy": "1 miejsce",
         "signature": "",
-        "dateadded": "2022-08-27"   
+        "dateadded": "2022-08-27",
+        "city": "Babice"
     }, 
     {
         "id": 3, 
@@ -146,7 +151,8 @@
         "marks" : 5,
         "trophy": "3 miejsce",
         "signature": "",
-        "dateadded": "2022-08-06"  
+        "dateadded": "2022-08-06",
+        "city": "Gdynia"  
     },
     {
         "id": 4, 
@@ -159,7 +165,8 @@
         "marks" : 4,
         "trophy": "1 miejsce",
         "signature": "",
-        "dateadded": "2022-07-10"  
+        "dateadded": "2022-07-10",
+        "city": "Bydgoszcz"   
     },
     {
         "id": 5, 
@@ -172,7 +179,8 @@
         "marks" : 5,
         "trophy": "4 miejsce",
         "signature": "Foto. startlist.pl",
-        "dateadded": "2022-05-29"  
+        "dateadded": "2022-05-29",
+        "city": "Olsztyn"    
     },
     {
         "id": 6, 
@@ -185,6 +193,7 @@
         "marks" : 5,
         "trophy": "1 miejsce",
         "signature": "",
-        "dateadded": "2022-05-07"
+        "dateadded": "2022-05-07",
+        "city": "Czempiń"  
     }
 ]
