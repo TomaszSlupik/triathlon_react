@@ -51,8 +51,8 @@ function App() {
           <Route path='/mprumia2023' element={<Mprumia2023 />} />
           <Route path='/mpczempin2023' element={<Mpczempin2023 />} />
           <Route path='/ursynow2023' element={<Ursynow2023 />} />
-          {/* <Route path='/susz2023' element={<Mpsusz2023 />} /> */}
-          {/* <Route path='/bydgoszcz2023' element={<Bydgoszcz2023 />} />  */}
+          <Route path='/susz2023' element={<Mpsusz2023 />} />
+          <Route path='/bydgoszcz2023' element={<Bydgoszcz2023 />} /> 
           <Route path='/thankyou' element={<Thankyou />} />
          </Routes>
         <Footer />

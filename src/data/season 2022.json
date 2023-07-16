@@ -3,54 +3,63 @@
         "name_competition" : "HP Indoor Triathlon",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Warszawa"
     },
         {
         "name_competition" : "Duathlon Czempiń",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Duathlon"
+        "kind": "Duathlon",
+        "city": "Czempiń"
     },
             {
-        "name_competition" : "Mistrzostwa Europy Olsztyn",
+        "name_competition" : "Mistrzostwa Europy",
         "place": "4 miejsce",
         "color": "#fff",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Olsztyn"
     },
                 {
         "name_competition" :   "Susz Triathlon",
         "place": "3 miejsce",
         "color": "#8b4513",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Susz"
     },
                     {
         "name_competition" :  "Enea Bydgoszcz Triathlon",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Bydgoszcz"
     },
                         {
-        "name_competition" :  "Sprint Triathlon Gdynia",
+        "name_competition" :  "Sprint Triathlon",
         "place": "3 miejsce",
         "color": "#8b4513",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Gdynia"
     },
     {
         "name_competition" :  "Dziesiątka Babicka",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Babice"
     },
     {
         "name_competition" :  "5150 Poznań",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Poznań"
     },
     {
         "name_competition" :  "Mararton Warszawski - kat M20",
         "place": "3 miejsce",
         "color": "#8b4513",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Warszawa"
     }
 ]

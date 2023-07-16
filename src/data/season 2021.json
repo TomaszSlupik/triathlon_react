@@ -1,38 +1,44 @@
 [
     {
-        "name_competition" : "Mistrzostwa Polski Rumia",
+        "name_competition" : "Mistrzostwa Polski",
         "place": "3 miejsce",
         "color": "#8b4513",
-        "kind": "Duathlon"
+        "kind": "Duathlon",
+        "city": "Rumia"
     },
         {
         "name_competition" : "Garmin Iron Triathlon 1/2",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Żyrardów"
     },
             {
         "name_competition" : "Serock Triathlon",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Serock"
     },
                 {
         "name_competition" :  "Triathlon Lwa",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Lusowo"
     },
                     {
         "name_competition" :  "Garmin Iron Triathlon 1/8",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Ślesin"
     },
                         {
         "name_competition" :  "Triathlon Radłów",
         "place": "2 miejsce",
         "color": "#c0c0c0",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Radłów"
     }
 ]

@@ -3,42 +3,49 @@
         "name_competition" : "HP Indoor Triathlon",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Warszawa"
     },
     {
         "name_competition" : "Grand Prix Polski",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Aquathlon"
+        "kind": "Aquathlon",
+        "city": "Mińsk Mazowiecki"
     },
     {
         "name_competition" : "Mistrzostwa Polski AG",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Duathlon"
+        "kind": "Duathlon",
+        "city": "Rumia"
     },
     {
         "name_competition" : "Mistrzostwa Polski AG",
         "place": "3 miejsce",
         "color": "#8b4513",
-        "kind": "Duathlon"
+        "kind": "Duathlon",
+        "city": "Czempiń"
     },
     {
         "name_competition" : "Bieg Ursynowa",
         "place": "6 miejsce",
         "color": "#fff",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Warszawa"
     }, 
     {
         "name_competition" : "Mistrzostwa Polski AG",
         "place": "DNF",
         "color": "",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Susz"
     },
     {
         "name_competition" : "Enea Bydgoszcz Triathlon",
         "place": "4 miejsce",
         "color": "#fff",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Bydgoszcz"
     }
 ]
