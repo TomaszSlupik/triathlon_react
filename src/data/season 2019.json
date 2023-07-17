@@ -3,144 +3,168 @@
         "name_competition" : "Indoor Triathlon Warszawa",
         "place": "3 miejsce",
         "color": "#8b4513",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Warszawa"
     },
     {
         "name_competition" : "Aquathlon Rzeszów",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Aquathlon"
+        "kind": "Aquathlon",
+        "city": "Rzeszów"
     },
     {
         "name_competition" : "Grand Prix Polski",
         "place": "2 miejsce",
         "color": "#c0c0c0",
-        "kind": "Aquathlon"
+        "kind": "Aquathlon",
+        "city": "Kraków"
     },
     {
         "name_competition" : "Mistrzostwa Polski kat. ELITE",
         "place": "4 miejsce",
         "color": "#fff",
-        "kind": "Aquathlon"
+        "kind": "Aquathlon",
+        "city": "Szczecinek"
     },
     {
         "name_competition" : "Mistrzostwa Polski AG",
         "place": "10 miejsce",
         "color": "#fff",
-        "kind": "Duathlon"
+        "kind": "Duathlon",
+        "city": "Rumia"
     },
     {
         "name_competition" : "LELIWA RUN",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Tarnów"
     },
     {
         "name_competition" : "BIEG SGGW",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Warszawa"
     },
     {
         "name_competition" : "BIEG Wegański",
         "place": "2 miejsce",
         "color": "#c0c0c0",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Warszawa"
     },
     {
         "name_competition" : "Garmin Iron Triathlon ",
         "place": "3 miejsce",
         "color": "#8b4513",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Płock"
     },
     {
         "name_competition" : "Garmin Iron Triathlon ",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Ślesin"
     },
     {
         "name_competition" : "Garmin Iron Triathlon ",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Augustów"
     },
     {
         "name_competition" : "Mistrzostwa Polski AG",
         "place": "8 miejsce",
         "color": "#fff",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Susz"
     },
     {
         "name_competition" : "Garmin Iron Triathlon ",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Stężyca"
     },
     {
         "name_competition" : "Triathlon Radłòw",
         "place": "2 miejsce",
         "color": "#c0c0c0",
-        "kind": "Triathlon"
+        "kind": "Triathlon",
+        "city": "Radłów"
     },
     {
         "name_competition" : "FROG RACE",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Piaseczno"
     },
     {
         "name_competition" : "Mistrzostwa Polski AG",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Duathlon"
+        "kind": "Duathlon",
+        "city": "Gniewino"
     },
     {
         "name_competition" : "Karczewski bieg",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Karczew"
     },
     {
         "name_competition" : "Dycha strażacka",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Skuły"
     },
     {
         "name_competition" : "Bieg radości",
         "place": "3 miejsce",
         "color": "#8b4513",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Warszawa"
     },
     {
         "name_competition" : "Bieg Mikołajkowy",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Warszawa"
     },
     {
         "name_competition" : "Bieg Kabacki",
         "place": "1 miejsce",
         "color": "gold",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Warszawa"
     },
     {
         "name_competition" : "Żoliborski Bieg",
         "place": "2 miejsce",
         "color": "#c0c0c0",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Warszawa"
     },
     {
         "name_competition" : "Białołęcki Bieg Wolności ",
         "place": "2 miejsce",
         "color": "#c0c0c0",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Warszawa"
     },
     {
         "name_competition" : "Krakowski Bieg Sylwestrowy",
         "place": "3 miejsce",
         "color": "#8b4513",
-        "kind": "Bieg"
+        "kind": "Bieg",
+        "city": "Kraków"
     }
 ]

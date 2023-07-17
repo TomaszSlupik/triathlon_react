@@ -36,8 +36,8 @@ export default function Mpsusz2023() {
           <Cardflex data-aos="fade-left">
             <img
               className="event__box-map"
-              src={process.env.PUBLIC_URL + "/img/img_2023/rumiaTwo.JPG"}
-              alt="pakiet startowy Rumia"
+              src={process.env.PUBLIC_URL + "/img/img_2023/suszTwo.jpg"}
+              alt="Jezioro Iławskie"
             />
             <Halfbox>
               <TextDescribebox>
@@ -52,24 +52,25 @@ export default function Mpsusz2023() {
           <Cardflex data-aos="fade-right">
             <Halfbox>
               <TextDescribebox>
-                Po przyjeździe, zakwaterowaliśmy się w apartamencie w Poznaniu.
-                Szybkie zakupy w żabce i mogliśmy podładować kcal przed
-                niedzielnym startem, które były zaplanowane na 13:00.
+                Po przyjeździe, zakwaterowałem się w Iławie. Z racji tego, że hotel miałem 50 m od pięknego jeziora Iławskiego, 
+                postanowiłem zrobić 8km lekkiego rozruchu. Następnie poszedłem na szybkie zakupy, a w drodze powrotnej skusiłem się 
+                na pyszne lody. 
+
               </TextDescribebox>
             </Halfbox>
             {window.innerWidth < 900 ? (
               <img
                 style={{ marginLeft: "0em" }}
                 className="event__box-map"
-                src={process.env.PUBLIC_URL + "/img/img_2023/czepinThree.jpg"}
-                alt="Ładowanie kcal przed zawodami"
+                src={process.env.PUBLIC_URL + "/img/img_2023/suszThree.jpg"}
+                alt="Lody - jezioro Iławskie"
               />
             ) : (
               <img
                 style={{ marginLeft: "1.2em" }}
                 className="event__box-map"
-                src={process.env.PUBLIC_URL + "/img/img_2023/czepinThree.jpg"}
-                alt="Ładowanie kcal przed zawodami"
+                src={process.env.PUBLIC_URL + "/img/img_2023/suszThree.jpg"}
+                alt="Lody - jezioro Iławskie"
               />
             )}
           </Cardflex>
@@ -81,21 +82,19 @@ export default function Mpsusz2023() {
 
           <div data-aos="fade-left">
             <TextDescribebox>
-              Mistrzostwa Polski w Duathlonie na dystansie średnim zaplanowane
-              były na godzinę 13:00. Dziesięć minut przed startem zrobiłem 1km
-              rozgrzewki w tym kilka rytmów. Pięć minut przed startem już każdy
-              ustawił się na linii startu. Wystrzał startera i od razu
-              narzuciłem bardzo mocne tempo. Chciałem zaryzykować i oderwać się
-              od grupy. Już od początkowych kilometrów byłem na prowadzeniu.
-              Całe 10km prowadziłem, a ze mną biegł 1 zawodnik z kat. PRO.
-              Pierwsze 10km zrobiłem w czasie 00:32:34 wbiegając jako pierwszy
-              zawodnik do T1.
+                Pakiet startowy odebrałem przed godziną 7:00. Szybkie oddanie roweru do strefy zmian i o 8:00 start. 
+                Pływanie bardzo dobrze mi poszło. Wyszedłem z wody w czołówce. Niestety w Suszu warunki pogodowe tego dnia 
+                nie były dobre. Śliska nawierzchnia asfaltowa, padający deszcz nie ułatwiał zawodnikom na trasie. W połowie trasy 
+                rowerowej, koło 10km wyprzedając zawodnika nagle z naprzeciwka ktoś zahaczył o moją lemondkę i przy prędkości 44km/h 
+                przeleciałem przez kierownicę. Na szczęście skończyło się tylko na mocnym poobijaniu. Nie mogłem dalej kontynuować 
+                wyścigu, ponieważ łańcuch zablokował mi się, a musiałbym rozkręcać całą korbę. Szkoda, że wyścig tak ułożył się bo chciałem 
+                powalczyć o miejsca medalowe. 
             </TextDescribebox>
             <div className="event__box-img">
               <img
                 className="event__box-img"
-                src={process.env.PUBLIC_URL + "/img/img_2023/czempinFour.jpg"}
-                alt="Etap biegowy, pierwsze 10km - MP Czempin"
+                src={process.env.PUBLIC_URL + "/img/img_2023/suszFour.jpg"}
+                alt="Etap kolarski - wypadek"
               />
             </div>
           </div>

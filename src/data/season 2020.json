@@ -42,12 +42,6 @@
         "city": "Gdynia"
     },   
     {
-        "name_competition" : "Garmin Iron Triathlon ",
-        "place": "1 miejsce",
-        "color": "gold",
-        "kind": "Triathlon"
-    },
-    {
         "name_competition" : "Mistrzostwa Polski AG",
         "place": "2 miejsce",
         "color": "#c0c0c0",
