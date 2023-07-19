@@ -80,24 +80,19 @@ export default function Mpsusz2023() {
             Dzień startu
           </Leftheader>
 
-          <div data-aos="fade-left">
-            <TextDescribebox>
-                Pakiet startowy odebrałem przed godziną 7:00. Szybkie oddanie roweru do strefy zmian i o 8:00 start. 
-                Pływanie bardzo dobrze mi poszło. Wyszedłem z wody w czołówce. Niestety w Suszu warunki pogodowe tego dnia 
-                nie były dobre. Śliska nawierzchnia asfaltowa, padający deszcz nie ułatwiał zawodnikom na trasie. W połowie trasy 
-                rowerowej, koło 10km wyprzedając zawodnika nagle z naprzeciwka ktoś zahaczył o moją lemondkę i przy prędkości 44km/h 
-                przeleciałem przez kierownicę. Na szczęście skończyło się tylko na mocnym poobijaniu. Nie mogłem dalej kontynuować 
-                wyścigu, ponieważ łańcuch zablokował mi się, a musiałbym rozkręcać całą korbę. Szkoda, że wyścig tak ułożył się bo chciałem 
-                powalczyć o miejsca medalowe. 
-            </TextDescribebox>
-            <div className="event__box-img">
-              <img
+          <Cardflex data-aos="fade-left">
+            <Halfbox style={{ marginRight: "1.2em" }}>
+              <TextDescribebox>
+              Pakiet startowy odebrałem przed godziną 7:00. Szybkie oddanie roweru do strefy zmian i o 8:00 start. Pływanie bardzo dobrze mi poszło. Wyszedłem z wody w czołówce. Niestety w Suszu warunki pogodowe tego dnia nie były dobre. Śliska nawierzchnia asfaltowa, padający deszcz nie ułatwiał zawodnikom na trasie. W połowie trasy rowerowej, koło 10km wyprzedając zawodnika nagle z naprzeciwka ktoś zahaczył o moją lemondkę i przy prędkości 44km/h przeleciałem przez kierownicę. Na szczęście skończyło się tylko na mocnym poobijaniu. Nie mogłem dalej kontynuować wyścigu, ponieważ łańcuch zablokował mi się, a musiałbym rozkręcać całą korbę. Szkoda, że wyścig tak ułożył się bo chciałem powalczyć o miejsca medalowe.
+              </TextDescribebox>
+            </Halfbox>
+            <img
                 className="event__box-img"
                 src={process.env.PUBLIC_URL + "/img/img_2023/suszFour.jpg"}
                 alt="Etap kolarski - wypadek"
               />
-            </div>
-          </div>
+          </Cardflex>
+          <Centerheader>DNF - Mistrzostwa Polski Triathlon</Centerheader>
         </div>
       </div>
     </div>
