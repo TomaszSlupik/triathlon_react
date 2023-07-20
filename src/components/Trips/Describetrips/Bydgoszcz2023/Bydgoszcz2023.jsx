@@ -1,36 +1,39 @@
-import React, {useEffect} from 'react'
-import 'aos/dist/aos.css'
-import Aos from 'aos';
-import BacktoPage from '../BacktoPage';
-import { ThemeProvider } from '@emotion/react';
-import theme from '../../../../style/mybreakpoints';
-import Linetext from '../../../../style/mymuistyle/linetext';
-import Line from '../../../../style/mymuistyle/line';
-import Myscrollbox from '../../../../style/myscrollbox';
-import Leftheader from '../../../../style/mymuistyle/leftheader';
-import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
+import Aos from "aos";
+import BacktoPage from "../BacktoPage";
+import { ThemeProvider } from "@emotion/react";
+import theme from "../../../../style/mybreakpoints";
+import Linetext from "../../../../style/mymuistyle/linetext";
+import Line from "../../../../style/mymuistyle/line";
+import Myscrollbox from "../../../../style/myscrollbox";
+import Leftheader from "../../../../style/mymuistyle/leftheader";
+import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import TextDescribebox from "../../../../style/mymuistyle/textdescribebox";
 import Halfbox from "../../../../style/mymuistyle/halfbox";
 import Cardflex from "../../../../style/mymuistyle/cardflex";
+import Centerheader from "../../../../style/mymuistyle/centerheader";
 
 export default function Bydgoszcz2023() {
-
-    useEffect (()=> {
-        Aos.init({duration: 3000})
-      }, [])
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
 
   return (
     <div>
-        <BacktoPage />
-        <div className="event">
+      <BacktoPage />
+      <div className="event">
         <ThemeProvider theme={theme}>
-            <Linetext>Enea Bydgoszcz Triathlon</Linetext>
-            <Line />
+          <Linetext>Enea Bydgoszcz Triathlon</Linetext>
+          <Line />
         </ThemeProvider>
         <Myscrollbox />
-            <div className="event__box">
-                <Leftheader><DoubleArrowIcon />Dzień przed startem</Leftheader>
-                <Cardflex data-aos="fade-left">
+        <div className="event__box">
+          <Leftheader>
+            <DoubleArrowIcon />
+            Dzień przed startem
+          </Leftheader>
+          <Cardflex data-aos="fade-left">
             <img
               className="event__box-map"
               src={process.env.PUBLIC_URL + "/img/img_2023/bydgoszczThree.jpg"}
@@ -38,10 +41,13 @@ export default function Bydgoszcz2023() {
             />
             <Halfbox>
               <TextDescribebox>
-                W zeszłym roku, początek lipca był debiutem w Enea Bydgoszcz Triathlon. Postanowiłem w tym roku,
-                również wystartować w tej imprezie z racji tego, że jest super atmosfera, dobra organizacja, dobrze zorganizowana strefa 
-                T1 oraz T2 pomimo dużej liczby uczestników oraz wspaniali kibice na trasie. Oczywiście dzień przed startem odwiedziliśmy 
-                Manekina, gdzie podładowaliśmy troszkę kcal. 
+                W zeszłym roku, początek lipca był debiutem w Enea Bydgoszcz
+                Triathlon. Postanowiłem w tym roku, również wystartować w tej
+                imprezie z racji tego, że jest super atmosfera, dobra
+                organizacja, dobrze zorganizowana strefa T1 oraz T2 pomimo dużej
+                liczby uczestników oraz wspaniali kibice na trasie. Oczywiście
+                dzień przed startem odwiedziliśmy Manekina, gdzie podładowaliśmy
+                troszkę kcal.
               </TextDescribebox>
             </Halfbox>
           </Cardflex>
@@ -49,9 +55,10 @@ export default function Bydgoszcz2023() {
           <Cardflex data-aos="fade-right">
             <Halfbox>
               <TextDescribebox>
-                W sobotę znajomi startowali na dłuższym dystanie 1/4, więc po rozruchu 8km udaliśmy się, aby im kibicować. Z wyścigu byli 
-                zadowoleni. 
-
+                W sobotę znajomi startowali na dłuższym dystansie 1/4, więc po
+                rozruchu 8km udaliśmy się, aby im kibicować. Z wyścigu byli
+                zadowoleni. Etap kolarski należał do Łukasza, natomiast biegowy
+                do Karola. Po starcie spędziliśmy czas w Expo, a następnie wyjście na miasto. 
               </TextDescribebox>
             </Halfbox>
             {window.innerWidth < 900 ? (
@@ -70,10 +77,14 @@ export default function Bydgoszcz2023() {
               />
             )}
           </Cardflex>
-            </div>
 
-
+          <Leftheader>
+            <DoubleArrowIcon />
+            Dzień startu
+          </Leftheader>
+          <Centerheader>Pływanie</Centerheader>
         </div>
+      </div>
     </div>
-  )
+  );
 }

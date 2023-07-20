@@ -37,7 +37,7 @@ import themeColor from "../../theme/themeColor";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import LocationCityIcon from '@mui/icons-material/LocationCity';
+import LocationCityIcon from "@mui/icons-material/LocationCity";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -312,11 +312,9 @@ export default function Trips() {
   };
 
   const handlerSortCity = () => {
-    setTrip([
-      ...trip.sort((a, b) => (a.city < b.city ? -1 : 1))
-    ])
+    setTrip([...trip.sort((a, b) => (a.city < b.city ? -1 : 1))]);
     setAnchorEl(null);
-  }
+  };
 
   return (
     <div>
@@ -603,11 +601,16 @@ export default function Trips() {
                               title={el.name}
                               subheader={el.data}
                             />
-                            <div className="trip__box-city">{el.city}
-                            <LocationCityIcon /></div>
-                   
+                            <div className="trip__box-city">
+                              {el.city}
+                              <LocationCityIcon />
+                            </div>
+
                             <CardMedia
-                              style={{ position: "relative", marginTop: "0.8em" }}
+                              style={{
+                                position: "relative",
+                                marginTop: "0.8em",
+                              }}
                               component="img"
                               height="194"
                               image={process.env.PUBLIC_URL + el.image}

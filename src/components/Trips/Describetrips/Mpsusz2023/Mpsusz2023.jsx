@@ -52,10 +52,10 @@ export default function Mpsusz2023() {
           <Cardflex data-aos="fade-right">
             <Halfbox>
               <TextDescribebox>
-                Po przyjeździe, zakwaterowałem się w Iławie. Z racji tego, że hotel miałem 50 m od pięknego jeziora Iławskiego, 
-                postanowiłem zrobić 8km lekkiego rozruchu. Następnie poszedłem na szybkie zakupy, a w drodze powrotnej skusiłem się 
-                na pyszne lody. 
-
+                Po przyjeździe, zakwaterowałem się w Iławie. Z racji tego, że
+                hotel miałem 50 m od pięknego jeziora Iławskiego, postanowiłem
+                zrobić 8km lekkiego rozruchu. Następnie poszedłem na szybkie
+                zakupy, a w drodze powrotnej skusiłem się na pyszne lody.
               </TextDescribebox>
             </Halfbox>
             {window.innerWidth < 900 ? (
@@ -83,14 +83,25 @@ export default function Mpsusz2023() {
           <Cardflex data-aos="fade-left">
             <Halfbox style={{ marginRight: "1.2em" }}>
               <TextDescribebox>
-              Pakiet startowy odebrałem przed godziną 7:00. Szybkie oddanie roweru do strefy zmian i o 8:00 start. Pływanie bardzo dobrze mi poszło. Wyszedłem z wody w czołówce. Niestety w Suszu warunki pogodowe tego dnia nie były dobre. Śliska nawierzchnia asfaltowa, padający deszcz nie ułatwiał zawodnikom na trasie. W połowie trasy rowerowej, koło 10km wyprzedając zawodnika nagle z naprzeciwka ktoś zahaczył o moją lemondkę i przy prędkości 44km/h przeleciałem przez kierownicę. Na szczęście skończyło się tylko na mocnym poobijaniu. Nie mogłem dalej kontynuować wyścigu, ponieważ łańcuch zablokował mi się, a musiałbym rozkręcać całą korbę. Szkoda, że wyścig tak ułożył się bo chciałem powalczyć o miejsca medalowe.
+                Pakiet startowy odebrałem przed godziną 7:00. Szybkie oddanie
+                roweru do strefy zmian i o 8:00 start. Pływanie bardzo dobrze mi
+                poszło. Wyszedłem z wody w czołówce. Niestety w Suszu warunki
+                pogodowe tego dnia nie były dobre. Śliska nawierzchnia
+                asfaltowa, padający deszcz nie ułatwiał zawodnikom na trasie. W
+                połowie trasy rowerowej, koło 10km wyprzedając zawodnika nagle z
+                naprzeciwka ktoś zahaczył o moją lemondkę i przy prędkości
+                44km/h przeleciałem przez kierownicę. Na szczęście skończyło się
+                tylko na mocnym poobijaniu. Nie mogłem dalej kontynuować
+                wyścigu, ponieważ łańcuch zablokował mi się, a musiałbym
+                rozkręcać całą korbę. Szkoda, że wyścig tak ułożył się bo
+                chciałem powalczyć o miejsca medalowe.
               </TextDescribebox>
             </Halfbox>
             <img
-                className="event__box-img"
-                src={process.env.PUBLIC_URL + "/img/img_2023/suszFour.jpg"}
-                alt="Etap kolarski - wypadek"
-              />
+              className="event__box-img"
+              src={process.env.PUBLIC_URL + "/img/img_2023/suszFour.jpg"}
+              alt="Etap kolarski - wypadek"
+            />
           </Cardflex>
           <Centerheader>DNF - Mistrzostwa Polski Triathlon</Centerheader>
         </div>

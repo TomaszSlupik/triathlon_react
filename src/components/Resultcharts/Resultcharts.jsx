@@ -266,7 +266,12 @@ export default function Resultcharts() {
                                 {el.name_competition}
                               </Typography>
                               <Typography>{el.kind}</Typography>
-                              <Typography variant="subtitle2" style={{color: 'black'}}>{el.city}</Typography>
+                              <Typography
+                                variant="subtitle2"
+                                style={{ color: "black" }}
+                              >
+                                {el.city}
+                              </Typography>
                             </TimelineContent>
                           </TimelineItem>
                         </div>
@@ -304,7 +309,12 @@ export default function Resultcharts() {
                                 {el.name_competition}
                               </Typography>
                               <Typography>{el.kind}</Typography>
-                              <Typography variant="subtitle2" style={{color: 'black'}}>{el.city}</Typography>
+                              <Typography
+                                variant="subtitle2"
+                                style={{ color: "black" }}
+                              >
+                                {el.city}
+                              </Typography>
                             </TimelineContent>
                           </TimelineItem>
                         </div>
@@ -381,7 +391,12 @@ export default function Resultcharts() {
                                 {el.name_competition}
                               </Typography>
                               <Typography>{el.kind}</Typography>
-                              <Typography variant="subtitle2" style={{color: 'black'}}>{el.city}</Typography>
+                              <Typography
+                                variant="subtitle2"
+                                style={{ color: "black" }}
+                              >
+                                {el.city}
+                              </Typography>
                             </TimelineContent>
                           </TimelineItem>
                         </div>
@@ -419,7 +434,12 @@ export default function Resultcharts() {
                                 {el.name_competition}
                               </Typography>
                               <Typography>{el.kind}</Typography>
-                              <Typography variant="subtitle2" style={{color: 'black'}}>{el.city}</Typography>
+                              <Typography
+                                variant="subtitle2"
+                                style={{ color: "black" }}
+                              >
+                                {el.city}
+                              </Typography>
                             </TimelineContent>
                           </TimelineItem>
                         </div>
@@ -457,7 +477,12 @@ export default function Resultcharts() {
                                 {el.name_competition}
                               </Typography>
                               <Typography>{el.kind}</Typography>
-                              <Typography variant="subtitle2" style={{color: 'black'}}>{el.city}</Typography>
+                              <Typography
+                                variant="subtitle2"
+                                style={{ color: "black" }}
+                              >
+                                {el.city}
+                              </Typography>
                             </TimelineContent>
                           </TimelineItem>
                         </div>
