@@ -83,6 +83,8 @@ export default function Bydgoszcz2023() {
             Dzień startu
           </Leftheader>
           <Centerheader>Pływanie</Centerheader>
+          <TextDescribebox>Dalsza relacja już w krótce :)</TextDescribebox>
+          
         </div>
       </div>
     </div>
