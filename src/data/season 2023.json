@@ -47,5 +47,12 @@
         "color": "#fff",
         "kind": "Triathlon",
         "city": "Bydgoszcz"
+    },
+    {
+        "name_competition" : "Ironman Gdynia",
+        "place": "",
+        "color": "",
+        "kind": "Triathlon",
+        "city": "Gdynia"
     }
 ]
