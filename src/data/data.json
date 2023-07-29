@@ -1,5 +1,19 @@
  [
     {
+        "id": 13, 
+        "nav": "/ironman2023",
+        "name" : "Ironman Gdynia",
+        "type": "Triathlon",
+        "data": "sierpnia 6, 2023",
+        "year": 2023,
+        "image": "/img/img_2023/bydgoszczOne.jpg",
+        "marks" : 5,
+        "trophy": " miejsce",
+        "signature": "",
+        "dateadded": "2023-08-06",
+        "city": "Gdynia"
+    },
+    {
         "id": 12, 
         "nav": "/bydgoszcz2023",
         "name" : "Enea Bydgoszcz Triathlon",
