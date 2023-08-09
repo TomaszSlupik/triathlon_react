@@ -22,7 +22,7 @@
     },
     {
         "name_competition" : "Mistrzostwa Polski AG",
-        "place": "3 miejsce",
+        "place": "3 miejsce M30",
         "color": "#8b4513",
         "kind": "Duathlon",
         "city": "Czempiń"
@@ -43,15 +43,15 @@
     },
     {
         "name_competition" : "Enea Bydgoszcz Triathlon",
-        "place": "4 miejsce",
-        "color": "#fff",
+        "place": "3 miejsce M30",
+        "color": "#8b4513",
         "kind": "Triathlon",
         "city": "Bydgoszcz"
     },
     {
         "name_competition" : "Ironman Gdynia",
-        "place": "",
-        "color": "",
+        "place": "6 miejsce M30",
+        "color": "#fff",
         "kind": "Triathlon",
         "city": "Gdynia"
     }

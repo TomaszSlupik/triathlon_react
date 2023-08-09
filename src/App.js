@@ -54,7 +54,7 @@ function App() {
           <Route path='/ursynow2023' element={<Ursynow2023 />} />
           <Route path='/susz2023' element={<Mpsusz2023 />} />
           <Route path='/bydgoszcz2023' element={<Bydgoszcz2023 />} /> 
-          <Route path='/ironman2023' element={<Ironman2023 />} />
+          {/* <Route path='/ironman2023' element={<Ironman2023 />} /> */}
           <Route path='/thankyou' element={<Thankyou />} />
          </Routes>
         <Footer />

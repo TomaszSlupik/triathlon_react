@@ -6,9 +6,9 @@
         "type": "Triathlon",
         "data": "sierpnia 6, 2023",
         "year": 2023,
-        "image": "/img/img_2023/bydgoszczOne.jpg",
+        "image": "/img/img_2023/gdyniaThree.jpeg",
         "marks" : 5,
-        "trophy": " miejsce",
+        "trophy": "6 miejsce M30",
         "signature": "",
         "dateadded": "2023-08-06",
         "city": "Gdynia"
@@ -22,7 +22,7 @@
         "year": 2023,
         "image": "/img/img_2023/bydgoszczOne.jpg",
         "marks" : 5,
-        "trophy": "4 miejsce",
+        "trophy": "3 miejsce M30",
         "signature": "",
         "dateadded": "2023-07-09",
         "city": "Bydgoszcz"
@@ -64,7 +64,7 @@
         "year": 2023,
         "image": "/img/img_2023/czempinOne.JPG",
         "marks" : 5,
-        "trophy": "3 miejsce",
+        "trophy": "3 miejsce M30",
         "signature": "Foto. IRONMAN Poland",
         "dateadded": "2023-05-13",
         "city": "Czempiń"
