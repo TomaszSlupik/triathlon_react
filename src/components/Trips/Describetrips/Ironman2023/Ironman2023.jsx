@@ -1,39 +1,35 @@
-import React, {useEffect} from 'react'
-import 'aos/dist/aos.css'
-import Aos from 'aos';
-import BacktoPage from '../BacktoPage';
-import { ThemeProvider } from '@emotion/react';
-import theme from '../../../../style/mybreakpoints';
-import Linetext from '../../../../style/mymuistyle/linetext';
-import Line from '../../../../style/mymuistyle/line';
-import Myscrollbox from '../../../../style/myscrollbox';
-import Leftheader from '../../../../style/mymuistyle/leftheader';
-import Centerheader from '../../../../style/mymuistyle/centerheader';
-import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
-import Cardflex from '../../../../style/mymuistyle/cardflex';
-import Halfbox from '../../../../style/mymuistyle/halfbox';
-import TextDescribebox from '../../../../style/mymuistyle/textdescribebox';
-
-
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
+import Aos from "aos";
+import BacktoPage from "../BacktoPage";
+import { ThemeProvider } from "@emotion/react";
+import theme from "../../../../style/mybreakpoints";
+import Linetext from "../../../../style/mymuistyle/linetext";
+import Line from "../../../../style/mymuistyle/line";
+import Myscrollbox from "../../../../style/myscrollbox";
+import Leftheader from "../../../../style/mymuistyle/leftheader";
+import Centerheader from "../../../../style/mymuistyle/centerheader";
+import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+import Cardflex from "../../../../style/mymuistyle/cardflex";
+import Halfbox from "../../../../style/mymuistyle/halfbox";
+import TextDescribebox from "../../../../style/mymuistyle/textdescribebox";
 
 export default function Ironman2023() {
-
-    useEffect (()=> {
-        Aos.init({duration: 3000})
-      }, [])
-    
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
 
   return (
     <div>
-         <BacktoPage />
-        <div className="event">
+      <BacktoPage />
+      <div className="event">
         <ThemeProvider theme={theme}>
-            <Linetext>Ironman Gdynia</Linetext>
-            <Line />
+          <Linetext>Ironman Gdynia</Linetext>
+          <Line />
         </ThemeProvider>
         <Myscrollbox />
-            <div className="event__box">
-            <Leftheader>
+        <div className="event__box">
+          <Leftheader>
             <DoubleArrowIcon />
             Dzień przed startem
           </Leftheader>
@@ -45,17 +41,18 @@ export default function Ironman2023() {
             />
             <Halfbox>
               <TextDescribebox>
-                Sierpień 2023 r. to w tym roku postanowiłem, że zrobię pełny dystans Ironman. Wybrałem 
-                Gdynię, ponieważ start i meta znajduje się na piaszczystej plaży w Gdyni, są super kibice, 
-                a cała trasa rowerowa i biegowa nie należy do najłatwiejszych z uwagi na duże przewyższenia i 
-                podbiegi. Do Gdyni wyruszyliśmy dzień przed startem i zameldowaliśmy się w Hotelu Mercure oddalonym 
-                350 m od plaży.
-
+                Sierpień 2023 r. to w tym roku postanowiłem, że zrobię pełny
+                dystans Ironman. Wybrałem Gdynię, ponieważ start i meta znajduje
+                się na piaszczystej plaży w Gdyni, są super kibice, a cała trasa
+                rowerowa i biegowa nie należy do najłatwiejszych z uwagi na duże
+                przewyższenia i podbiegi. Do Gdyni wyruszyliśmy dzień przed
+                startem i zameldowaliśmy się w Hotelu Mercure oddalonym 350 m od
+                plaży.
               </TextDescribebox>
             </Halfbox>
           </Cardflex>
-            </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
