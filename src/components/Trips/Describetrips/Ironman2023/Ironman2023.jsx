@@ -36,7 +36,7 @@ export default function Ironman2023() {
           <Cardflex data-aos="fade-left">
             <img
               className="event__box-map"
-              src={process.env.PUBLIC_URL + "/img/img_2023/bydgoszczThree.jpg"}
+              src={process.env.PUBLIC_URL + "/img/img_2023/gdyniaFour.jpg"}
               alt="manekin - restauracja"
             />
             <Halfbox>
@@ -47,7 +47,8 @@ export default function Ironman2023() {
                 rowerowa i biegowa nie należy do najłatwiejszych z uwagi na duże
                 przewyższenia i podbiegi. Do Gdyni wyruszyliśmy dzień przed
                 startem i zameldowaliśmy się w Hotelu Mercure oddalonym 350 m od
-                plaży.
+                plaży. Wybraliśmy pokój z widokiem na piękną plażę. Z pokoju widoki były 
+                przepieknę. 
               </TextDescribebox>
             </Halfbox>
           </Cardflex>
