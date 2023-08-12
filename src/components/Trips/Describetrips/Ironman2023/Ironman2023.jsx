@@ -13,6 +13,8 @@ import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import Cardflex from "../../../../style/mymuistyle/cardflex";
 import Halfbox from "../../../../style/mymuistyle/halfbox";
 import TextDescribebox from "../../../../style/mymuistyle/textdescribebox";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFlip, Pagination, Navigation } from "swiper";
 
 export default function Ironman2023() {
   useEffect(() => {
@@ -48,9 +50,78 @@ export default function Ironman2023() {
                 przewyższenia i podbiegi. Do Gdyni wyruszyliśmy dzień przed
                 startem i zameldowaliśmy się w Hotelu Mercure oddalonym 350 m od
                 plaży. Wybraliśmy pokój z widokiem na piękną plażę. Z pokoju widoki były 
-                przepieknę. 
+                przepiękne. 
               </TextDescribebox>
             </Halfbox>
+          </Cardflex>
+
+          <Cardflex data-aos="fade-right">
+            <Halfbox>
+              <TextDescribebox>
+                Po przyjeździe, udaliśmy się w stronę Expo, gdzie znajomi startowali na krótszym dystansie Sprint. 
+                My wymęczeni podróżą, oni startem, zdecydowaliśmy podładować kcal. Padło na pizzę, a następnie 
+                pyszne smakołyki z kawą. Trzeba było mieć nadmiar energii, ponieważ w niedzielę start był zaplanowany na 
+                godzinę 6:00. 
+              </TextDescribebox>
+            </Halfbox>
+            {window.innerWidth < 900 ? (
+                 <Swiper
+                 style={{ marginLeft: "0em" }}
+                 effect={"flip"}
+                 grabCursor={true}
+                 pagination={true}
+                 navigation={true}
+                 modules={[EffectFlip, Pagination, Navigation]}
+                 className="mySwiper event__box-map"
+                 color="primary"
+               >
+                 <div className="carousel__box-slide">
+                   <SwiperSlide>
+                     <img
+                       className="carousel__box-slide"
+                       src={process.env.PUBLIC_URL + "/img/img_2023/gdyniaFive.jpg"}
+                       alt="Ładowanie kcal przed zawodami"
+                     />
+                   </SwiperSlide>
+                   <SwiperSlide>
+                     <img
+                       className="carousel__box-slide"
+                       src={process.env.PUBLIC_URL + "/img/img_2023/gdyniaSix.jpg"}
+                       alt="Ładowanie kcal przed zawodami"
+                     />
+                   </SwiperSlide>
+                 </div>
+               </Swiper>
+            ) : (
+
+              <Swiper
+            style={{ marginLeft: "1.2em" }}
+            effect={"flip"}
+            grabCursor={true}
+            pagination={true}
+            navigation={true}
+            modules={[EffectFlip, Pagination, Navigation]}
+            className="mySwiper carousel__box"
+            color="primary"
+          >
+            <div className="carousel__box-slide">
+              <SwiperSlide>
+                <img
+                  className="carousel__box-slide"
+                  src={process.env.PUBLIC_URL + "/img/img_2023/gdyniaFive.jpg"}
+                  alt="Ładowanie kcal przed zawodami"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="carousel__box-slide"
+                  src={process.env.PUBLIC_URL + "/img/img_2023/gdyniaSix.jpg"}
+                  alt="Ładowanie kcal przed zawodami"
+                />
+              </SwiperSlide>
+            </div>
+          </Swiper>
+            )}
           </Cardflex>
         </div>
       </div>
