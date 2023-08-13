@@ -66,7 +66,7 @@ export default function Ironman2023() {
             </Halfbox>
             {window.innerWidth < 900 ? (
                  <Swiper
-                 style={{ marginLeft: "0em" }}
+                 style={{ marginLeft: "0em", height: '100%' }}
                  effect={"flip"}
                  grabCursor={true}
                  pagination={true}
@@ -75,8 +75,12 @@ export default function Ironman2023() {
                  className="mySwiper event__box-map"
                  color="primary"
                >
-                 <div className="carousel__box-slide">
-                   <SwiperSlide>
+                 <div className="carousel__box-slide event__box-map"
+                 
+                 >
+                   <SwiperSlide
+                   
+                   >
                      <img
                        className="carousel__box-slide"
                        src={process.env.PUBLIC_URL + "/img/img_2023/gdyniaFive.jpg"}
@@ -123,6 +127,11 @@ export default function Ironman2023() {
           </Swiper>
             )}
           </Cardflex>
+
+          <Leftheader>
+            <DoubleArrowIcon />
+            Dzień startu
+          </Leftheader>
         </div>
       </div>
     </div>
