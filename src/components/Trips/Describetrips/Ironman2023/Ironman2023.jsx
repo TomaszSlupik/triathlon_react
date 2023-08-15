@@ -143,6 +143,7 @@ export default function Ironman2023() {
             🏃‍♂️ śr. 4’03 => 2h53😅
             </TextDescribebox>
           </div>
+          <div>Tutaj fotka będzie </div>
         </div>
       </div>
     </div>
