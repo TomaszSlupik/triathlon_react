@@ -8,7 +8,6 @@ import Linetext from "../../../../style/mymuistyle/linetext";
 import Line from "../../../../style/mymuistyle/line";
 import Myscrollbox from "../../../../style/myscrollbox";
 import Leftheader from "../../../../style/mymuistyle/leftheader";
-import Centerheader from "../../../../style/mymuistyle/centerheader";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import Cardflex from "../../../../style/mymuistyle/cardflex";
 import Halfbox from "../../../../style/mymuistyle/halfbox";
@@ -142,6 +141,13 @@ export default function Ironman2023() {
             🚴‍♂️240W - śr. 34km/h
             🏃‍♂️ śr. 4’03 => 2h53😅
             </TextDescribebox>
+            <div className="event__box-img">
+              <img
+                className="event__box-img"
+                src={process.env.PUBLIC_URL + "/img/img_2023/gdyniaThree.jpeg"}
+                alt="Po mecie"
+              />
+            </div>
           </div>
           <div>Tutaj fotka będzie </div>
         </div>
