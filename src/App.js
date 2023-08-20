@@ -25,6 +25,7 @@ import Ursynow2023 from './components/Trips/Describetrips/Ursynow2023/Ursynow202
 import Mpsusz2023 from './components/Trips/Describetrips/Mpsusz2023/Mpsusz2023';
 import Bydgoszcz2023 from './components/Trips/Describetrips/Bydgoszcz2023/Bydgoszcz2023';
 import Ironman2023 from './components/Trips/Describetrips/Ironman2023/Ironman2023';
+import Poznan2023 from './components/Trips/Describetrips/Poznan2023/Poznan2023';
 
 
 
@@ -55,6 +56,7 @@ function App() {
           <Route path='/susz2023' element={<Mpsusz2023 />} />
           <Route path='/bydgoszcz2023' element={<Bydgoszcz2023 />} /> 
           <Route path='/ironman2023' element={<Ironman2023 />} />
+          <Route path='/poznan2023' element={<Poznan2023 />} />
           <Route path='/thankyou' element={<Thankyou />} />
          </Routes>
         <Footer />
