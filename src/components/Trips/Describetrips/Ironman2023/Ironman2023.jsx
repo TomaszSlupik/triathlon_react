@@ -134,7 +134,7 @@ export default function Ironman2023() {
 
           <div data-aos="fade-left">
             <TextDescribebox>
-            Enea IRONMAN Gdynia w wersji skróconej 180,2km🚴‍♂️ + 42,195 km 🏃‍♂️Zrobiłem to‼️‼️‼️I am an Ironman🤩1 Polak🇵🇱w kat, 6 open w kat M30, 13 OPEN.
+            Enea IRONMAN Gdynia w wersji skróconej 180,2km🚴‍♂️ + 42,195 km 🏃‍♂️Zrobiłem to‼️‼️‼️I am an Ironman🤩1 Polak 🇵🇱 w kat, 6 open w kat M30, 13 OPEN.
             Sam nie dowierzam, że to zrobiłem w takich warunkach, ale mając taki support @lolek_wu @olku123 , wszytko możemy i z tego miejsca chciałbym serdecznie dziękuję moim najbliższym! Również bardzo dziękuję @mareknegu który wspierał mnie na trasie.
             Ze względu na duże fale, etap pływacki został odwołany i o 7:00 mieliśmy zacząć od roweru. Od 6:45, godzinę czasu czekałem bez bluzy aż ruszy moja strefa. Ruszając na etap kolarski, wyziębiony na 0,1km 😂😂wypad mi cały bidon z picie i tak 180km leciałem bez płynu, tylko zatrzymywałem się na punktach odżywczych. Po 20km już chciałem zejść z trasy!!!! Po 70km jechałem już w bluzie @endlesspain_team i zanim rozgrzałem organizm trochę minęło. Dostałem jeszcze dodatkowo 1’ kary za wyrzucenie żelu w nieodpowiednie miejsce.
             Podsumowując wyniki z datasport:
