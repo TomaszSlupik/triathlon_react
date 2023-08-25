@@ -54,5 +54,12 @@
         "color": "#fff",
         "kind": "Triathlon",
         "city": "Gdynia"
+    },
+    {
+        "name_competition" : "5150 Poznań",
+        "place": "",
+        "color": "",
+        "kind": "Triathlon",
+        "city": "Poznań"
     }
 ]

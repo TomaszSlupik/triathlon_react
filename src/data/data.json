@@ -1,5 +1,19 @@
  [
     {
+    "id": 14, 
+    "nav": "/poznan2023",
+    "name": "5150 Poznań",
+        "type": "Triathlon",
+        "data": "września 3, 2023",
+        "year": 2023,
+        "image": "/img/img_2022/5150.JPG",
+        "marks" : 5,
+        "trophy": "miejsce",
+        "signature": "Foto. IRONMAN Poland",
+        "dateadded": "2023-09-03",
+        "city": "Poznań"
+},
+    {
         "id": 13, 
         "nav": "/ironman2023",
         "name" : "Ironman Gdynia",
