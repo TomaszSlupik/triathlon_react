@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Poznan2023() {
-  return (
-    <div>Poznan2023</div>
-  )
+  return <div>Poznan2023</div>;
 }
