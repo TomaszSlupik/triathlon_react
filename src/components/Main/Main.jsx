@@ -18,6 +18,7 @@ import TextDescribe from "../../style/mymuistyle/textdescribe";
 import theme from "../../style/mybreakpoints";
 import { ThemeProvider } from "@mui/material";
 import Headercarousel from "../Headercarousel/Headercarousel";
+import News from "../News/News";
 
 export default function Main() {
   const [load, setLoad] = useState(true);
@@ -58,6 +59,7 @@ export default function Main() {
             <div className="main__navigationblock"></div>
             <Header />
             <HeaderImage />
+            <News />
             <Aboutme />
             <Headercarousel />
             <div className="main__welcome">
