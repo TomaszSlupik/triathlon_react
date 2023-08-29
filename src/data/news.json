@@ -1,0 +1,19 @@
+[{
+    "name_news": "Jak zrobiłem Ironmana",
+    "img": "/img/news/newsGdynia.jpeg",
+    "data_add": "6 sierpnia 2023",
+    "link": "/ironman2023"
+},
+    {
+        "name_news": "Bydgoszcz i epickie zawody",
+        "img": "/img/news/newsBydgoszcz.jpg",
+        "data_add": "9 lipca 2023",
+        "link": "/bydgoszcz2023"
+    },
+{
+    "name_news": "Wypadek w Suszu",
+        "img": "/img/news/newsSusz.jpeg",
+        "data_add": "2 lipca 2023",
+        "link": "/susz2023"
+}
+]
