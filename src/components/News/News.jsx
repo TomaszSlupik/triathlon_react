@@ -9,6 +9,8 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import Message from "../../data/news.json";
 import { Link } from "react-router-dom";
+import theme from "../../style/mybreakpoints";
+import { ThemeProvider } from "@mui/system";
 
 export default function News() {
   const [message, setMessage] = useState(Message);
@@ -19,14 +21,15 @@ export default function News() {
       <div className="news__box">
         <div className="news__box-wrapper">
         <Box sx={{ flexGrow: 1 }}>
+          <ThemeProvider theme={theme}>
           <Grid
             container
-            spacing={{ xs: 2, md: 3 }}
-            columns={{ xs: 4, sm: 8, md: 12 }}
+            spacing={{ xs: 2, sm: 2, md: 3, lg: 4 }}
+            columns={{ xs: 4, sm: 4, md: 12 }}
           >
             {message.map((el, index) => {
               return (
-                <Grid item xs={6} md={4}>
+                <Grid item xs={6} sm={6} md={4}>
                   <Link to={el.link}>
                     <Card key={index}>
                       <CardActionArea>
@@ -56,6 +59,8 @@ export default function News() {
               );
             })}
           </Grid>
+          </ThemeProvider>
+         
         </Box>
         </div>
         
