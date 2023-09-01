@@ -66,7 +66,7 @@ export default function Records() {
         </ImageButton>
         <ImageButton focusRipple style={{ width: "40%", height: "400px" }}>
           <ImageSrc
-            style={{ backgroundImage: `url(/img/img_2023/czempinFour.jpg)` }}
+            style={{ backgroundImage: `url(/img/img_2023/gdyniaseven.JPG)` }}
           ></ImageSrc>
           <ImageBackdrop className="MuiImageBackdrop-root" />
           <Image>
