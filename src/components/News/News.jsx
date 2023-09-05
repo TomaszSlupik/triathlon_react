@@ -40,24 +40,22 @@ export default function News() {
                               alt="green iguana"
                             />
                             <div className="news__box-wrapper--content">
-                            <CardContent
-                            style={{minHeight: '100%'}}
-                            >
-                              <Typography
-                                gutterBottom
-                                variant="h5"
-                                component="div"
-                                className="news__box-title"
-                              >
-                                {el.name_news}
-                              </Typography>
-                              <Typography
-                                variant="body2"
-                                color="text.secondary"
-                              >
-                                Data dodania: {el.data_add}
-                              </Typography>
-                            </CardContent>
+                              <CardContent style={{ minHeight: "100%" }}>
+                                <Typography
+                                  gutterBottom
+                                  variant="h5"
+                                  component="div"
+                                  className="news__box-title"
+                                >
+                                  {el.name_news}
+                                </Typography>
+                                <Typography
+                                  variant="body2"
+                                  color="text.secondary"
+                                >
+                                  Data dodania: {el.data_add}
+                                </Typography>
+                              </CardContent>
                             </div>
                           </CardActionArea>
                         </Card>
