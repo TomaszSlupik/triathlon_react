@@ -1,4 +1,11 @@
-[{
+[
+    {
+        "name_news": "Wypad do Poznania",
+            "img": "/img/news/poznan2023_v5.jpg",
+            "data_add": "3 września 2023",
+            "link": "/poznan2023"
+    },
+    {
     "name_news": "Jak zrobiłem Ironmana?",
     "img": "/img/news/newsGdynia.jpeg",
     "data_add": "6 sierpnia 2023",
@@ -9,11 +16,5 @@
         "img": "/img/news/newsBydgoszcz.jpg",
         "data_add": "9 lipca 2023",
         "link": "/bydgoszcz2023"
-    },
-{
-    "name_news": "Wypadek w Suszu!",
-        "img": "/img/news/newsSusz.jpeg",
-        "data_add": "2 lipca 2023",
-        "link": "/susz2023"
-}
+    }
 ]
