@@ -29,11 +29,11 @@ export default function Poznan2023() {
         </ThemeProvider>
         <Myscrollbox />
         <div className="event__box">
-          <Leftheader>
+          {/* <Leftheader>
             <DoubleArrowIcon /> Dzień przed startem
           </Leftheader>
           <Centerheader>Bieg</Centerheader>
-          
+           */}
 
 
           <Leftheader>
