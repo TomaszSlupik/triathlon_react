@@ -164,7 +164,6 @@ export default function Ironman2023() {
               />
             </div>
           </div>
-          <div>Tutaj fotka będzie </div>
         </div>
       </div>
     </div>
