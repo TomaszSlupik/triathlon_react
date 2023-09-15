@@ -1,16 +1,16 @@
 [
     {
         "name_news": "Wypad do Poznania",
-            "img": "/img/news/poznan2023_v5.jpg",
-            "data_add": "3 września 2023",
-            "link": "/poznan2023"
+        "img": "/img/news/poznan2023_v5.jpg",
+        "data_add": "3 września 2023",
+        "link": "/poznan2023"
     },
     {
-    "name_news": "Jak zrobiłem Ironmana?",
-    "img": "/img/news/newsGdynia.jpeg",
-    "data_add": "6 sierpnia 2023",
-    "link": "/ironman2023"
-},
+        "name_news": "Jak zrobiłem Ironmana?",
+        "img": "/img/news/newsGdynia.jpeg",
+        "data_add": "6 sierpnia 2023",
+        "link": "/ironman2023"
+    },
     {
         "name_news": "Epickie zawody",
         "img": "/img/news/newsBydgoszcz.jpg",
