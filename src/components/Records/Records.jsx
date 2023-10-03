@@ -15,30 +15,56 @@ export default function Records() {
     <div className="records">
       <div className="records__header">Bieganie</div>
       <div className="records__text">~ ulica</div>
-      <Atropos className="records__myatropos" highlight={false}>
-        <ImageButton focusRipple style={{ width: "100%", height: "100%" }}>
-          <ImageSrc
-            style={{ backgroundImage: `url(/img/recordRunOne.jpeg)` }}
-          ></ImageSrc>
-          <ImageBackdrop className="MuiImageBackdrop-root" />
-          <Image>
-            <Typography
-              component="span"
-              variant="subtitle1"
-              color="inherit"
-              sx={{
-                position: "relative",
-                p: 4,
-                pt: 2,
-                pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-              }}
-            >
-              Bieg 5 km - 15'12"
-              <ImageMarked className="MuiImageMarked-root" />
-            </Typography>
-          </Image>
-        </ImageButton>
-      </Atropos>
+      <div className="records__street">
+        <Atropos className="records__street-myatropos" highlight={false}>
+          <ImageButton focusRipple style={{ width: "90%", height: "100%" }}>
+            <ImageSrc
+              style={{ backgroundImage: `url(/img/recordRunOne.jpeg)` }}
+            ></ImageSrc>
+            <ImageBackdrop className="MuiImageBackdrop-root" />
+            <Image>
+              <Typography
+                component="span"
+                variant="subtitle1"
+                color="inherit"
+                sx={{
+                  position: "relative",
+                  p: 4,
+                  pt: 2,
+                  pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                }}
+              >
+                Bieg 5 km - 15'12"
+                <ImageMarked className="MuiImageMarked-root" />
+              </Typography>
+            </Image>
+          </ImageButton>
+        </Atropos>
+        <Atropos className="records__street-myatropos" highlight={false}>
+          <ImageButton focusRipple style={{ width: "90%", height: "100%" }}>
+            <ImageSrc
+              style={{ backgroundImage: `url(/img/recordRunOne.jpeg)` }}
+            ></ImageSrc>
+            <ImageBackdrop className="MuiImageBackdrop-root" />
+            <Image>
+              <Typography
+                component="span"
+                variant="subtitle1"
+                color="inherit"
+                sx={{
+                  position: "relative",
+                  p: 4,
+                  pt: 2,
+                  pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                }}
+              >
+                Bieg 10 km - 15'12"
+                <ImageMarked className="MuiImageMarked-root" />
+              </Typography>
+            </Image>
+          </ImageButton>
+        </Atropos>
+      </div>
       <div className="records__header">Duathlon</div>
       <div className="records__text">~ dys. sprint</div>
       <div className="records__img">
