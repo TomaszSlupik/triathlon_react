@@ -26,10 +26,10 @@ export default function Nav() {
       nameLink: "Galeria",
       hrefLink: "/gallery",
     },
-    {
-      nameLink: "Rekordy",
-      hrefLink: "/records",
-    },
+    // {
+    //   nameLink: "Rekordy",
+    //   hrefLink: "/records",
+    // },
     {
       nameLink: "Wyniki",
       hrefLink: "/results",
