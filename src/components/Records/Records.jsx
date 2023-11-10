@@ -14,7 +14,7 @@ export default function Records() {
   return (
     <div className="records">
       <div className="records__header">Bieganie</div>
-      <div className="records__text">~ ulica</div>
+      <div className="records__text">~ ulica, wszytskie rekordy zostały ustanowione na trasie z atestem PZLA</div>
       <div className="records__street">
         <Atropos className="records__street-myatropos" highlight={false}>
           <ImageButton focusRipple style={{ width: "90%", height: "100%" }}>
@@ -34,7 +34,7 @@ export default function Records() {
                   pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
                 }}
               >
-                Bieg 5 km - 15'12"
+                Bieg 5 km - 15'04"
                 <ImageMarked className="MuiImageMarked-root" />
               </Typography>
             </Image>
@@ -43,7 +43,7 @@ export default function Records() {
         <Atropos className="records__street-myatropos" highlight={false}>
           <ImageButton focusRipple style={{ width: "90%", height: "100%" }}>
             <ImageSrc
-              style={{ backgroundImage: `url(/img/recordRunOne.jpeg)` }}
+              style={{ backgroundImage: `url(img/img_2023/narodowy2023.JPG)` }}
             ></ImageSrc>
             <ImageBackdrop className="MuiImageBackdrop-root" />
             <Image>
@@ -58,7 +58,7 @@ export default function Records() {
                   pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
                 }}
               >
-                Bieg 10 km - 15'12"
+                Bieg 10 km - 32'30"
                 <ImageMarked className="MuiImageMarked-root" />
               </Typography>
             </Image>
@@ -66,7 +66,7 @@ export default function Records() {
         </Atropos>
       </div>
       <div className="records__header">Duathlon</div>
-      <div className="records__text">~ dys. sprint</div>
+      <div className="records__text">~ dys. sprint (5km 🏃🏼 20km 🚴‍♂️2,5km🏃🏼)</div>
       <div className="records__img">
         <ImageButton focusRipple style={{ width: "30%", height: "400px" }}>
           <ImageSrc
@@ -135,7 +135,7 @@ export default function Records() {
           </Image>
         </ImageButton>
       </div>
-      <div className="records__header">Triathlon</div>
+      {/* <div className="records__header">Triathlon</div>
       <div className="records__text">~ dys. sprint</div>
       <div className="records__img">
         <ImageButton focusRipple style={{ width: "30%", height: "400px" }}>
@@ -203,8 +203,8 @@ export default function Records() {
               <ImageMarked className="MuiImageMarked-root" />
             </Typography>
           </Image>
-        </ImageButton>
-      </div>
+        </ImageButton> */}
+      {/* </div> */}
     </div>
   );
 }
