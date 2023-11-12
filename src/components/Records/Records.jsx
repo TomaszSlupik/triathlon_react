@@ -205,6 +205,9 @@ export default function Records() {
           </Image>
         </ImageButton> */}
       {/* </div> */}
+
+      {/* Dodatkowy opis */}
+      
     </div>
   );
 }
