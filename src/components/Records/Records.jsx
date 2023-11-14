@@ -14,7 +14,9 @@ export default function Records() {
   return (
     <div className="records">
       <div className="records__header">Bieganie</div>
-      <div className="records__text">~ ulica, wszytskie rekordy zostały ustanowione na trasie z atestem PZLA</div>
+      <div className="records__text">
+        ~ ulica, wszytskie rekordy zostały ustanowione na trasie z atestem PZLA
+      </div>
       <div className="records__street">
         <Atropos className="records__street-myatropos" highlight={false}>
           <ImageButton focusRipple style={{ width: "90%", height: "100%" }}>
@@ -58,7 +60,7 @@ export default function Records() {
                   pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
                 }}
               >
-                Bieg 10 km - 32'30"
+                Bieg 10 km - 31'05"
                 <ImageMarked className="MuiImageMarked-root" />
               </Typography>
             </Image>
@@ -207,7 +209,6 @@ export default function Records() {
       {/* </div> */}
 
       {/* Dodatkowy opis */}
-      
     </div>
   );
 }

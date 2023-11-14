@@ -61,5 +61,12 @@
         "color": "gold",
         "kind": "Triathlon",
         "city": "Poznań"
+    },
+    {
+        "name_competition" : "33 Bieg Niepodległości",
+        "place": "2 miejsce",
+        "color": "#c0c0c",
+        "kind": "Bieg",
+        "city": "Warszawa"
     }
 ]
