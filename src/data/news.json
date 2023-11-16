@@ -1,5 +1,11 @@
 [
     {
+        "name_news": "Ponad 15 tys uczestników",
+        "img": "/img/img_2023/niepodleglosciSix.jpg",
+        "data_add": "11 listopada 2023",
+        "link": "/biegniepodleglosci2023"
+    },
+    {
         "name_news": "Wypad do Poznania",
         "img": "/img/news/poznan2023_v5.jpg",
         "data_add": "3 września 2023",
@@ -10,11 +16,5 @@
         "img": "/img/news/newsGdynia.jpeg",
         "data_add": "6 sierpnia 2023",
         "link": "/ironman2023"
-    },
-    {
-        "name_news": "Epickie zawody",
-        "img": "/img/news/newsBydgoszcz.jpg",
-        "data_add": "9 lipca 2023",
-        "link": "/bydgoszcz2023"
     }
 ]

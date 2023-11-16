@@ -1,8 +1,22 @@
  [
     {
-    "id": 14, 
-    "nav": "/poznan2023",
-    "name": "5150 Poznań",
+        "id": 15, 
+        "nav": "/biegniepodleglosci2023",
+        "name": "Bieg Niepodległości",
+        "type": "Bieg",
+        "data": "listopada 11, 2023",
+        "year": 2023,
+        "image": "/img/img_2023/poznan2023_v5.jpg",
+        "marks" : 5,
+        "trophy": "2 miejsce",
+        "signature": "",
+        "dateadded": "2023-11-11",
+        "city": "Warszawa"
+    },
+    {
+        "id": 14, 
+        "nav": "/poznan2023",
+        "name": "5150 Poznań",
         "type": "Triathlon",
         "data": "września 3, 2023",
         "year": 2023,
@@ -12,7 +26,7 @@
         "signature": "",
         "dateadded": "2023-09-03",
         "city": "Poznań"
-},
+    },
     {
         "id": 13, 
         "nav": "/ironman2023",
