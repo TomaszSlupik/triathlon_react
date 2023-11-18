@@ -99,7 +99,7 @@ export default function Main() {
             <Carousel />
             <Contact />
           </div>
-          {/* <ScrollToTop /> */}
+          <ScrollToTop />
         </>
       )}
     </div>
