@@ -10,6 +10,9 @@ import Myscrollbox from "../../../../style/myscrollbox";
 import Leftheader from "../../../../style/mymuistyle/leftheader";
 import Centerheader from "../../../../style/mymuistyle/centerheader";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+import Cardflex from "../../../../style/mymuistyle/cardflex";
+import Halfbox from "../../../../style/mymuistyle/halfbox";
+import TextDescribebox from "../../../../style/mymuistyle/textdescribebox";
 
 export default function Niepodleglosci2023() {
   useEffect(() => {
@@ -26,9 +29,70 @@ export default function Niepodleglosci2023() {
         </ThemeProvider>
         <Myscrollbox />
         <div className="event__box">
-          {/* <Leftheader><DoubleArrowIcon />Dzień startu</Leftheader>
-                <Centerheader>Bieg</Centerheader> */}
-          <div style={{ color: "#fff" }}>Relacja niebawem</div>
+          <Leftheader>
+            <DoubleArrowIcon />
+            Dzień startu
+          </Leftheader>
+          <Centerheader>Bieg</Centerheader>
+
+          <Cardflex data-aos="fade-left">
+            <img
+              className="event__box-map"
+              src={
+                process.env.PUBLIC_URL + "/img/img_2023/niepodleglosciFive.jpg"
+              }
+              alt="Bieg niepodległości - 3 km trasy"
+            />
+            <Halfbox>
+              <TextDescribebox>Uzupełnić</TextDescribebox>
+            </Halfbox>
+          </Cardflex>
+
+          <Cardflex data-aos="fade-right">
+            <Halfbox>
+              <TextDescribebox>Uzupełnić</TextDescribebox>
+            </Halfbox>
+            {window.innerWidth < 900 ? (
+              <img
+                style={{ marginLeft: "0em", backgroundSize: "cover" }}
+                className="event__box-map"
+                src={
+                  process.env.PUBLIC_URL +
+                  "/img/img_2023/niepodleglosciFour.jpg"
+                }
+                alt="Bieg niepodległości - czołówka biegu"
+              />
+            ) : (
+              <img
+                style={{ marginLeft: "1.2em", backgroundSize: "cover" }}
+                className="event__box-map"
+                src={
+                  process.env.PUBLIC_URL +
+                  "/img/img_2023/niepodleglosciFour.jpg"
+                }
+                alt="Bieg niepodległości - czołówka bieg"
+              />
+            )}
+          </Cardflex>
+
+          <div data-aos="fade-left">
+            <TextDescribebox>
+              Podsumowując, 10km z atestem w czasie 31:05‼️‼️‼️podczas
+              Narodowego Święta Niepodległości w Warszawie i drugie 🥈miejsce
+              OPEN na ponad 15 tys uczestników oraz 1 🥇w swojej kat. wiekowej.
+              Tym samym życiówkę poprawiam o 1’25”.
+            </TextDescribebox>
+            <div className="event__box-img">
+              <img
+                className="event__box-img"
+                src={
+                  process.env.PUBLIC_URL +
+                  "/img/img_2023/niepodleglosciThree.jpg"
+                }
+                alt="Zdjęcie z podium"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
