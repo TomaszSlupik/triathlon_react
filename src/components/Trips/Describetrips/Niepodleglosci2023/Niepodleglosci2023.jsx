@@ -44,13 +44,27 @@ export default function Niepodleglosci2023() {
               alt="Bieg niepodległości - 3 km trasy"
             />
             <Halfbox>
-              <TextDescribebox>Uzupełnić</TextDescribebox>
+              <TextDescribebox>
+                Pierwsze 5 kilometrów to były prawdziwe emocje! Razem z grupą
+                pięciu innych zawodników walczyliśmy o przewagę, próbując uciec
+                rywalom. Start zawodów był z Arkadii, a trasa prowadziła nas
+                przez pierwsze pięć kilometrów w kierunku Uczelni SGH, by
+                później powrócić tą samą trasą. Atmosfera rywalizacji w grupie
+                naprawdę napędzała mnie do dalszego wysiłku.
+              </TextDescribebox>
             </Halfbox>
           </Cardflex>
 
           <Cardflex data-aos="fade-right">
             <Halfbox>
-              <TextDescribebox>Uzupełnić</TextDescribebox>
+              <TextDescribebox>
+                Na 7km bieg stał się jeszcze bardziej intensywny. Moment
+                przełomowy nadszedł na dziewiątym kilometrze, gdy postanowiłem
+                zaatakować. Skoncentrowałem się, wykorzystałem swoje rezerwy sił
+                i z determinacją rzuciłem się do przodu. To było ryzykowne
+                posunięcie, ale zaowocowało - udało mi się zdobyć drugie miejsce
+                w kategorii OPEN
+              </TextDescribebox>
             </Halfbox>
             {window.innerWidth < 900 ? (
               <img
@@ -80,7 +94,12 @@ export default function Niepodleglosci2023() {
               Podsumowując, 10km z atestem w czasie 31:05‼️‼️‼️podczas
               Narodowego Święta Niepodległości w Warszawie i drugie 🥈miejsce
               OPEN na ponad 15 tys uczestników oraz 1 🥇w swojej kat. wiekowej.
-              Tym samym życiówkę poprawiam o 1’25”.
+              To dla mnie ogromny zaszczyt, że mogłem uczestniczyć w tak
+              wyjątkowym wydarzeniu, celebrującym historię Polski. Tym samym
+              życiówkę poprawiam o 1’25”. To dla mnie ogromny postęp i dowód na
+              to, że ciężka praca naprawdę się opłaca. Jestem podekscytowany i
+              zmotywowany do podnoszenia dalszej poprzeczki. Oby więcej takich
+              wyzwań przed mną!
             </TextDescribebox>
             <div className="event__box-img">
               <img
