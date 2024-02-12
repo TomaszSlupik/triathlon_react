@@ -5,5 +5,12 @@
         "color": "gold",
         "kind": "Triathlon",
         "city": "Warszawa"
+    },
+    {
+        "name_competition" : "Bieg o Puchar Bielan",
+        "place": "1 miejsce m30",
+        "color": "gold",
+        "kind": "Bieg",
+        "city": "Warszawa"
     }
 ]
