@@ -33,6 +33,7 @@ import Season2020 from "../../data/season 2020.json";
 import Season2021 from "../../data/season 2021.json";
 import Season2022 from "../../data/season 2022.json";
 import Season2023 from "../../data/season 2023.json";
+import Season2024 from '../../data/season 2024.json'
 import { useState } from "react";
 
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement);
@@ -85,90 +86,6 @@ export default function Resultcharts() {
   const handleChangeIndex = (index) => {
     setValue(index);
   };
-
-  // const data2021 = {
-  //   labels: [
-  //     "MP w duathlonie",
-  //     "Garmin Iron Triathlon 1/2",
-  //     "Serock Triathlon",
-  //     "Triathlon Lwa",
-  //     "Garmin Iron Triathlon 1/8",
-  //     "Triathlon Radłów",
-  //   ],
-  //   datasets: [
-  //     {
-  //       data: [3, 1, 1, 1, 1, 2],
-  //       borderColor: "#7c5fe9",
-  //       tension: 1,
-  //     },
-  //   ],
-  // };
-
-  // const data2022 = {
-  //   labels: [
-  //     "HP Indoor Triathlon",
-  //     "Duathlon Czempiń",
-  //     "Mistrzostwa Europy Olsztyn",
-  //     "Susz Triathlon",
-  //     "Enea Bydgoszcz Triathlon",
-  //     "Sprint Triathlon Gdynia",
-  //     "Dziesiątka Babicka",
-  //     "5150 Poznań",
-  //     "Mararton Warszawski - kat M20",
-  //   ],
-  //   datasets: [
-  //     {
-  //       data: [1, 1, 4, 3, 1, 3, 1, 1, 3],
-  //       borderColor: "#7c5fe9",
-  //       tension: 1,
-  //     },
-  //   ],
-  // };
-
-  // const data2023 = {
-  //   labels: ["HP Indoor Triathlon", "Grand Prix Polski"],
-  //   datasets: [
-  //     {
-  //       data: [1, 1],
-  //       borderColor: "#7c5fe9",
-  //       tension: 1,
-  //     },
-  //   ],
-  // };
-
-  // const options = {
-  //   plugins: {
-  //     legend: {
-  //       labels: {
-  //         font: {
-  //           size: 14,
-  //         },
-  //       },
-  //     },
-  //   },
-  //   scales: {
-  //     x: {
-  //       scaleLabel: {
-  //         display: true,
-  //         labelString: "Miejsce zawodów",
-  //         grid: {
-  //           display: false,
-  //         },
-  //       },
-  //     },
-
-  //     y: {
-  //       ticks: {
-  //         stepSize: 1,
-  //       },
-  //       scaleLabel: {
-  //         display: true,
-  //         labelString: "Miejsce",
-  //         position: "top",
-  //       },
-  //     },
-  //   },
-  // };
 
   // Wybór roku
   const [yearIntervalFirst, setYearIntervalFirst] = useState(false);
@@ -327,7 +244,43 @@ export default function Resultcharts() {
               <TabPanel value={value} index={2} dir={theme.direction}>
                 <div className="data">
                   <Timeline position="alternate">
-                    Brak wydarzeń sportowych
+                  {Season2024.map((el, index) => {
+                      return (
+                        <div>
+                          <TimelineItem key={index}>
+                            <TimelineOppositeContent
+                              sx={{ m: "auto 0" }}
+                              align="right"
+                              variant="body2"
+                              color="text.secondary"
+                            >
+                              {el.place}
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                              <TimelineConnector />
+                              <TimelineDot color="primary">
+                                <EmojiEventsIcon
+                                  style={{ color: `${el.color}` }}
+                                />
+                              </TimelineDot>
+                              <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent sx={{ py: "12px", px: 2 }}>
+                              <Typography variant="h6" component="span">
+                                {el.name_competition}
+                              </Typography>
+                              <Typography>{el.kind}</Typography>
+                              <Typography
+                                variant="subtitle2"
+                                style={{ color: "black" }}
+                              >
+                                {el.city}
+                              </Typography>
+                            </TimelineContent>
+                          </TimelineItem>
+                        </div>
+                      );
+                    })}
                   </Timeline>
                 </div>
               </TabPanel>
