@@ -108,6 +108,10 @@ export default function Trips() {
   const [windowFilter, setWindowFilter] = useState(false);
   const [windowFilterSecond, setWindowFilterSecond] = useState(false);
 
+  const [check2024, setCheck2024] = useState(false);
+  const [disabledCheck2024, setDisabledCheck2024] = useState(false);
+  const [label2024, setLabel2024] = useState("2024 r.");
+
   const [check2023, setCheck2023] = useState(false);
   const [disabledCheck2023, setDisabledCheck2023] = useState(false);
   const [label2023, setLabel2023] = useState("2023 r.");
@@ -133,6 +137,10 @@ export default function Trips() {
 
   const [errorYear, setErrorYear] = useState(false);
   const [errorSports, setErrorSports] = useState(false);
+
+  const handlerChange2024 = (e) => {
+    setCheck2024(e.target.checked);
+  };
 
   const handlerChange2023 = (e) => {
     setCheck2023(e.target.checked);
@@ -166,13 +174,15 @@ export default function Trips() {
   const clickTrue = true;
 
   const handlerAccept = () => {
-    if (check2023 === false && check2022 === false) {
+    if (check2024 === false && check2023 === false && check2022 === false) {
       setErrorYear(true);
       setTimeout(() => {
         setErrorYear(false);
       }, 1500);
     } else {
       switch (clickTrue) {
+        case check2024:
+          eventClickAll.push(`${check2024}2024`);
         case check2023:
           eventClickAll.push(`${check2023}2023`);
         case check2022:
@@ -260,6 +270,7 @@ export default function Trips() {
       );
 
       setTrip(newArrSports);
+      setCheck2024(false);
       setCheck2023(false);
       setCheck2022(false);
       setCheckTriathlon(false);
@@ -272,8 +283,10 @@ export default function Trips() {
 
   const handlerFilterClose = () => {
     setWindowFilter(false);
+    setCheck2024(false);
     setCheck2023(false);
     setCheck2022(false);
+    setDisabledCheck2024(false);
     setDisabledCheck2023(false);
     setDisabledCheck2022(false);
   };
@@ -351,6 +364,16 @@ export default function Trips() {
               <DialogContent>
                 <DialogContentText id="alert-dialog-slide-description">
                   <FormGroup style={{ marginLeft: "0.4em" }}>
+                  <FormControlLabel
+                      control={
+                        <Checkbox
+                          disabled={disabledCheck2024}
+                          checked={check2024}
+                          onChange={handlerChange2024}
+                        />
+                      }
+                      label={label2024}
+                    />
                     <FormControlLabel
                       control={
                         <Checkbox

@@ -1,5 +1,19 @@
  [
     {
+        "id": 16, 
+        "nav": "/bielany2023",
+        "name": "Bieg o Puchar Bielan",
+        "type": "Bieg",
+        "data": "luty 11, 2024",
+        "year": 2024,
+        "image": "/img/img_2024/bielanyOne.jpg",
+        "marks" : 5,
+        "trophy": "1 miejsce M30",
+        "signature": "Foto. Bieg Chomiczówki",
+        "dateadded": "2024-02-11",
+        "city": "Warszawa"
+    },
+    {
         "id": 15, 
         "nav": "/biegniepodleglosci2023",
         "name": "Bieg Niepodległości",
