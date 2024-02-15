@@ -33,7 +33,7 @@ import Season2020 from "../../data/season 2020.json";
 import Season2021 from "../../data/season 2021.json";
 import Season2022 from "../../data/season 2022.json";
 import Season2023 from "../../data/season 2023.json";
-import Season2024 from '../../data/season 2024.json'
+import Season2024 from "../../data/season 2024.json";
 import { useState } from "react";
 
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement);
@@ -244,7 +244,7 @@ export default function Resultcharts() {
               <TabPanel value={value} index={2} dir={theme.direction}>
                 <div className="data">
                   <Timeline position="alternate">
-                  {Season2024.map((el, index) => {
+                    {Season2024.map((el, index) => {
                       return (
                         <div>
                           <TimelineItem key={index}>

@@ -364,7 +364,7 @@ export default function Trips() {
               <DialogContent>
                 <DialogContentText id="alert-dialog-slide-description">
                   <FormGroup style={{ marginLeft: "0.4em" }}>
-                  <FormControlLabel
+                    <FormControlLabel
                       control={
                         <Checkbox
                           disabled={disabledCheck2024}
