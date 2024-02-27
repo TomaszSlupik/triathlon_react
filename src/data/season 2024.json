@@ -12,5 +12,12 @@
         "color": "gold",
         "kind": "Bieg",
         "city": "Warszawa"
+    }, 
+    {
+        "name_competition" : "",
+        "place": "",
+        "color": "",
+        "kind": "",
+        "city": ""
     }
 ]
