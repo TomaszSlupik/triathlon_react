@@ -1,5 +1,19 @@
  [
     {
+        "id": 17, 
+        "nav": "/",
+        "name": "",
+        "type": "Aquathlon",
+        "data": "",
+        "year": 2024,
+        "image": "",
+        "marks" : 5,
+        "trophy": "",
+        "signature": "",
+        "dateadded": "",
+        "city": ""
+    },
+    {
         "id": 16, 
         "nav": "/bielany2024",
         "name": "Bieg o Puchar Bielan",
