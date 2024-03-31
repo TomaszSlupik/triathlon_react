@@ -36,3 +36,18 @@ export default function Grandprixpolski2023() {
     </div>
   )
 }
+
+// {
+//     "id": 17, 
+//     "nav": "/",
+//     "name": "",
+//     "type": "Aquathlon",
+//     "data": "",
+//     "year": 2024,
+//     "image": "",
+//     "marks" : 5,
+//     "trophy": "",
+//     "signature": "",
+//     "dateadded": "",
+//     "city": "Mińsk Mazowiecki"
+// },

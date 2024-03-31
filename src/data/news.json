@@ -1,5 +1,11 @@
 [
     {
+        "name_news": "Rozpoczęcie sezonu",
+        "img": "/img/img_2024/bielanyThree.JPG",
+        "data_add": "11 luty 2024",
+        "link": "/bielany2024"
+    },
+    {
         "name_news": "Ponad 15 tys uczestników",
         "img": "/img/img_2023/niepodleglosciSix.jpg",
         "data_add": "11 listopada 2023",
@@ -10,11 +16,5 @@
         "img": "/img/news/poznan2023_v5.jpg",
         "data_add": "3 września 2023",
         "link": "/poznan2023"
-    },
-    {
-        "name_news": "Jak zrobiłem Ironmana?",
-        "img": "/img/news/newsGdynia.jpeg",
-        "data_add": "6 sierpnia 2023",
-        "link": "/ironman2023"
     }
 ]
