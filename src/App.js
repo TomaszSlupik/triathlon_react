@@ -28,6 +28,7 @@ import Ironman2023 from './components/Trips/Describetrips/Ironman2023/Ironman202
 import Poznan2023 from './components/Trips/Describetrips/Poznan2023/Poznan2023';
 import Niepodleglosci2023 from './components/Trips/Describetrips/Niepodleglosci2023/Niepodleglosci2023';
 import Bielany2024 from './components/Trips/Describetrips/Bielany2024/Bielany2024';
+import Grandprixpolski2024 from './components/Trips/Describetrips/Grandprixpolski2024/Grandprixpolski2024';
 
 
 
@@ -61,6 +62,7 @@ function App() {
           <Route path='/poznan2023' element={<Poznan2023 />} />
           <Route path='/biegniepodleglosci2023' element={<Niepodleglosci2023 />} />
           <Route path='/bielany2024' element={<Bielany2024 />} />
+          <Route path='/grandprixpolski2024' element={<Grandprixpolski2024 />} />
           <Route path='/thankyou' element={<Thankyou />} />
          </Routes>
         <Footer />

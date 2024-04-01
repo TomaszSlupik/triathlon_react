@@ -1,5 +1,11 @@
 [
     {
+        "name_news": "Aquathlon na sprawdzenie formy",
+        "img": "/img/img_2024/bielanyThree.JPG",
+        "data_add": "07 kwietnia 2024",
+        "link": "/grandprixpolski2024"
+    },
+    {
         "name_news": "Rozpoczęcie sezonu",
         "img": "/img/img_2024/bielanyThree.JPG",
         "data_add": "11 luty 2024",
@@ -10,11 +16,5 @@
         "img": "/img/img_2023/niepodleglosciSix.jpg",
         "data_add": "11 listopada 2023",
         "link": "/biegniepodleglosci2023"
-    },
-    {
-        "name_news": "Wypad do Poznania",
-        "img": "/img/news/poznan2023_v5.jpg",
-        "data_add": "3 września 2023",
-        "link": "/poznan2023"
     }
 ]

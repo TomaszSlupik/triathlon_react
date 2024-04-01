@@ -1,4 +1,17 @@
- [
+    [ {
+        "id": 17, 
+        "nav": "/grandprixpolski2024",
+        "name": "Grand Prix Polski",
+        "type": "Aquathlon",
+        "data": "kwietnia 07, 2024",
+        "year": 2024,
+        "image": "",
+        "marks" : 5,
+        "trophy": "",
+        "signature": "",
+        "dateadded": "2024-04-07",
+        "city": "Mińsk Mazowiecki"
+    },
     {
         "id": 16, 
         "nav": "/bielany2024",
