@@ -14,7 +14,6 @@ import Cardflex from "../../../../style/mymuistyle/cardflex";
 import Halfbox from "../../../../style/mymuistyle/halfbox";
 import TextDescribebox from "../../../../style/mymuistyle/textdescribebox";
 
-
 export default function Grandprixpolski2024() {
   useEffect(() => {
     Aos.init({ duration: 3000 });
@@ -45,9 +44,7 @@ export default function Grandprixpolski2024() {
               />
             </div>
             <Halfbox>
-              <TextDescribebox>
-                Po 
-              </TextDescribebox>
+              <TextDescribebox>Po</TextDescribebox>
             </Halfbox>
           </Cardflex>
           <Centerheader>Pływanie </Centerheader>
