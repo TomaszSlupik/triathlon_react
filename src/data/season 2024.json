@@ -15,8 +15,8 @@
     }, 
     {
         "name_competition" : "Grand Prix Polski",
-        "place": "",
-        "color": "",
+        "place": "1 miejsce",
+        "color": "gold",
         "kind": "Aquathlon",
         "city": "Mińsk Mazowiecki"
     }
