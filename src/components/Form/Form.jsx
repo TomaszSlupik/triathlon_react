@@ -55,6 +55,36 @@ export default function Form() {
     setText(e.target.value);
   };
 
+
+  // Wysłanie wiadomości:
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Tutaj można dodać walidację formularza
+
+    // Przekazanie danych do skryptu PHP
+    const formData = new FormData();
+    formData.append('email', email);
+    formData.append('message', text);
+
+    fetch('/php/main.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+        console.log('E-mail został wysłany');
+        // Tutaj można dodać obsługę sukcesu, np. wyświetlenie komunikatu
+      } else {
+        console.error('Błąd podczas wysyłania e-maila');
+        // Tutaj można dodać obsługę błędu, np. wyświetlenie komunikatu o błędzie
+      }
+    })
+    .catch(error => {
+      console.error('Błąd:', error);
+      // Obsługa błędów sieciowych
+    });
+  };
+  
   const style = {
     paper: {
       width: "100%",
@@ -78,8 +108,8 @@ export default function Form() {
     <div>
       <div className="contactbox">
         <form
-          action="https://formsubmit.io/send/slupiktomasz@gmail.com"
-          method="POST"
+          // action="https://formsubmit.io/send/slupiktomasz@gmail.com"
+          // method="POST"
           className="contactbox__form"
         >
           <div className="contactbox__form-item">
@@ -147,9 +177,9 @@ export default function Form() {
               </Collapse>
               <TextField
                 style={style.emailInput}
-                id="mail"
-                type="mail"
-                name="mail"
+                id="email"
+                type="email"
+                name="email"
                 value={email}
                 onChange={changeEmail}
                 label="wpisz swój adres email"
@@ -181,12 +211,6 @@ export default function Form() {
               </label>
               <br></br>
               <div className="contactbox__form-box--msg">
-                {/* <TextField id="msg" type="msg" name='msg' 
-                        style={style.field}
-                        value={text} 
-                        onChange={changeText}
-                        label="wpisz treść wiadomości" 
-                        variant="outlined" /> */}
                 <textarea
                   value={text}
                   onChange={changeText}
@@ -208,7 +232,7 @@ export default function Form() {
                 value="https://slupiktriathlon.pl/#thankyou"
               ></input>
               <Mybutton
-                onSubmit={submit}
+                onClick={handleSubmit}
                 style={style.btn}
                 variant="contained"
                 endIcon={<SendIcon />}
