@@ -5,17 +5,16 @@ import Paper from "@mui/material/Paper";
 import Mybutton from "../../style/mystyle";
 import SendIcon from "@mui/icons-material/Send";
 import Alert from "@mui/material/Alert";
-import IconButton from "@mui/material/IconButton";
-import CloseIcon from "@mui/icons-material/Close";
-import Collapse from "@mui/material/Collapse";
 import Iconcontact from "../../style/mymuistyle/iconcontact";
 import theme from "../../style/mybreakpoints";
 import { ThemeProvider } from "@mui/material";
 import Snackbar from "@mui/material/Snackbar";
+import Stack from "@mui/material/Stack";
+
 
 export default function Form() {
   const [email, setTextEmail] = useState("");
-  const [validemail, setValidEmail] = useState(null);
+  const [validemail, setValidEmail] = useState("");
   const [openemail, setOpenEmail] = useState(false);
 
   const [text, setText] = useState("");
@@ -24,67 +23,61 @@ export default function Form() {
 
   const [openAlertSuccess, setOpenAlertSuccess] = useState(false);
 
-  const submit = (e) => {
-    e.preventDefault();
-    if (email === "" || email == null) {
-      setOpenEmail(true);
-      setValidEmail("Wprowadź poprawny email");
-      if (text === "" || text == null) {
-        setOpenText(true);
-        setValidText("Wprowadź wiadomość");
-      }
-    } else if (text === "" || text == null) {
-      setOpenText(true);
-      setValidText("Wprowadź wiadomość");
-    } else {
-      console.log("Twoja wiaodmość została wysłana");
-      setOpenAlertSuccess(true);
-      setOpenEmail(false);
-      setOpenText(false);
-      setTimeout(() => {
-        setOpenAlertSuccess(false);
-      }, 2000);
-    }
-  };
-
   const changeEmail = (e) => {
     setTextEmail(e.target.value);
+    validateEmail(e.target.value)
   };
 
   const changeText = (e) => {
     setText(e.target.value);
   };
 
+  // Wyrażenie regularne do sprawdzania e-maila:
+  const validateEmail = (email) => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+  };
 
   // Wysłanie wiadomości:
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Tutaj można dodać walidację formularza
-
-    // Przekazanie danych do skryptu PHP
-    const formData = new FormData();
-    formData.append('email', email);
-    formData.append('message', text);
-
-    fetch('/php/main.php', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => {
-      if (response.ok) {
-        console.log('E-mail został wysłany');
-        // Tutaj można dodać obsługę sukcesu, np. wyświetlenie komunikatu
-      } else {
-        console.error('Błąd podczas wysyłania e-maila');
-        // Tutaj można dodać obsługę błędu, np. wyświetlenie komunikatu o błędzie
-      }
-    })
-    .catch(error => {
-      console.error('Błąd:', error);
-      // Obsługa błędów sieciowych
-    });
+  
+    if (!validateEmail(email)) {
+      setValidEmail('Wprowadź poprawny adres e-mail!')
+      setOpenEmail(true) 
+      setTimeout(() => {
+        setOpenEmail(false) 
+      }, 3000)
+    } else {
+      const formData = new FormData();
+      formData.append("email", email);
+      formData.append("msg", text);
+  
+      fetch("/php/main.php", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => {
+          if (response.ok) {
+            console.log("E-mail został wysłany");
+            setOpenAlertSuccess(true)
+            setTimeout(() => {
+              setOpenAlertSuccess(false)
+              setTextEmail("")
+              setText("")
+            }, 3000)
+          } else {
+            console.error("Błąd podczas wysyłania e-maila");
+          }
+        })
+        .catch((error) => {
+          console.error("Błąd:", error);
+          // Obsługa błędów sieciowych
+        });
+    }
   };
   
+
   const style = {
     paper: {
       width: "100%",
@@ -156,25 +149,7 @@ export default function Form() {
                 <i class="fa-solid fa-at iconEmail"></i>
               </label>
               <br></br>
-              <Collapse in={openemail}>
-                <Alert
-                  severity="error"
-                  action={
-                    <IconButton
-                      aria-label="close"
-                      color="inherit"
-                      size="small"
-                      onClick={() => {
-                        setOpenEmail(false);
-                      }}
-                    >
-                      <CloseIcon fontSize="inherit" />
-                    </IconButton>
-                  }
-                >
-                  {validemail}
-                </Alert>
-              </Collapse>
+
               <TextField
                 style={style.emailInput}
                 id="email"
@@ -186,25 +161,6 @@ export default function Form() {
                 variant="outlined"
               />
               <br></br>
-              <Collapse in={opentext}>
-                <Alert
-                  severity="error"
-                  action={
-                    <IconButton
-                      aria-label="close"
-                      color="inherit"
-                      size="small"
-                      onClick={() => {
-                        setOpenText(false);
-                      }}
-                    >
-                      <CloseIcon fontSize="inherit" />
-                    </IconButton>
-                  }
-                >
-                  {validtext}
-                </Alert>
-              </Collapse>
               <label className="label" htmlFor="msg">
                 Twoja wiadomość
                 <i class="fa-solid fa-envelope iconEmail"></i>
@@ -217,8 +173,24 @@ export default function Form() {
                   name="msg"
                   id="msg"
                 ></textarea>
+          <Stack 
+          spacing={2} sx={{ width: "100%" }}
+       
+          >
+        <Snackbar open={openemail} autoHideDuration={6000}>
+          <Alert    
+          variant="filled" 
+          severity="error"
+          style={{backgroundColor: 'red'}} 
+          sx={{ width: "100%" }}>
+             {validemail}
+          </Alert>
+        </Snackbar>
+                </Stack>
                 <Snackbar open={openAlertSuccess} autoHideDuration={6000}>
-                  <Alert severity="success" sx={{ width: "100%" }}>
+                  <Alert 
+                  variant="filled" 
+                  severity="success" sx={{ width: "100%" }}>
                     Twoja wiadomość została wysłana!
                   </Alert>
                 </Snackbar>
@@ -240,7 +212,12 @@ export default function Form() {
                 Wyślij
               </Mybutton>
             </Paper>
+
+
+    
           </div>
+
+        
         </form>
       </div>
     </div>

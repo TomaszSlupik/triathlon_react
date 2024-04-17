@@ -1,15 +1,15 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
-    $message = $_POST['msg']; // Pobranie treści wiadomości z pola "msg"
+    $text = $_POST['msg']; 
 
     $to = "slupiktomasz@gmail.com";
-    $subject = "Nowa wiadomość";
+    $subject = "Wiadomość z mojej strony slupiktriathlon.pl";
     $headers = "From: " . $email . "\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-    if (mail($to, $subject, $message, $headers)) {
+    if (mail($to, $subject, $text, $headers)) {
         http_response_code(200);
         echo "E-mail został wysłany pomyślnie.";
     } else {

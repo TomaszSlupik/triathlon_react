@@ -38,6 +38,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import LocationCityIcon from "@mui/icons-material/LocationCity";
+import ScrollToTop from '../../hooks/ScrollToTop'
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -332,6 +333,7 @@ export default function Trips() {
   return (
     <div>
       <div className="trip">
+        <ScrollToTop />
         <div className="trip__headerImage">
           <div className="trip__headerImage-text">
             Wyjazdy Triathlonowe, Duathlonowe i biegowe.
