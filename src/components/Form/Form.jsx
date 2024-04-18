@@ -48,7 +48,16 @@ export default function Form() {
       setTimeout(() => {
         setOpenEmail(false) 
       }, 3000)
-    } else {
+    }
+    else if (validtext == "") {
+      setValidText('Wprowadź wiadomość')
+      setOpenText(true)
+      setTimeout(() => {
+        setOpenText(false) 
+      }, 3000)
+    }
+    
+    else {
       const formData = new FormData();
       formData.append("email", email);
       formData.append("msg", text);
@@ -72,7 +81,6 @@ export default function Form() {
         })
         .catch((error) => {
           console.error("Błąd:", error);
-          // Obsługa błędów sieciowych
         });
     }
   };
@@ -186,6 +194,18 @@ export default function Form() {
              {validemail}
           </Alert>
         </Snackbar>
+
+        <Snackbar open={opentext} autoHideDuration={6000}>
+          <Alert    
+          variant="filled" 
+          severity="error"
+          style={{backgroundColor: 'red'}} 
+          sx={{ width: "100%" }}>
+             {validtext}
+          </Alert>
+        </Snackbar>
+
+
                 </Stack>
                 <Snackbar open={openAlertSuccess} autoHideDuration={6000}>
                   <Alert 
