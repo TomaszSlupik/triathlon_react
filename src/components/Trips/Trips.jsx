@@ -38,7 +38,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import LocationCityIcon from "@mui/icons-material/LocationCity";
-import ScrollToTop from '../../hooks/ScrollToTop'
+import ScrollToTop from "../../hooks/ScrollToTop";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;

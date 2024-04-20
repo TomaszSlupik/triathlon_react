@@ -11,7 +11,6 @@ import { ThemeProvider } from "@mui/material";
 import Snackbar from "@mui/material/Snackbar";
 import Stack from "@mui/material/Stack";
 
-
 export default function Form() {
   const [email, setTextEmail] = useState("");
   const [validemail, setValidEmail] = useState("");
@@ -25,7 +24,7 @@ export default function Form() {
 
   const changeEmail = (e) => {
     setTextEmail(e.target.value);
-    validateEmail(e.target.value)
+    validateEmail(e.target.value);
   };
 
   const changeText = (e) => {
@@ -41,27 +40,24 @@ export default function Form() {
   // Wysłanie wiadomości:
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     if (!validateEmail(email)) {
-      setValidEmail('Wprowadź poprawny adres e-mail!')
-      setOpenEmail(true) 
+      setValidEmail("Wprowadź poprawny adres e-mail!");
+      setOpenEmail(true);
       setTimeout(() => {
-        setOpenEmail(false) 
-      }, 3000)
-    }
-    else if (validtext == "") {
-      setValidText('Wprowadź wiadomość')
-      setOpenText(true)
+        setOpenEmail(false);
+      }, 3000);
+    } else if (validtext == "") {
+      setValidText("Wprowadź wiadomość");
+      setOpenText(true);
       setTimeout(() => {
-        setOpenText(false) 
-      }, 3000)
-    }
-    
-    else {
+        setOpenText(false);
+      }, 3000);
+    } else {
       const formData = new FormData();
       formData.append("email", email);
       formData.append("msg", text);
-  
+
       fetch("/php/main.php", {
         method: "POST",
         body: formData,
@@ -69,12 +65,12 @@ export default function Form() {
         .then((response) => {
           if (response.ok) {
             console.log("E-mail został wysłany");
-            setOpenAlertSuccess(true)
+            setOpenAlertSuccess(true);
             setTimeout(() => {
-              setOpenAlertSuccess(false)
-              setTextEmail("")
-              setText("")
-            }, 3000)
+              setOpenAlertSuccess(false);
+              setTextEmail("");
+              setText("");
+            }, 3000);
           } else {
             console.error("Błąd podczas wysyłania e-maila");
           }
@@ -84,7 +80,6 @@ export default function Form() {
         });
     }
   };
-  
 
   const style = {
     paper: {
@@ -181,36 +176,35 @@ export default function Form() {
                   name="msg"
                   id="msg"
                 ></textarea>
-          <Stack 
-          spacing={2} sx={{ width: "100%" }}
-       
-          >
-        <Snackbar open={openemail} autoHideDuration={6000}>
-          <Alert    
-          variant="filled" 
-          severity="error"
-          style={{backgroundColor: 'red'}} 
-          sx={{ width: "100%" }}>
-             {validemail}
-          </Alert>
-        </Snackbar>
+                <Stack spacing={2} sx={{ width: "100%" }}>
+                  <Snackbar open={openemail} autoHideDuration={6000}>
+                    <Alert
+                      variant="filled"
+                      severity="error"
+                      style={{ backgroundColor: "red" }}
+                      sx={{ width: "100%" }}
+                    >
+                      {validemail}
+                    </Alert>
+                  </Snackbar>
 
-        <Snackbar open={opentext} autoHideDuration={6000}>
-          <Alert    
-          variant="filled" 
-          severity="error"
-          style={{backgroundColor: 'red'}} 
-          sx={{ width: "100%" }}>
-             {validtext}
-          </Alert>
-        </Snackbar>
-
-
+                  <Snackbar open={opentext} autoHideDuration={6000}>
+                    <Alert
+                      variant="filled"
+                      severity="error"
+                      style={{ backgroundColor: "red" }}
+                      sx={{ width: "100%" }}
+                    >
+                      {validtext}
+                    </Alert>
+                  </Snackbar>
                 </Stack>
                 <Snackbar open={openAlertSuccess} autoHideDuration={6000}>
-                  <Alert 
-                  variant="filled" 
-                  severity="success" sx={{ width: "100%" }}>
+                  <Alert
+                    variant="filled"
+                    severity="success"
+                    sx={{ width: "100%" }}
+                  >
                     Twoja wiadomość została wysłana!
                   </Alert>
                 </Snackbar>
@@ -232,12 +226,7 @@ export default function Form() {
                 Wyślij
               </Mybutton>
             </Paper>
-
-
-    
           </div>
-
-        
         </form>
       </div>
     </div>
