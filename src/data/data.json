@@ -1,4 +1,19 @@
-    [ {
+    [ 
+    {
+        "id": 18, 
+        "nav": "/mprumia2024",
+        "name": "Mistrzostwa Polski AG",
+        "type": "Duathlon",
+        "data": "kwietnia 21, 2024",
+        "year": 2024,
+        "image": "/img/img_2024/aquathlonThree.jpg",
+        "marks" : 5,
+        "trophy": "1 miejsce",
+        "signature": "Foto. LOTTO Duathlon Energy",
+        "dateadded": "2024-04-21",
+        "city": "Rumia"
+    },    
+    {
         "id": 17, 
         "nav": "/grandprixpolski2024",
         "name": "Grand Prix Polski",

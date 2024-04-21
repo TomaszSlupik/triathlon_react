@@ -19,5 +19,12 @@
         "color": "gold",
         "kind": "Aquathlon",
         "city": "Mińsk Mazowiecki"
+    },
+    {
+        "name_competition" : "Mistrzostwa Polski AG",
+        "place": "1 miejsce",
+        "color": "gold",
+        "kind": "Duathlon",
+        "city": "Rumia"
     }
 ]
