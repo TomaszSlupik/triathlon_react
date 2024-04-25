@@ -13,6 +13,7 @@ import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import Cardflex from "../../../../style/mymuistyle/cardflex";
 import Halfbox from "../../../../style/mymuistyle/halfbox";
 import TextDescribebox from "../../../../style/mymuistyle/textdescribebox";
+import ScrollToTop from "../../../../hooks/ScrollToTop";
 
 export default function Bielany2024() {
   useEffect(() => {
@@ -21,6 +22,7 @@ export default function Bielany2024() {
 
   return (
     <div>
+      <ScrollToTop />
       <BacktoPage />
       <div className="event">
         <ThemeProvider theme={theme}>

@@ -10,6 +10,11 @@ import Myscrollbox from '../../../../style/myscrollbox';
 import Leftheader from '../../../../style/mymuistyle/leftheader';
 import Centerheader from '../../../../style/mymuistyle/centerheader';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import Cardflex from "../../../../style/mymuistyle/cardflex";
+import Halfbox from "../../../../style/mymuistyle/halfbox";
+import TextDescribebox from "../../../../style/mymuistyle/textdescribebox";
+import ScrollToTop from '../../../../hooks/ScrollToTop';
+import './Mprumia2024.scss'
 
 
 export default function Mprumia2024() {
@@ -21,16 +26,34 @@ export default function Mprumia2024() {
 
   return (
     <div>
+        <ScrollToTop />
         <BacktoPage />
-        <div className="event">
+        <div className="rumia">
         <ThemeProvider theme={theme}>
             <Linetext>Mistrzostwa Polski Rumia</Linetext>
             <Line />
         </ThemeProvider>
         <Myscrollbox />
-            <div className="event__box">
+            <div className="rumia__box">
                 <Leftheader><DoubleArrowIcon />Dzień startu</Leftheader>
                 <Centerheader>Bieg</Centerheader>
+                <Cardflex data-aos="fade-left">
+            <img
+              className="rumia__box-map"
+              src={process.env.PUBLIC_URL + "/img/img_2024/rumiaFive.JPG"}
+              alt="Start bieg o Puchar Bielan"
+            />
+            <Halfbox>
+              <TextDescribebox>
+              Obroniłem tytuł Mistrza Polski w triathlonie na dystansie sprint! 
+              To moje trzecie złoto na tym dystansie, więc jestem niesamowicie zadowolony z tego 
+              osiągnięcia. Pomimo trudnych warunków pogodowych – wiatru i chłodu – udało mi się 
+              utrzymać solidne tempo na pierwszych 5 kilometrach biegu, o
+              siągając średnio 3’09” na kilometr i wypracować sobie 
+              sporą przewagę nad rywalami.
+              </TextDescribebox>
+            </Halfbox>
+          </Cardflex>
             </div>
         </div>
     </div>

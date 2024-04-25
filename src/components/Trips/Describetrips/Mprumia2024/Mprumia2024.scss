@@ -1,0 +1,76 @@
+.rumia {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    &__box {
+        position: relative;
+        width: 80%;
+        &-map{
+            position: relative;
+            width: 320px;
+            height: 266px;
+            background-size: cover;
+            border-radius: 8px;
+            &--signature {
+                position: absolute;
+                right: 14%;
+                bottom: 1%;
+                font-size: 0.9rem;
+                color: #fff;
+            }
+           
+        }
+
+        &-img {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 350px;
+            border-radius: 8px;
+            box-shadow: 5px 5px 10px #000;
+            margin-top: 1em;
+            margin-bottom: 2em;
+          
+            &--signature {
+                position: absolute;
+                right: 14%;
+                bottom: 1%;
+                font-size: 0.9rem;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .rumia {
+        &__box {
+            &-map{
+                position: relative;
+                height: 400px;
+                width: 455px;
+                margin-top: 1em;
+            }
+            &-img {
+                height: 600px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .rumia {
+        &__box {
+            &-img {
+                height: 1000px;
+            }
+        }
+    }
+}
