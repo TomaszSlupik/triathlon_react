@@ -10,6 +10,9 @@ import Myscrollbox from "../../../../style/myscrollbox";
 import Leftheader from "../../../../style/mymuistyle/leftheader";
 import Centerheader from "../../../../style/mymuistyle/centerheader";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+import Halfbox from "../../../../style/mymuistyle/halfbox";
+import TextDescribebox from "../../../../style/mymuistyle/textdescribebox";
+import Cardflex from "../../../../style/mymuistyle/cardflex";
 
 export default function Grandprixpolski2024() {
   useEffect(() => {
@@ -31,6 +34,24 @@ export default function Grandprixpolski2024() {
             Dzień startu
           </Leftheader>
           <Centerheader>Bieg</Centerheader>
+          <Cardflex data-aos="fade-left">
+            <img
+              className="event__box-map"
+              src={process.env.PUBLIC_URL + "/img/img_2024/aquatlonTwo.JPG"}
+              alt="Start bieg o Puchar Bielan"
+            />
+            <Halfbox>
+              <TextDescribebox>
+              Dzisiaj wystartowałem w Grand Prix Polski w Aquathlonie 
+              i cieszę się ogromnie z zajęcia pierwszego miejsca! 
+              Moje wyniki to: 400 metrów pływania ukończyłem w czasie 4 minuty i 54 sekundy, 
+              przy średnim tempie 1 minutę i 13 sekund na 100 metrów. 
+              Następnie przebiegłem 5 kilometrów w czasie 15 minut i 34 sekundy. 
+              Teraz skupiam się na przygotowaniach do Mistrzostw Polski w Duathlonie, 
+              które odbędą się już za dwa tygodnie
+              </TextDescribebox>
+            </Halfbox>
+          </Cardflex>
         </div>
       </div>
     </div>
