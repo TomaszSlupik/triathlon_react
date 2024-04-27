@@ -1,5 +1,11 @@
 [
     {
+        "name_news": "Kolejny tytuł Mistrza Polski",
+        "img": "/img/img_2024/rumiaTwo.JPG",
+        "data_add": "26 kwietnia 2024",
+        "link": "/mprumia2024"
+    },
+    {
         "name_news": "Aquathlon na sprawdzenie formy",
         "img": "/img/img_2024/aquathlonThree.jpg",
         "data_add": "07 kwietnia 2024",
@@ -10,11 +16,5 @@
         "img": "/img/img_2024/bielanyThree.JPG",
         "data_add": "11 luty 2024",
         "link": "/bielany2024"
-    },
-    {
-        "name_news": "Ponad 15 tys uczestników",
-        "img": "/img/img_2023/niepodleglosciSix.jpg",
-        "data_add": "11 listopada 2023",
-        "link": "/biegniepodleglosci2023"
     }
 ]

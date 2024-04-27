@@ -42,13 +42,13 @@ export default function Grandprixpolski2024() {
             />
             <Halfbox>
               <TextDescribebox>
-              Dzisiaj wystartowałem w Grand Prix Polski w Aquathlonie 
-              i cieszę się ogromnie z zajęcia pierwszego miejsca! 
-              Moje wyniki to: 400 metrów pływania ukończyłem w czasie 4 minuty i 54 sekundy, 
-              przy średnim tempie 1 minutę i 13 sekund na 100 metrów. 
-              Następnie przebiegłem 5 kilometrów w czasie 15 minut i 34 sekundy. 
-              Teraz skupiam się na przygotowaniach do Mistrzostw Polski w Duathlonie, 
-              które odbędą się już za dwa tygodnie
+                Dzisiaj wystartowałem w Grand Prix Polski w Aquathlonie i cieszę
+                się ogromnie z zajęcia pierwszego miejsca! Moje wyniki to: 400
+                metrów pływania ukończyłem w czasie 4 minuty i 54 sekundy, przy
+                średnim tempie 1 minutę i 13 sekund na 100 metrów. Następnie
+                przebiegłem 5 kilometrów w czasie 15 minut i 34 sekundy. Teraz
+                skupiam się na przygotowaniach do Mistrzostw Polski w
+                Duathlonie, które odbędą się już za dwa tygodnie
               </TextDescribebox>
             </Halfbox>
           </Cardflex>
