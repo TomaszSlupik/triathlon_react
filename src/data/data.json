@@ -1,5 +1,19 @@
     [ 
     {
+        "id": 19, 
+        "nav": "/samsung2024gorzow",
+        "name": "",
+        "type": "Triathlon",
+        "data": "",
+        "year": 2024,
+        "image": "",
+        "marks" : 5,
+        "trophy": "",
+        "signature": "",
+        "dateadded": "",
+        "city": ""
+    },   
+    {
         "id": 18, 
         "nav": "/mprumia2024",
         "name": "Mistrzostwa Polski AG",
