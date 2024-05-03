@@ -2,7 +2,7 @@
 
 ## W projekcie wykorzystano technologie i narzędzia:
 
-[![My Skills](https://skillicons.dev/icons?i=html,css)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,scss,javascript,react,materialui,php)](https://skillicons.dev)
 
 ## Struktura projektu:
 
