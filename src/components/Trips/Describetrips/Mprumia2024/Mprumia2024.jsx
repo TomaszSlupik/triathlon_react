@@ -50,8 +50,8 @@ export default function Mprumia2024() {
                 niesamowicie zadowolony z tego osiągnięcia. Pomimo trudnych
                 warunków pogodowych – wiatru i chłodu – udało mi się utrzymać
                 solidne tempo na pierwszych 5 kilometrach biegu, osiągając
-                średnio 3’09” na kilometr i wypracowanie sobie sporej przewagi nad
-                rywalami.
+                średnio 3’09” na kilometr i wypracowanie sobie sporej przewagi
+                nad rywalami.
               </TextDescribebox>
             </Halfbox>
           </Cardflex>
@@ -60,32 +60,26 @@ export default function Mprumia2024() {
           <Cardflex data-aos="fade-right">
             <Halfbox>
               <TextDescribebox>
-              Moja średnia moc podczas jazdy rowerem wyniosła 334 waty. 
-              Na pierwszych 10 kilometrach utrzymywałem równomierne tempo, 
-              ale wiedziałem, że w końcu moim rywalom uda się mnie dogonić. 
-              Mimo to postanowiłem zachować siły na kolejny bieg, 
-              dlatego pozostawałem z nimi w grupie, 
-              starając się dotrzeć razem do strefy T2.
+                Moja średnia moc podczas jazdy rowerem wyniosła 334 waty. Na
+                pierwszych 10 kilometrach utrzymywałem równomierne tempo, ale
+                wiedziałem, że w końcu moim rywalom uda się mnie dogonić. Mimo
+                to postanowiłem zachować siły na kolejny bieg, dlatego
+                pozostawałem z nimi w grupie, starając się dotrzeć razem do
+                strefy T2.
               </TextDescribebox>
             </Halfbox>
             {window.innerWidth < 900 ? (
               <img
                 style={{ marginLeft: "0em", backgroundSize: "cover" }}
                 className="event__box-map"
-                src={
-                  process.env.PUBLIC_URL +
-                  "/img/img_2024/rumiaSix.jpg"
-                }
+                src={process.env.PUBLIC_URL + "/img/img_2024/rumiaSix.jpg"}
                 alt="Rumia MP - etap rowerowy"
               />
             ) : (
               <img
                 style={{ marginLeft: "1.2em", backgroundSize: "cover" }}
                 className="event__box-map"
-                src={
-                  process.env.PUBLIC_URL +
-                  "/img/img_2024/rumiaSix.jpg"
-                }
+                src={process.env.PUBLIC_URL + "/img/img_2024/rumiaSix.jpg"}
                 alt="Rumia MP - etap rowerowy"
               />
             )}
@@ -94,10 +88,10 @@ export default function Mprumia2024() {
           <Centerheader>Bieg</Centerheader>
           <div data-aos="fade-left">
             <TextDescribebox>
-            W drugim biegu postawiłem na mocne rozpoczęcie, aby oderwać się od rywali. 
-            Gdy już uzyskałem pewną przewagę, postanowiłem zachować spokój i kontrolować tempo biegu.
-            Później już spokojnie zmierzałem do mety, 
-            mając na celu zdobycie tytułu mistrza Polski.
+              W drugim biegu postawiłem na mocne rozpoczęcie, aby oderwać się od
+              rywali. Gdy już uzyskałem pewną przewagę, postanowiłem zachować
+              spokój i kontrolować tempo biegu. Później już spokojnie zmierzałem
+              do mety, mając na celu zdobycie tytułu mistrza Polski.
             </TextDescribebox>
             <div className="event__box-img">
               <img
