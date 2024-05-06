@@ -26,5 +26,12 @@
         "color": "gold",
         "kind": "Duathlon",
         "city": "Rumia"
+    },
+    {
+        "name_competition" : "Samsung River Triathlon",
+        "place": "",
+        "color": "",
+        "kind": "Triathlon",
+        "city": "Gorzów Wielkopolski"
     }
 ]
