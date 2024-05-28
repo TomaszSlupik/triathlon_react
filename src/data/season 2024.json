@@ -33,5 +33,12 @@
         "color": "",
         "kind": "Triathlon",
         "city": "Gorzów Wielkopolski"
+    },
+    {
+        "name_competition" : "Mistrzostwa Polski AG",
+        "place": "",
+        "color": "",
+        "kind": "Triathlon",
+        "city": "Susz"
     }
 ]
