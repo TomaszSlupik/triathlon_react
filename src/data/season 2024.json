@@ -40,5 +40,12 @@
         "color": "",
         "kind": "Triathlon",
         "city": "Susz"
+    },
+     {
+        "name_competition" : "Malbork",
+        "place": "",
+        "color": "",
+        "kind": "Triathlon",
+        "city": "Malbork"
     }
 ]
