@@ -1,4 +1,18 @@
-    [     
+    [   
+    {
+        "id": 20, 
+        "nav": "/",
+        "name": "",
+        "type": "Triathlon",
+        "data": "czerwca 30, 2024",
+        "year": 2024,
+        "image": "",
+        "marks" : 5,
+        "trophy": "",
+        "signature": "",
+        "dateadded": "2024-06-30",
+        "city": "Susz"
+    },  
     {
         "id": 19, 
         "nav": "/samsung2024miedzychod",
