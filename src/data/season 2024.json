@@ -41,6 +41,13 @@
         "kind": "Triathlon",
         "city": "Susz"
     },
+    {
+        "name_competition" : "Enea Bydgoszcz Triathlon",
+        "place": "",
+        "color": "",
+        "kind": "Triathlon",
+        "city": "Bydgoszcz"
+    },
      {
         "name_competition" : "Malbork",
         "place": "",
