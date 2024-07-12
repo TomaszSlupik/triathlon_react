@@ -48,6 +48,13 @@
         "kind": "Triathlon",
         "city": "Bydgoszcz"
     },
+    {
+        "name_competition" : "Enea Bydgoszcz Triathlon - 1/8 IM",
+        "place": "3 miejsce",
+        "color": "#8b4513",
+        "kind": "Triathlon",
+        "city": "Bydgoszcz"
+    },
      {
         "name_competition" : "Malbork",
         "place": "",
