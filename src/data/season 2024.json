@@ -42,9 +42,9 @@
         "city": "Susz"
     },
     {
-        "name_competition" : "Enea Bydgoszcz Triathlon",
-        "place": "",
-        "color": "",
+        "name_competition" : "Enea Bydgoszcz Triathlon - SuperSprint",
+        "place": "1 miejsce",
+        "color": "gold",
         "kind": "Triathlon",
         "city": "Bydgoszcz"
     },
