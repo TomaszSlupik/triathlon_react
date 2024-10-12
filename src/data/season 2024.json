@@ -57,10 +57,10 @@
     },
     {
         "name_competition" : "Garmin Iron Triathlon",
-        "place": "",
-        "color": "",
+        "place": "1 miejsce",
+        "color": "gold",
         "kind": "Triathlon",
-        "city": ""
+        "city": "Serock"
     },
      {
         "name_competition" : "Malbork",
